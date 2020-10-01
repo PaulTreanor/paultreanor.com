@@ -1,3 +1,17 @@
 main {
     margin-top: 60px;  /*room for navbar*/
 }
+
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about {
+    @extend section;
+}
+
+
+.project {
+    @extend section;
+}
