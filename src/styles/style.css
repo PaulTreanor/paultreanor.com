@@ -3,8 +3,35 @@ main {
   /*room for navbar*/
 }
 
-.about {
+.myimage {
+  display: inline;
+}
+
+.project {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+nav {
+  background-color: white;
+}
+
+.section, .about, .projects, .contact {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.sectionTitle {
+  padding-bottom: 25px;
+}
+
+.projectlink {
+  color: #555;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+}
+
+i {
+  font-size: 24px !important;
 }
 /*# sourceMappingURL=style.css.map */

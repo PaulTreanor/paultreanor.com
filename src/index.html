@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Custom CSS-->
     <link rel="stylesheet" href="./styles/style.css">
+    <!---boxicons-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <title>Paul Treanor</title>
   </head>
   <body>
@@ -18,18 +20,22 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarCollapse">
-        <ul class="navbar-nav mr-autos">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">CV</a>
-          </li>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
         </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">CV</a>
+            </li>
+          </ul>
+        </form>
       </div>
     </nav>
 
@@ -46,25 +52,71 @@
             <p>
               Please have a look at some of the things I've worked on and just send me an email if you want to get in touch, my inbox is always open :)
             </p>
+            <div class="row justify-content-start">
+              <div class="col-1"><i class='bx bxl-github'></i></div>
+              <div class="col-1"><i class='bx bx-envelope'></i></div>
+              <div class="col-1"><i class='bx bxl-linkedin'></i></div>
+            </div>
           </div>
-          <div class="col-lg">
-            <img src="./images/me.jpg" class="img-fluid" alt="picture of me" width="250">
+          <div class="col-lg text-center">
+            <img src="./images/me.jpg" class="img-fluid myimage " alt="picture of me" width="250">
           </div>
         </div>
 
       <!----Projects ------->
       <div class="projects">
         <h2 class="text-center">Projects</h2>
-        <div class="row">
-          <div class="col-lg">
-            <img src="./images/android1.jpg" class="img-fluid" alt="android app picture" width="250">
+        <!---project 1---->
+        <div class="project row">
+          <div class="col-lg order-first">
+            <img src="./images/splash.png" class="img-fluid mt-3" alt="android app picture" width="500">
           </div>
           <div class="col-lg">
-            <h2>String Theory </h2>
+            <h3>String Theory </h3>
+            <p>String Theory is an android app I developed with Colin Gorman to help users learn the guitar on the go.</p>
+            <p>We made the app in mind for people who want to practice their instrument on public transport and for beginners
+              who can't play for long periods of time without their fingers hurting. </p>
+            <p>The app was built using Java and XML within Android Studio and is avaiable for download on the Play Store</p>
+            <div class="row justify-content-start">
+              <div class="col-3"><p class="projectlink">PLAY STORE</p></div>
+              <div class="col-3"><p class="projectlink">GITLAB</p></div>
+            </div>
+          </div>
+        </div>
+        <!-----project 2----->
+        <div class="project row">
+          <div class="col-lg order-md-5">
+            <img src="./images/splash.png" class="img-fluid mt-3" alt="covid web-app picture" width="500">
+          </div>
+          <div class="col-lg">
+            <h3>Covid Level Tracker</h3>
+            <p>A web app built to help people keep track of what lockdown level their county is in and 
+              how that restricts their movements. 
+            </p>
+            <p>The website detects the users locations using their IP address and then displays the lockdown status for their location.
+              The user also has the option to choose their location from a dropdown menu if they want to know about other counties or if the location choosen
+            by the app was wrong. </p>
+            <p>The website was built using Python Flask and</p>
+            <div class="row justify-content-start">
+              <div class="col-3"><p class="projectlink">WEBSITE</p></div>
+              <div class="col-3"><p class="projectlink">GITHUB</p></div>
+            </div>
           </div>
         </div>
       </div>
-      
+      <!----contact me section -->
+      <div class="row contact justify-content-center">
+      <div>
+        <h2 class="text-center">Say Hi</h2>
+        <p>If you want to get in touch just shoot me an email at treanorpaul9@gmail.com</p>
+        <p>If you want to have a look at my CV you can see it here.</p>
+        <div class="row justify-content-start">
+          <div class="col-1"><i class='bx bxl-github'></i></div>
+          <div class="col-1"><i class='bx bx-envelope'></i></div>
+          <div class="col-1"><i class='bx bxl-linkedin'></i></div>
+        </div>
+      </div>
+      </div>
 
       
       
@@ -72,7 +124,7 @@
     
     
     <!-----FOOTER-->
-    <footer class="footer mt-auto py-3">
+    <footer class="footer mt-auto py-3 border-top">
       <div class="container">
         <span class="text-muted">Paul Treanor 2020.</span>
       </div>

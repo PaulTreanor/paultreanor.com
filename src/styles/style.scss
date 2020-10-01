@@ -2,16 +2,44 @@ main {
     margin-top: 60px;  /*room for navbar*/
 }
 
+.myimage {
+    display: inline;
+}
+
+.project {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+nav {
+    background-color: white;
+}
 .section {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .about {
-    @extend section;
+    @extend .section;
 }
 
+.projects {
+    @extend .section;
+}
 
-.project {
-    @extend section;
+.contact {
+    @extend .section
+}
+
+.sectionTitle {
+    padding-bottom: 25px;
+}
+
+.projectlink {
+    color: #555;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+i {
+    font-size:24px!important;
 }
