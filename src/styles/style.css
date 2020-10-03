@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   margin-top: 60px;
   /*room for navbar*/
@@ -16,12 +20,12 @@ nav {
   background-color: white;
 }
 
-.section, .about, .projects, .contact {
+.section, #about, #projects, #contact {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.contact {
+#contact {
   padding-top: 25px;
 }
 
@@ -37,5 +41,9 @@ nav {
 
 i {
   font-size: 24px !important;
+}
+
+.nav-link:active {
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

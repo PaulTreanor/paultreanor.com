@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 main {
     margin-top: 60px;  /*room for navbar*/
 }
@@ -18,15 +22,15 @@ nav {
     padding-bottom: 50px;
 }
 
-.about {
+#about {
     @extend .section;
 }
 
-.projects {
+#projects {
     @extend .section;
 }
 
-.contact {
+#contact {
     @extend .section;
     padding-top: 25px;
 }
@@ -44,3 +48,8 @@ nav {
 i {
     font-size:24px!important;
 }
+
+.nav-link:active{
+    font-weight: 700;
+}
+
