@@ -88,8 +88,72 @@ i {
     }
     .section {
         margin: 0px;
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+    .myimage {
+        padding-bottom: 20px;
+    }
+    .title {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+    .project {
+        padding-top: 0px;
+    }
+    h3 {
+        font-size: 150%;
+    }
+    .project-title {
+        padding-bottom: 20x;
+    }
+    .project-image {
+        padding-bottom: 20px;
+       
+    }
+    .project {
+    }
+    .icons {
+        justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    main {
+        margin: 0px;
+    }
+    nav {
+        margin: 0px;
+    }
+    .section {
+        margin: 0px;
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+    .myimage {
+        padding-bottom: 20px;
+    }
+    .title {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+    .project {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    h3 {
+        font-size: 150%;
+    }
+    .project-title {
+        padding-bottom: 20x;
+    }
+    .project-image {
+        padding-bottom: 20px;
+       
+    }
+    
+    .icons {
+        justify-content: center;
     }
   }
 
