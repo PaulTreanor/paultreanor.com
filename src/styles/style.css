@@ -20,10 +20,6 @@ main {
   padding-bottom: 25px;
 }
 
-nav {
-  padding-top: 50px;
-}
-
 .section, #about, #projects, #contact {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -58,17 +54,9 @@ i {
   font-size: 24px !important;
 }
 
-.nav-link:active {
-  font-weight: 700;
-}
-
 @media only screen and (max-width: 600px) {
   main {
     margin: 0px;
-  }
-  nav {
-    margin: 0px;
-    padding-top: 30px;
   }
   .section, #about, #projects, #contact {
     margin: 0px;
@@ -103,9 +91,6 @@ i {
 
 @media only screen and (max-width: 900px) {
   main {
-    margin: 0px;
-  }
-  nav {
     margin: 0px;
   }
   .section, #about, #projects, #contact {
