@@ -4,22 +4,11 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-image: url("../images/Rectangle.svg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
 }
 
 main {
-  margin-top: 60px;
+  margin-top: 40px;
   /*room for navbar*/
-}
-
-.wrapper {
-  background-image: url("../images/Rectangle2.png");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
 }
 
 .myimage {
@@ -41,11 +30,11 @@ nav {
 }
 
 #about {
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 }
 
 #projects {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 #contact {
@@ -67,11 +56,6 @@ nav {
 
 i {
   font-size: 24px !important;
-}
-
-.chevron {
-  padding-top: 80px;
-  font-size: 50px !important;
 }
 
 .nav-link:active {
@@ -153,6 +137,13 @@ i {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+/* Blurb position on desktops*/
+@media (min-width: 900px) {
+  .blurb {
+    margin-top: 30px;
   }
 }
 

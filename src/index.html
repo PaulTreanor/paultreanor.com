@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+  <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -15,107 +15,85 @@
     <title>Paul Treanor</title>
   </head>
   <body >
+
+    
     <!----NAV------>
     <nav class="container  text-center">
-      <h3 class="title">PAUL TREANOR</h3>
+      <h3 class="title">Paul Treanor</h3>
       <div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
         <a href="#about" class="p-2 bd-highlight links">ABOUT</a>
         <a href="#projects" class="p-2 bd-highlight links">PROJECTS</a>
-        <!----a href="" class="p-2 bd-highlight links">CV</a----->
       </div>
     </nav>
-    <div class="wrapper">
+
     <main class="container" >
     
       <!------About Me------>
       <div id="about">
         <div class="row">
           <div class="col-lg-4 text-center order-lg-5">
-            <img src="./images/eggme.png" class="img-fluid myimage " alt="picture of me" width="250">
+            <img src="./images/eggme.png" class="img-fluid myimage " alt="picture of me" width="230">
           </div>
           <div class="col-lg-8">
-            <div class="col-lg-11">
-              <h2 class="title">HI, I'M PAUL!</h2>
+            <div class="blurb col-lg-11">
+              <h2 class="title">Hi, I'm Paul!</h2>
               <p>I'm a final year Computer Applications student at DCU.
                 I'm interested in full stack development, test automation, CI/CD pipelines, and machine learning. 
-                  I'm proficient in Java, Python, and JavaScript.
-
-              </p>
-              <p>
-                Feel free to get in touch :)
-              </p>
+                  I'm proficient in Java, Python, and JavaScript.</p>
+              <p>Feel free to get in touch :)</p>
               <div class="icons row">
                 <a href="https://github.com/PaulTreanor" class="col-1"><i class='bx bxl-github'></i></a>
                 <a href="mailto: treanorpaul9@gmail.com" class="col-1"><i class='bx bx-envelope'></i></a>
-                <!--a href="" class="col-1"><i class='bx bxl-linkedin'></i></a--->
               </div>
             </div>
-    
-          </div>
-          
-        </div>
-        <div class="text-center ">
-
-          <a href="#projects"><i class='d-none d-lg-block chevron bx bxs-chevron-down'></i></a>
-        </div>
-        
+          </div>     
+        </div>  
       </div>
         
+      <hr>
 
       <!----Projects ------->
       <div id="projects">
-        
-        <h2 class="text-center project-title title">PROJECTS</h2>
-        <div class=" d-md-none">
-          <hr >
-        </div>
+        <h2 class="text-center project-title title">Projects</h2>
+
         <!---project 1---->
         <div class="project row">
-          <div class="col-lg order-first  d-flex justify-content-center">
+          <div class="col-lg d-flex justify-content-center">
             <img src="./images/mockup.jpg" class="img-fluid mt-1 project-image " alt="android app picture" width="500">
           </div>
           <div class="col-lg">
-            <h3 class="title">STRING THEORY </h3>
-            <p>String Theory is an android app I developed with Colin Gorman to help users learn the guitar on the go.</p>
-            <p>It was designed to be played on public transport and for beginners
-              who can't play for long periods of time without their fingers hurting. </p>
-            <p>The app was built using Java and XML within Android Studio and is avaiable for download on the Play Store</p>
+            <h3 class="title">String Theory</h3>
+            <p>An android app I developed with Colin Gorman to help users learn the guitar on the go.</p>
             <div class="d-flex flex-row bd-highlight">
               <a href="https://play.google.com/store/apps/details?id=com.paul.stringtheory_justplay" class="bd-highlight links">PLAY STORE</a>
               <a href="https://gitlab.computing.dcu.ie/gormac23/2020-ca326-cgorman-chordlearner" class="bd-highlight links">GITLAB</a>
             </div>
           </div>
         </div>
+
         <!-----project 2----->
         <div class="project row">
-          <div class="col-lg order-lg-5 d-flex justify-content-center">
+          <div class="col-lg d-flex justify-content-center">
             <img src="./images/canileavethehouse.jpg" class="img-fluid project-image " alt="covid web-app picture" width="500">
           </div>
           <div class="col-lg">
-            <h3 class="title">CANILEAVETHEHOUSE?</h3>
-            <p>Canileavethehouse is a webapp built to help people keep track of what lockdown level their county is in and 
-              how that restricts their movements. 
-            </p>
-            <p>The user can select their location with the map, and then information regarding that area's level of lockdown is displayed.</p>
-            <p>I used Vue.js to create this webapp.</p>
+            <h3 class="title">canileavethehouse?</h3>
+            <p>An interactive map to help users determine what covid restrictions apply to their area.</p>
             <div class="d-flex flex-row bd-highlight">
               <a href="./canileavethehouse" class="bd-highlight links">WEB PAGE</a>
               <a href="https://github.com/PaulTreanor/canileavethehouse" class="bd-highlight links">GITHUB</a>
             </div>
           </div>
         </div>
+
         <!---project 3---->
         <div class="project row">
-          <div class="col-lg order-first  d-flex justify-content-center">
+          <div class="col-lg   d-flex justify-content-center">
             <img src="./images/jester.png" class="img-fluid mt-1 project-image" alt="android app picture" width="500">
           </div>
           <div class="col-lg">
             <h3 class="title">Jester </h3>
-            <p>Jester is a webapp that allows users to take photos and videos using hand gestures. </p>
-            <p>
-              Jester is powered by a KNN and Local Outlier Factor classifier built from scratch using Python, a flask API, and a Vue.js front end. 
-            </p>
-            <p>It's still a bit of a work in progress, but it's functional. Source code will be public soon!</p>
+            <p>A gesture recognition system powered by a OpenPose, KNN, and local outlier factor.</p>
             <div class="d-flex flex-row bd-highlight">
               <a href="https://www.youtube.com/watch?v=2fk3ZSIIf_g" target="_blank" class="bd-highlight links">EARLY DEMO</a>
             </div>
@@ -123,11 +101,13 @@
         </div>
       </div>
       
+      <hr>
+      
       <!----contact me section -->
       <div id="contact">
         <div class="row justify-content-center text-center">
           <div>
-            <h2 class="text-center sectionTitle title">SAY HI!</h2>
+            <h2 class="text-center sectionTitle title">Get in touch!</h2>
             <div class="row">
               <div class="col-lg">
                 <a href="https://github.com/PaulTreanor/tududle"><i class='bx bxl-github'></i>
@@ -139,28 +119,11 @@
                   <i class='bx bx-envelope'></i>
                   <p>treanorpaul9@gmail.com</p>
                 </a>
-              </div>
-              <!--div class="col">
-                <a href="linkedin.com/paultreanor">
-                  <i class='bx bxl-linkedin'></i>
-                  <p>linkedin.com/paultreanor?</p>
-                </a>
-              </div---->
+              </div>         
             </div>
           </div>
-          </div>
+        </div>
       </div>
-    </div>
-
-      
-      
-    </main>
-    
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </main>  
   </body>
 </html>
