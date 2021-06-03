@@ -18,8 +18,8 @@
                 I'm interested in full stack development, machine learning, and automating things.</p>
               <p>Feel free to get in touch :)</p>
               <div class="icons row">
-                <a href="https://github.com/PaulTreanor" class="col-1"><i class="bx bxl-github"></i></a>
-                <a href="mailto: treanorpaul9@gmail.com" class="col-1"><i class="bx bx-envelope"></i></a>
+                <a href="https://github.com/PaulTreanor" class="col-1 h4 mb-2"><b-icon icon="github"></b-icon></a>
+                <a href="mailto: treanorpaul9@gmail.com" class="col-1 h4 mb-2"><b-icon icon="envelope-fill"></b-icon></a>
               </div>
             </div>
           </div>     
@@ -90,13 +90,14 @@
             <h2 class="text-center sectionTitle title">Get in touch!</h2>
             <div class="row">
               <div class="col-lg">
-                <a href="https://github.com/PaulTreanor/tududle"><i class="bx bxl-github"></i>
+                <a href="https://github.com/PaulTreanor/" class="h6 mb-2">
+                  <b-icon icon="github"></b-icon>
                 <p>github.com/paultreanor</p>
                 </a>
               </div>
               <div class="col">
-                <a href="mailto:treanorpaul9@gmail.com">
-                  <i class="bx bx-envelope"></i>
+                <a href="mailto:treanorpaul9@gmail.com" class="h6 mb-2">
+                  <b-icon icon="envelope-fill"></b-icon>
                   <p>treanorpaul9@gmail.com</p>
                 </a>
               </div>         
