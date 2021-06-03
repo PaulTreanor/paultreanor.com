@@ -36,14 +36,15 @@
         <!---project 1---->
         <div class="project row">
           <div class="col-lg   d-flex justify-content-center">
-            <img src="/jester.png" class="img-fluid mt-1 project-image" alt="android app picture" width="500">
+            <img src="/openhands.png" class="img-fluid mt-1 project-image" alt="android app picture" width="500">
           </div>
           <div class="col-lg">
-            <h3 class="title">Jester </h3>
+            <h3 class="title">OpenHands </h3>
             <p>A novel approach to gesture recognition implementing KNN and local outlier factor.</p>
-            <p>Source code and more details will be available soon!</p>
+            <p>Includes Vue.js camera webapp to demo the gesture classifier.</p>
             <div class="d-flex flex-row bd-highlight">
               <a href="https://www.youtube.com/watch?v=QSDZ-cdyGXw&amp;t=1s" target="_blank" class="bd-highlight links">DEMO</a>
+              <a href="https://github.com/PaulTreanor/openhands" class="bd-highlight links">GITHUB</a>
             </div>
           </div>
         </div>
@@ -58,14 +59,13 @@
             <h3 class="title">String Theory</h3>
             <p>An android app I developed with Colin Gorman to help users learn the guitar on the go.</p>
             <div class="d-flex flex-row bd-highlight">
-              <a href="https://play.google.com/store/apps/details?id=com.paul.stringtheory_justplay" class="bd-highlight links">PLAY STORE</a>
               <a href="https://gitlab.computing.dcu.ie/gormac23/2020-ca326-cgorman-chordlearner" class="bd-highlight links">GITLAB</a>
             </div>
           </div>
         </div>
 
         <!-----project 3----->
-        <div class="project row">
+        <!-- <div class="project row">
           <div class="col-lg d-flex justify-content-center">
             <img src="/canileavethehouse.jpg" class="img-fluid project-image " alt="covid web-app picture" width="500">
           </div>
@@ -77,7 +77,7 @@
               <a href="https://github.com/PaulTreanor/canileavethehouse" class="bd-highlight links">GITHUB</a>
             </div>
           </div>
-        </div>
+        </div> -->
 
       </div>
       
