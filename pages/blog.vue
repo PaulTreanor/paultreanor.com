@@ -6,7 +6,7 @@
 			  <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
 				  <div class="article-inner">
 						<div class="detail">
-              <pre>{{ article.createdAt }}</pre>
+              <pre>{{ formatDate(article.createdAt) }}</pre>
 							<h3>{{ article.title }}</h3>
 							<p>{{ article.short }}</p>
 						</div>
@@ -27,6 +27,13 @@
       return {
         articles
       }
+    },
+
+    methods: {
+       formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
+    }
     }
   }
 </script>
