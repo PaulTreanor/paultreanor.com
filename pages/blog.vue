@@ -6,6 +6,7 @@
 			  <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
 				  <div class="article-inner">
 						<div class="detail">
+              <pre>{{ article.createdAt }}</pre>
 							<h3>{{ article.title }}</h3>
 							<p>{{ article.short }}</p>
 						</div>
@@ -20,10 +21,9 @@
   export default {
     async asyncData({ $content, params }) {
       const articles = await $content('blog')
-        .only(['title', 'short', 'img', 'slug', 'author'])
+        .only(['title', 'short', 'img', 'slug', 'author', 'createdAt'])
         .sortBy('createdAt', 'desc')
         .fetch()
-
       return {
         articles
       }
