@@ -13,9 +13,9 @@
           <div class="col-lg-8">
             <div class="blurb col-lg-11">
               <h2 class="title">Paul Treanor</h2>
-              <p class="text-muted">Software Engineering Student</p>
-              <p>Hi, I'm Paul, and I'm currently in my final year studying Computer Applications at DCU.
-                I'm interested in full stack development, machine learning, and automating things.</p>
+              <p class="text-muted">Software Engineer</p>
+              <p>Hi, I'm Paul. 
+                I'm a software engineer at fourTheorem, where I work with AWS, the Serverless framework, and Node. </p>
               <p>Feel free to get in touch :)</p>
               <div class="icons row">
                 <a href="https://github.com/PaulTreanor" class="col-1 h4 mb-2"><b-icon icon="github"></b-icon></a>
