@@ -34,5 +34,18 @@ h1 {
   margin-bottom: 30px;
 }
 
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+@media screen and (max-width: 750px) {
+    iframe {
+        max-width: 100% !important;
+        width: auto !important;
+        height: auto !important;
+    }
+}
+
 
 </style>
