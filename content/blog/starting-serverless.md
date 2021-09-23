@@ -22,9 +22,9 @@ Since joining fourTheorem earlier this year I've worked with AWS and the Serverl
 
 Serverless Stack's [guide to the Serverless Framework](https://serverless-stack.com/chapters/setup-the-serverless-framework.html) is a very comprehensive and well laid out resource on setting up a serverless project. 
 
-The guide details how to set up a fullstack note-taking webapp using lambda, dynamoDB, cognito, amplify, and S3. The project uses React, but the important bits are explained clearly enough to be followed along with any frontend framework. The project also sets up a billing system with the Stripe API, making it a great way to prototype a potential business project very quickly.
+The guide details how to set up a fullstack note-taking webapp using lambda, dynamoDB, cognito, amplify, and S3. The project uses React, but the important bits are explained clearly enough to be followed along with any frontend framework. The guide even sets up a billing system with the Stripe API, making it a great way to prototype a potential business project very quickly.
 
-Serverless Stack also provides fantastic standalone pages that explain some of the more confusing features of serverless applications, like [IAM Roles](https://serverless-stack.com/chapters/what-is-iam.html), [Cognito user and identity pools](https://serverless-stack.com/chapters/cognito-user-pool-vs-identity-pool.html), and [stages](https://serverless-stack.com/chapters/stages-in-serverless-framework.html). 
+Serverless Stack also provides fantastic standalone pages that explain some of the more confusing ideas in serverless applications, like [IAM Roles](https://serverless-stack.com/chapters/what-is-iam.html), [Cognito user and identity pools](https://serverless-stack.com/chapters/cognito-user-pool-vs-identity-pool.html), and [stages](https://serverless-stack.com/chapters/stages-in-serverless-framework.html). 
 
 
 ## [Complete Coding](https://www.youtube.com/channel/UC8uBP0Un18DJAnWjm1CPqBg)
@@ -32,7 +32,7 @@ Serverless Stack also provides fantastic standalone pages that explain some of t
 
 There's not much to say here other than that Complete Coding has the best Serverless AWS tutorials on the internet. 
 
-The videos are concise, follow best practices, and easy to follow. Sam usually provides a git repo with each video too which is very helpful. Complete coding is always the first place I go to when I need to refresh my understanding of anything AWS or Serverless. 
+The videos are concise, use best practices, and are easy to follow. Sam usually provides a git repo with each video too which is very helpful. Complete coding is always the first place I go to when I need to refresh my understanding of anything AWS or Serverless. 
 
 ## [SLIC Starter](https://github.com/fourtheorem/slic-starter)
 
