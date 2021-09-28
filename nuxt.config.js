@@ -15,7 +15,10 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: "text/css", href: '/css2.css' }
+      { rel: 'stylesheet', type: "text/css", href: '/css2.css' },
+      { rel: 'stylesheet', type: "text/css", href: '/skeleton-main.css' },
+      // { rel: 'stylesheet', type: "text/css", href: '/skeleton-light.css' },
+      { rel: 'stylesheet', type: "text/css", href: '/global-custom.css' }
     ]
   },
 
@@ -38,8 +41,6 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content

@@ -14,7 +14,7 @@ tags:
 
 # Starting with AWS and the Serverless Framework
 
-<b-img src="/ft.jpg" fluid alt="fourtheorem"></b-img>
+<img src="/ft.jpg" alt="fourtheorem">
 
 Since joining fourTheorem earlier this year I've worked with AWS and the Serverless framework a lot, here are some of the best learning resources I've found:
 

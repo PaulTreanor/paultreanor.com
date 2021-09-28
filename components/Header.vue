@@ -3,14 +3,31 @@
 	  <nav>
 		  <nuxt-link to="/">Home</nuxt-link>
 		  <nuxt-link to="/blog">Blog</nuxt-link>
+
+			<ThemeToggle v-on:darkMode='switchMode'/>
+
 	  </nav>
   </header>
 </template>
 
+<script>
+import ThemeToggle from './ThemeToggle.vue'
+
+export default {
+	components: {
+		ThemeToggle
+	},
+	methods: {
+		switchMode (value) {
+			this.$emit('darkMode', value)
+		}
+	}
+}
+</script>
+
 <style>
 header {
 	padding: 15px 30px;
-	background-color: #FFF;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -27,4 +44,6 @@ nav a {
 	display: block;
 	margin: 0 15px;
 }
+
+
 </style>

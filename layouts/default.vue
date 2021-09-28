@@ -1,9 +1,38 @@
 <template>
   <div>
-    <Header />
+    <Header v-on:darkMode='swap'/>
     <Nuxt />
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      link: [
+        {
+          rel: "stylesheet",
+          href: `/skeleton-${this.cur}.css`
+        }
+      ]
+    };
+  },
+  data() {
+    return {
+      cur: "light"
+    };
+  },
+  methods: {
+    swap(value) {
+      if (value) {
+        this.cur = "dark";
+      } else {
+        this.cur = "light";
+      }
+    }
+  }
+}
+</script>
 
 <style>
 * {
@@ -14,3 +43,5 @@
 }
 
 </style>
+
+

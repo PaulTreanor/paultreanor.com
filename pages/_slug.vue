@@ -39,6 +39,10 @@ iframe {
   height: 400px;
 }
 
+img {
+  max-width: 100%;
+}
+
 @media screen and (max-width: 750px) {
     iframe {
         max-width: 100% !important;

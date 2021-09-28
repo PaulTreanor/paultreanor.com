@@ -23,8 +23,6 @@ Local outlier factor (LOF) is an anomaly detection algorithm which can give you 
 
 The algorithm essentialy compares the density of an item's neighbourhood (how close the items in an area are to eachother) to the density of the item's neighbour's neighbourhoods. 
 
-\
-&nbsp;
 
 ### Why use local outlier factor?
 
@@ -36,12 +34,10 @@ This image shows how an outlier in one area of a dataset may not be an outlier i
 
 
 
-<b-img center  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/LOF.svg/1024px-LOF.svg.png" width="450"  fluid alt="Local outlier factor diagram"></b-img>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/LOF.svg/1024px-LOF.svg.png" width="450" alt="Local outlier factor diagram">
 <figcaption center class="figure-caption text-center">Source: Wikipedia</figcaption>
 
 
-\
-&nbsp;
 \
 &nbsp;
 \
@@ -62,16 +58,12 @@ The LOF method takes 4 arguments:
 </ul>
 
 
-\
-&nbsp;
 
 
 ##### 1. Reachability distance 
 
-\
-&nbsp;
 
-<b-img  src="/rdist.png" fluid alt="reachability distance"></b-img>
+<img  src="/rdist.png" alt="reachability distance">
 
 \
 &nbsp;
@@ -92,10 +84,8 @@ def  reachability_distance(A, B, classifier, k):
 
 ##### 2. Local reachability density 
 
-\
-&nbsp;
 
-<b-img src="/lrd.png" fluid alt="local reachability density"></b-img>
+<img src="/lrd.png" alt="local reachability density">
 
 \
 &nbsp;
@@ -121,10 +111,8 @@ def  local_r_density(A, nearest_neighbours, classifier, k): # Local reachability
 
 ##### 3. Local outlier factor
 
-\
-&nbsp;
 
-<b-img src="/lof.png" fluid alt="local outlier factor"></b-img>
+<img src="/lof.png" alt="local outlier factor">
 
 \
 &nbsp;
@@ -152,8 +140,6 @@ def  local_outlier_factor(A, nearest_neighbours, classifier, k):
 
 LOF is slow because since it essentially runs KNN *k<sup>2</sup>+1* times. If performance is important it may be worth looking at the [local *distance* outlier factor](https://doi.org/10.1145/342009.335388) algorithm instead. 
 
-\
-&nbsp;
 
 ### Resources
 
