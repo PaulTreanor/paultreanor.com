@@ -16,10 +16,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: "text/css", href: '/css2.css' },
-      { rel: 'stylesheet', type: "text/css", href: '/skeleton-main.css' },
-      // { rel: 'stylesheet', type: "text/css", href: '/skeleton-light.css' },
-      { rel: 'stylesheet', type: "text/css", href: '/global-custom.css' }
-    ]
+      { rel: 'stylesheet', type: "text/css", href: '/skeleton-main.css' }    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

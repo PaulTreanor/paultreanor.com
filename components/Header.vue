@@ -1,10 +1,16 @@
 <template>
   <header>
 	  <nav>
-		  <nuxt-link to="/">Home</nuxt-link>
+			<div class="nav-buttons">
+				<nuxt-link to="/">Home</nuxt-link>
+			<nuxt-link to="/projects">Projects</nuxt-link>
 		  <nuxt-link to="/blog">Blog</nuxt-link>
+			</div>
+		  
+			
 
-			<ThemeToggle v-on:darkMode='switchMode'/>
+
+			<ThemeToggle class="toggle" v-on:darkMode='switchMode'/>
 
 	  </nav>
   </header>
@@ -28,22 +34,24 @@ export default {
 <style>
 header {
 	padding: 15px 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 150%;
-
 }
 
 nav {
 	display: flex;
 	align-items: center;
-	margin: 0 -15px;
 }
 nav a {
 	display: block;
 	margin: 0 15px;
 }
+
+.nav-buttons {
+	display: flex;
+	font-size: 2rem;
+	margin: 0 auto;
+
+}
+
 
 
 </style>

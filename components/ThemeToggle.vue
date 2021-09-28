@@ -31,8 +31,8 @@ export default {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 55px;
+  height: 29px;
 }
 
 /* Hide default HTML checkbox */
@@ -58,10 +58,10 @@ export default {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 24px;
+  width: 23px;
+  left: 3px;
+  bottom: 3px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -83,7 +83,7 @@ input:checked + .slider:before {
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 30px;
 }
 
 .slider.round:before {

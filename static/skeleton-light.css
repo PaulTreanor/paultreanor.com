@@ -222,6 +222,18 @@ hr {
 /* custom
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+
+
 .lead {
-  color: #777
+  color: #777;
+  font-size: 18px;
+}
+
+/* blog summary box 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.article-inner {
+  padding: 15px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
 }
