@@ -13,8 +13,11 @@
           <p>Feel free to get in touch :)</p>
           <div class="row">
             <a href="https://github.com/PaulTreanor"><ion-icon name="logo-github"></ion-icon></a>
-            <a @click="copyEmailToClipboard" class="emailCopy"><ion-icon name="mail"></ion-icon></b-icon></a>
-          </div>          
+            <a @click="copyEmailToClipboard" class="emailCopy">
+              <ion-icon name="mail"></ion-icon>
+              <span class="tooltip">copy email to clipboard</span>
+            </a>
+          </div>      
         </div>
       </div>     
     </main>  
@@ -66,6 +69,17 @@ ion-icon {
   margin-right: 15px;
 }
 
+.emailCopy:hover .tooltip {
+  display:block;
+}
+
+.tooltip {
+  display: none;
+    /* margin-top: 10px; moves it down */
+    position: absolute;
+    z-index: 1000;
+}
+
 /* Larger than desktop */
 @media (min-width: 1000px) {
   .image {
@@ -77,8 +91,6 @@ ion-icon {
     max-width: 700px;
     margin: 0 auto;
   }
-  
-
 
 }
 
