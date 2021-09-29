@@ -64,6 +64,7 @@ h2 {
 .article-inner .detail {
   padding-left: 15px;
   padding-right: 15px;
+  
 }
 
 

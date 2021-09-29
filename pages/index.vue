@@ -12,8 +12,8 @@
           <p>I've worked on some interesting <NuxtLink to="/projects">projects</NuxtLink>, and I also have a <NuxtLink to="/blog">blog!</NuxtLink></p>
           <p>Feel free to get in touch :)</p>
           <div class="row">
-            <a href="https://github.com/PaulTreanor" class="col-1 h4 mb-2">github</a>
-            <a @click="copyEmailToClipboard" class="emailCopy">email</b-icon></a>
+            <a href="https://github.com/PaulTreanor"><ion-icon name="logo-github"></ion-icon></a>
+            <a @click="copyEmailToClipboard" class="emailCopy"><ion-icon name="mail"></ion-icon></b-icon></a>
           </div>          
         </div>
       </div>     
@@ -23,6 +23,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      
+    }
+  },
   methods: {
     copyEmailToClipboard () {
       navigator.clipboard.writeText("treanorpaul9" + "@" + "gmail" + ".com");
@@ -54,6 +59,11 @@ p {
 
 .emailCopy {
   cursor: pointer;
+}
+
+ion-icon {
+  font-size: 2.4rem;
+  margin-right: 15px;
 }
 
 /* Larger than desktop */

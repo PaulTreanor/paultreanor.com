@@ -16,7 +16,12 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: "text/css", href: '/css2.css' },
-      { rel: 'stylesheet', type: "text/css", href: '/skeleton-main.css' }    ]
+      { rel: 'stylesheet', type: "text/css", href: '/skeleton-main.css' }    ],
+    script: [
+      {        src: "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js",      },
+      { src: "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" }
+    
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
