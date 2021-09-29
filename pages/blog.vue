@@ -56,11 +56,11 @@ h2 {
   margin-bottom: 15px;
 }
 
-.article-inner img {
+/* .article-inner img {
   display: block;
   width: 100%;
   max-width: 300px;
-}
+} */
 .article-inner .detail {
   padding-left: 15px;
   padding-right: 15px;

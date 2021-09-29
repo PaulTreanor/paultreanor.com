@@ -5,7 +5,7 @@
         <h2>Projects</h2>
 
         <!---project 1---->
-        <div class="project row">
+        <div class="project article-inner row">
           <img src="/openhands.png" class="one-third column image" alt="android app picture" width="400">
           <div >
             <h4>OpenHands </h4>
@@ -20,11 +20,9 @@
 
 
         <!---project 2---->
-        <div class="project row">
-          <div class="col-lg d-flex justify-content-center">
-            <img src="/mockup.jpg" class="one-third column image" alt="android app picture" width="400">
-          </div>
-          <div class="col-lg">
+        <div class="project article-inner row">
+          <img src="/mockup.jpg" class="one-third column image" alt="android app picture" width="400">
+          <div>
             <h4>String Theory</h4>
             <p>An android app I developed with Colin Gorman to help users learn the guitar on the go.</p>
             <div class="d-flex flex-row bd-highlight">
@@ -52,7 +50,7 @@ p {
 }
 
 .project {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .container {
