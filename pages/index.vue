@@ -34,7 +34,6 @@ export default {
   methods: {
     copyEmailToClipboard () {
       navigator.clipboard.writeText("treanorpaul9" + "@" + "gmail" + ".com");
-      //pop up copied to clipboard 
     }
   }
 }
