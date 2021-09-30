@@ -14,7 +14,7 @@ tags:
 
 # Starting with AWS and the Serverless Framework
 
-<img src="/fourthereom.png" alt="fourtheorem">
+<img src="/fourTheorem.png" alt="fourtheorem">
 
 Since joining fourTheorem earlier this year I've worked with AWS and the Serverless framework a lot, here are some of the best learning resources I've found:
 

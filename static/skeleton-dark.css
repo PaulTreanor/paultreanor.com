@@ -181,15 +181,15 @@ label > .label-body {
 
 
 
-/* Code
+/* Code - custom edited for paultreanor.com
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: #1a1a1a;
-  border: 1px solid #1f1f1f;
+  background: #DDD;
+  border: 1px solid #DDD;
   border-radius: 4px; }
 pre > code {
   display: block;
@@ -245,4 +245,15 @@ h3 {
   padding: 15px;
   box-shadow: 0px 3px 6px rgba(1, 1, 1, 0.5);
   border-radius: 8px;
+}
+
+/* prism js code blocks (nuxt content)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
+  color: #9a6e3a;
+  background: #DDD;
+}
+
+pre[class*="language-"] {
+  background: #DDD;
 }
