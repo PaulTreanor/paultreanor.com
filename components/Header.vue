@@ -1,19 +1,17 @@
 <template>
   <header>
 	  <nav>
+			
 			<div class="nav-buttons">
 				<nuxt-link to="/">Home</nuxt-link>
 				<nuxt-link to="/projects">Projects</nuxt-link>
 				<nuxt-link to="/blog">Blog</nuxt-link>
 			</div>
 		  
-			
-
 			<div class="selector">
-				<ThemeToggle class="toggle" v-on:darkMode='switchMode'/>
+				<ThemeToggle v-on:darkMode='switchMode'/>
 			</div>
 			
-
 	  </nav>
   </header>
 </template>
@@ -44,14 +42,10 @@ header {
 	}
 }
 
-
-
 nav {
 	display: flex;
 	align-items: center;
 }
-
-
 
 nav a {
 	display: block;
@@ -63,7 +57,5 @@ nav a {
 	font-size: 2rem;
 	margin: 0 auto;
 }
-
-
 
 </style>

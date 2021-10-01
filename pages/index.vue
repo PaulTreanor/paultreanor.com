@@ -1,10 +1,5 @@
 <template>
     <main class="container">
-    
-      <!------About Me------>
-      <!-- <div>
-        <img src="/eggme.png" class="img-fluid myimage " alt="picture of me" width="230">
-      </div> -->
       <div>
         <div class="blurb">
           <h2>Hi, I'm Paul</h2>

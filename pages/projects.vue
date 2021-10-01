@@ -1,7 +1,7 @@
 <template>
   <!----Projects ------->
   <div class="container">
-      <div id="projects">
+      <div>
         <h2>Projects</h2>
 
         <!---project 1---->
@@ -11,9 +11,9 @@
             <h4>OpenHands </h4>
             <p>A novel approach to gesture recognition implementing KNN and local outlier factor.</p>
             <p>Includes Vue.js camera webapp to demo the gesture classifier.</p>
-            <div class="d-flex flex-row bd-highlight">
-              <a href="https://www.youtube.com/watch?v=QSDZ-cdyGXw&amp;t=1s" target="_blank" class="bd-highlight links">DEMO</a>
-              <a href="https://github.com/PaulTreanor/openhands" class="bd-highlight links">GITHUB</a>
+            <div>
+              <a href="https://www.youtube.com/watch?v=QSDZ-cdyGXw&amp;t=1s" target="_blank">DEMO</a>
+              <a href="https://github.com/PaulTreanor/openhands">GITHUB</a>
             </div>
           </div>
         </div>
@@ -25,8 +25,8 @@
           <div>
             <h4>String Theory</h4>
             <p>An android app I developed with Colin Gorman to help users learn the guitar on the go.</p>
-            <div class="d-flex flex-row bd-highlight">
-              <a href="https://gitlab.computing.dcu.ie/gormac23/2020-ca326-cgorman-chordlearner" class="bd-highlight links">GITLAB</a>
+            <div>
+              <a href="https://gitlab.computing.dcu.ie/gormac23/2020-ca326-cgorman-chordlearner">GITLAB</a>
             </div>
           </div>
         </div>

@@ -1,17 +1,12 @@
 <template>
   <article>
 	  <nuxt-content :document="article" />
-
-    
-    
   </article>
 </template>
-
 <script>
 
 
 export default {
-
 	async asyncData({ $content, params }) {
 		const article = await $content('blog', params.slug).fetch();
 		return { article }
@@ -20,7 +15,6 @@ export default {
 </script>
 
 <style>
-
 
 article {
   display: block;
@@ -57,8 +51,6 @@ pre > code {
   display: block;
   padding: 1rem 1.5rem;
   white-space: pre; }
-
-
 
 @media screen and (max-width: 750px) {
     iframe {
