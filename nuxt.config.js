@@ -14,7 +14,7 @@ export default {
       { hid: 'description', name: 'description', content: 'My website where I talk about software development :)' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       { rel: 'stylesheet', type: "text/css", href: '/css2.css' },
       { rel: 'stylesheet', type: "text/css", href: '/skeleton-main.css' }    ],
     script: [
