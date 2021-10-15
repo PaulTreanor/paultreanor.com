@@ -12,6 +12,10 @@ export default {
       link: [
         {
           rel: "stylesheet",
+          href: `/skeleton-light.css`
+        },
+        {
+          rel: "stylesheet",
           href: `/skeleton-${this.cur}.css`
         }
       ]
