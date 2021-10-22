@@ -1,5 +1,7 @@
 # personalBlog
 
+https://paultreanor.com/
+
 ## Build Setup
 
 ```bash
