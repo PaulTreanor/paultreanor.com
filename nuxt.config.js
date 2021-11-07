@@ -60,5 +60,42 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  }, 
+
+  feed: [
+    // A default feed configuration object
+    {
+      path: '/feed.xml', // The route to your feed.
+      create: async feed => {
+        
+        const $content = require('@nuxt/content').$content
+
+        feed.options = {
+          title: "Paul Treanor's blog",
+          link: 'https://paultreanor.com/blog',
+          description: "Bloggo :)",
+        }
+
+          const posts = await $content('blog')
+          .sortBy('createdAt', 'desc')
+          .fetch()
+
+            posts.forEach(post => {
+          const url = `https://paultreanor.com/blog/${post.slug}`
+          feed.addItem({
+            author: post.authors,
+            content: post.bodyHtml,
+            date: new Date(post.createdAt),
+            description: post.description,
+            id: url,
+            link: url,
+            title: post.title,
+          })
+        })
+
+      },
+      cacheTime: 1000 * 60 * 15, // How long should the feed be cached
+      type: 'rss2', // Can be: rss2, atom1, json1
+    }
+  ]
 }
