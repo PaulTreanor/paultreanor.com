@@ -8,6 +8,7 @@
           <p>Feel free to get in touch :)</p>
           <div class="row">
             <a href="https://github.com/PaulTreanor"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://paultreanor.com/feed.xml"><ion-icon name="logo-rss"></ion-icon></a>
             <a @click="copyEmailToClipboard" class="emailCopy">
               <ion-icon name="mail"></ion-icon>
               <span class="tooltip">copy email to clipboard</span>
