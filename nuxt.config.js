@@ -66,7 +66,7 @@ export default {
   feed: [
     // A default feed configuration object
     {
-      path: '/feed.xml', // The route to your feed.
+      path: '/rss.xml', // The route to your feed.
       create: async feed => {
         
         const $content = require('@nuxt/content').$content
