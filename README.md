@@ -1,8 +1,10 @@
-# personalBlog
+# Personal website
 
 https://paultreanor.com/
 
-## Build Setup
+Built with Nuxt (and the content and feed modules) and skeleton.css. 
+
+## Setup
 
 ```bash
 # install dependencies
