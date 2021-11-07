@@ -10,7 +10,7 @@ The code for my personal website, feel free to use this as a template for your o
 
 ## Stack
 
-Built with Nuxtjs (and the content and feed modules). Styled with Skeleton CSS and Icoicons.
+Built with [Nuxtjs](https://nuxtjs.org/) (and the [content](https://content.nuxtjs.org/) and [feed](https://github.com/nuxt-community/feed-module) modules). Styled with [Skeleton CSS](http://getskeleton.com/) with [Ionic icons](https://ionic.io/ionicons).
 
 
 ## Setup
