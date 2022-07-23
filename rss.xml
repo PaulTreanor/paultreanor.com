@@ -4,9 +4,23 @@
         <title>Paul Treanor&apos;s blog</title>
         <link>https://paultreanor.com/blog</link>
         <description>Bloggo :)</description>
-        <lastBuildDate>Mon, 14 Feb 2022 17:37:27 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 23 Jul 2022 09:00:30 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[MacBook secondary monitor not waking from sleep solved 💻]]></title>
+            <link>https://paultreanor.com/blog/fix-mac-monitor</link>
+            <guid>https://paultreanor.com/blog/fix-mac-monitor</guid>
+            <pubDate>Sat, 23 Jul 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="macbook-secondary-monitor-not-waking-from-sleep-solved-"><a aria-hidden="true" href="#macbook-secondary-monitor-not-waking-from-sleep-solved-" tabindex="-1"><span class="icon icon-link"></span></a>MacBook secondary monitor not waking from sleep solved 💻</h1>
+<p>I’ve had this issue where my MacBook’s external monitor hasn't been waking up after the laptop went to sleep. The fix that worked for me was to manually reset the refresh rate of the external monitor to the monitor's standard refresh rate (which is 60hz for my Phillips 243V, this was set to 75hz by default for some reason).</p>
+<ol>
+<li>Go to System preferences → Displays → Display settings</li>
+<li>Select the secondary monitor from the panel on the left</li>
+<li>Play around with the refresh rates</li>
+</ol>
+<p>This worked on a 2020 M1 MacBook Pro running macOS Monterey. Hopefully this helps someone 🙂</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Starting with AWS and the Serverless Framework]]></title>
             <link>https://paultreanor.com/blog/starting-serverless</link>
