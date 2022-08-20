@@ -12,7 +12,7 @@ tags:
 ---
 
 
-# Starting with AWS and the Serverless Framework
+# Starting with AWS and the Serverless Framework 
 
 <img src="/fourTheorem.png" alt="fourtheorem">
 

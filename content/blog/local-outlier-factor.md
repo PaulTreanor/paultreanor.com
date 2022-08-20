@@ -16,7 +16,6 @@ tags:
 # Local outlier factor from scratch in Python 
 
 
-
 ### Overview
 
 Local outlier factor (LOF) is an anomaly detection algorithm which can give you an idea of how similar an item is to other items in a dataset. 
