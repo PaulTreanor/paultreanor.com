@@ -4,7 +4,7 @@
         <title>Paul Treanor&apos;s blog</title>
         <link>https://paultreanor.com/blog</link>
         <description>Bloggo :)</description>
-        <lastBuildDate>Sat, 20 Aug 2022 20:02:06 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 20 Aug 2022 20:07:26 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -13,7 +13,7 @@
             <guid>https://paultreanor.com/blog/save-slides-image</guid>
             <pubDate>Sat, 20 Aug 2022 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h1 id="how-to-download-an-image-from-google-slides--"><a href="#how-to-download-an-image-from-google-slides--" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>How to download an image from Google Slides  🏞</h1>
-<p>Not sure why Google didn’t include an option to download images directly from Slides, this is a pretty fast work around.</p>
+<p>Not sure why Google didn’t include an option to download images directly from Slides, this is a reasonably fast work around.</p>
 <h3 id="1-save-the-image-to-google-keep"><a href="#1-save-the-image-to-google-keep" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>1. Save the image to Google Keep</h3>
 <p>Right click on image in slides and select “Save to Keep”.</p>
 <img src="/slides1.png" alt="Select save to keep">
