@@ -4,9 +4,29 @@
         <title>Paul Treanor&apos;s blog</title>
         <link>https://paultreanor.com/blog</link>
         <description>Bloggo :)</description>
-        <lastBuildDate>Sat, 20 Aug 2022 12:29:44 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 20 Aug 2022 20:02:06 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[How to download an image from Google Slides]]></title>
+            <link>https://paultreanor.com/blog/save-slides-image</link>
+            <guid>https://paultreanor.com/blog/save-slides-image</guid>
+            <pubDate>Sat, 20 Aug 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="how-to-download-an-image-from-google-slides--"><a href="#how-to-download-an-image-from-google-slides--" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>How to download an image from Google Slides  🏞</h1>
+<p>Not sure why Google didn’t include an option to download images directly from Slides, this is a pretty fast work around.</p>
+<h3 id="1-save-the-image-to-google-keep"><a href="#1-save-the-image-to-google-keep" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>1. Save the image to Google Keep</h3>
+<p>Right click on image in slides and select “Save to Keep”.</p>
+<img src="/slides1.png" alt="Select save to keep">
+<p><br>
+</p>
+<h3 id="2-open-the-image-in-a-new-tab-from-google-keep"><a href="#2-open-the-image-in-a-new-tab-from-google-keep" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>2. Open the image in a new tab from Google Keep</h3>
+<p>Open your most recent note in <a href="https://keep.google.com/" rel="nofollow noopener noreferrer" target="_blank">Google Keep</a>, right click on the image and select “Open Image In New Tab”.</p>
+<img src="/slides2.png" alt="Select save to keep">
+<p><br>
+</p>
+<h3 id="3-save-the-image-from-the-new-tab"><a href="#3-save-the-image-from-the-new-tab" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>3. Save the image from the new tab</h3>
+<p>Right click on image in new tab and save the image.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[MacBook secondary monitor not waking from sleep solved 💻]]></title>
             <link>https://paultreanor.com/blog/fix-mac-monitor</link>
