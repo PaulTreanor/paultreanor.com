@@ -5,7 +5,7 @@
           <h2>Hi, I'm Paul</h2>
           <p>I'm a software engineer at <a href="https://www.fourtheorem.com/">fourTheorem</a>, where I work with AWS, Serverless, and Node.</p>
           <p>I've worked on some interesting <a href="https://github.com/PaulTreanor">projects</a>, and I also have a <NuxtLink to="/blog">blog!</NuxtLink></p>
-          <p>Feel free to get in touch :)</p>
+          <p>Feel free to get in touch 😄</p>
           <div class="row">
             <a href="https://github.com/PaulTreanor"><ion-icon name="logo-github"></ion-icon></a>
             <a href="https://paultreanor.com/rss.xml"><ion-icon name="logo-rss"></ion-icon></a>
