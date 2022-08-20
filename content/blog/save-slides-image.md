@@ -13,7 +13,7 @@ tags:
 # How to download an image from Google Slides  🏞
 
 
-Not sure why Google didn’t include an option to download images directly from Slides, this is a pretty fast work around. 
+Not sure why Google didn’t include an option to download images directly from Slides, this is a reasonably fast work around. 
 
 ### 1. Save the image to Google Keep
 
