@@ -81,7 +81,7 @@ export default {
           .fetch()
 
         posts.forEach((post) => {
-          const url = `https://paultreanor.com/blog/${post.slug}`
+          const url = `https://paultreanor.com/${post.slug}`
           feed.addItem({
             author: post.authors,
             content: post.bodyHtml,

@@ -2,6 +2,7 @@
     <main class="container">
       <div>
         <div class="blurb">
+          <img src="../static/me.png" alt="">
           <h2>Hi, I'm Paul</h2>
           <p>I’m a fullstack JavaScript developer, currently making serverless things at <a href="https://www.fourtheorem.com/">fourTheorem</a>.</p>
           <p>Feel free to get in touch! 😄</p>
@@ -88,5 +89,8 @@ ion-icon {
 
 }
 
+img {
+  max-width: 100px;
+}
 
 </style>
