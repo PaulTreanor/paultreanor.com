@@ -4,13 +4,13 @@
         <title>Paul Treanor&apos;s blog</title>
         <link>https://paultreanor.com/blog</link>
         <description>Bloggo :)</description>
-        <lastBuildDate>Sat, 20 Aug 2022 21:59:40 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Aug 2022 11:18:06 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
             <title><![CDATA[How to download images from Google Slides]]></title>
-            <link>https://paultreanor.com/blog/save-slides-image</link>
-            <guid>https://paultreanor.com/blog/save-slides-image</guid>
+            <link>https://paultreanor.com/save-slides-image</link>
+            <guid>https://paultreanor.com/save-slides-image</guid>
             <pubDate>Sat, 20 Aug 2022 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h1 id="how-to-download-images-from-google-slides--"><a href="#how-to-download-images-from-google-slides--" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>How to download images from Google Slides  🏞</h1>
 <p>Not sure why Google didn’t include an option to download images directly from Slides, this is a reasonably fast work around. This only works for images that are hosted on Google Drive, so images that you've uploaded yourself to the slide show.</p>
@@ -32,8 +32,8 @@
         </item>
         <item>
             <title><![CDATA[MacBook secondary monitor not waking from sleep solved 💻]]></title>
-            <link>https://paultreanor.com/blog/fix-mac-monitor</link>
-            <guid>https://paultreanor.com/blog/fix-mac-monitor</guid>
+            <link>https://paultreanor.com/fix-mac-monitor</link>
+            <guid>https://paultreanor.com/fix-mac-monitor</guid>
             <pubDate>Sat, 23 Jul 2022 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h1 id="macbook-secondary-monitor-not-waking-from-sleep-solved-"><a aria-hidden="true" href="#macbook-secondary-monitor-not-waking-from-sleep-solved-" tabindex="-1"><span class="icon icon-link"></span></a>MacBook secondary monitor not waking from sleep solved 💻</h1>
 <p>I’ve had this issue where my MacBook’s external monitor hasn't been waking up after the laptop went to sleep. The fix that worked for me was to manually reset the refresh rate of the external monitor to the monitor's standard refresh rate (which is 60hz for my Phillips 243V, this was set to 75hz by default for some reason).</p>
@@ -46,8 +46,8 @@
         </item>
         <item>
             <title><![CDATA[Starting with AWS and the Serverless Framework]]></title>
-            <link>https://paultreanor.com/blog/starting-serverless</link>
-            <guid>https://paultreanor.com/blog/starting-serverless</guid>
+            <link>https://paultreanor.com/starting-serverless</link>
+            <guid>https://paultreanor.com/starting-serverless</guid>
             <pubDate>Tue, 21 Sep 2021 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h1 id="starting-with-aws-and-the-serverless-framework"><a href="#starting-with-aws-and-the-serverless-framework" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>Starting with AWS and the Serverless Framework</h1>
 <img src="/fourTheorem.png" alt="fourtheorem">
@@ -73,8 +73,8 @@
         </item>
         <item>
             <title><![CDATA[Local outlier factor from scratch in Python]]></title>
-            <link>https://paultreanor.com/blog/local-outlier-factor</link>
-            <guid>https://paultreanor.com/blog/local-outlier-factor</guid>
+            <link>https://paultreanor.com/local-outlier-factor</link>
+            <guid>https://paultreanor.com/local-outlier-factor</guid>
             <pubDate>Thu, 03 Jun 2021 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h1 id="local-outlier-factor-from-scratch-in-python"><a href="#local-outlier-factor-from-scratch-in-python" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>Local outlier factor from scratch in Python</h1>
 <h3 id="overview"><a href="#overview" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>Overview</h3>
