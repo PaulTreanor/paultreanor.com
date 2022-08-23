@@ -91,6 +91,10 @@ ion-icon {
 
 img {
   max-width: 100px;
+  display:block;
+  margin:auto;
+  margin-top: 20px;
+
 }
 
 </style>
