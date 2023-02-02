@@ -11,6 +11,8 @@ tags:
   - Code
 ---
 
+# Adding custom electron app icons on Mac with electron-build
+
 ### Setting up an Electron app using React and electron-build 
 - You can set up a simple Electron app that uses electron-build by following [this blog post](https://blog.devgenius.io/how-to-build-and-publish-an-electron-app-with-react-tutorial-971e1d9d27ce). 
 - Remove the Windows build code from `package.json`. Your `package` and `publish` scripts should look like this:
