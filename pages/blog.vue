@@ -19,11 +19,18 @@
 
 <script>
   export default {
+    
     async asyncData({ $content, params }) {
       const articles = await $content('blog')
         .only(['title', 'short', 'img', 'slug', 'author', 'createdAt'])
         .sortBy('createdAt', 'desc')
         .fetch()
+        // .then((articles) => {
+        //   console.log(articles)
+        //   return {
+        //     articles}
+        // })
+
       return {
         articles
       }
@@ -35,6 +42,17 @@
       return new Date(date).toLocaleDateString('en', options)
     }
     }
+
+    // when component is mounted load the articles from content blog and console log details
+    // mounted() {
+    //   this.$content('blog')
+    //     .only(['title', 'short', 'img', 'slug', 'author', 'createdAt'])
+    //     .sortBy('createdAt', 'desc')
+    //     .fetch()
+    //     .then((articles) => {
+    //       console.log(articles)
+    //     })
+    // }
   }
 </script>
 
