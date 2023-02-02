@@ -24,8 +24,9 @@ article {
 }
 h1 {
   font-size: 28px;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 30px;
+  font-family: 'inter', sans-serif;
 }
 
 iframe {
