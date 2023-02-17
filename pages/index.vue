@@ -26,7 +26,7 @@
       <h2>Latest Posts</h2>
 
       <div class="search-box">
-        <input type="text" placeholder="Search" v-model="search" />
+        <input type="text" placeholder="Search for tags or post titles" v-model="search" size="40"/>
       </div>
 
       <div class="articles">
@@ -60,14 +60,19 @@ export default {
   computed: {
     filteredArticles () {
       return this.articles.filter(article => {
-        return article.title.toLowerCase().includes(this.search.toLowerCase())
+        if (article.tags) {
+          return article.tags.some(tag => {
+            return tag.toLowerCase().includes(this.search.toLowerCase())
+          })
+        }
+        return article.title.toLowerCase().includes(this.search.toLowerCase()) 
       })
     }
   },
 
   async asyncData ({ $content, params }) {
     const articles = await $content('blog')
-      .only(['title', 'short', 'img', 'slug', 'author', 'createdAt'])
+      .only(['title', 'short', 'img', 'slug', 'author', 'createdAt', 'tags'])
       .sortBy('createdAt', 'desc')
       .fetch()
 
