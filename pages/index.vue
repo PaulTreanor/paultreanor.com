@@ -1,5 +1,7 @@
 <template>
   <div>
+
+  <!-- Hero -->
   <main class="container">
     <div>
       <div class="blurb">
@@ -19,19 +21,24 @@
     </div>
   </main>
 
-
+  <!-- Blog Item List -->
     <div class="home-page">
       <h2>Latest Posts</h2>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search" v-model="search" />
+      </div>
+
       <div class="articles">
-        <div v-for="article of articles" :key="article.slug" class="article">
+        <div v-for="article of filteredArticles" :key="article.slug" class="article">
           <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
             <div class="article-inner">
               <div class="detail">
                 <pre>{{ formatDate(article.createdAt) }}</pre>
-                <h4>{{ article.title }}</h4>
-                <p class="lead">
+                <h5>{{ article.title }}</h5>
+                <!-- <p class="lead">
                   {{ article.short }}
-                </p>
+                </p> -->
               </div>
             </div>
           </nuxt-link>
@@ -43,12 +50,21 @@
 
 <script>
 export default {
-  head () {
-    return {
 
+  data () {
+    return {
+      search: ''
     }
   },
-  
+
+  computed: {
+    filteredArticles () {
+      return this.articles.filter(article => {
+        return article.title.toLowerCase().includes(this.search.toLowerCase())
+      })
+    }
+  },
+
   async asyncData ({ $content, params }) {
     const articles = await $content('blog')
       .only(['title', 'short', 'img', 'slug', 'author', 'createdAt'])
@@ -138,13 +154,8 @@ img {
 
 
 /* ----- blog page CSS -------- */
-.home-page {
-  padding: 50px 30px;
-}
-h2 {
-  margin-bottom: 30px;
-  text-align: center;
-}
+
+
 .articles {
   margin: 0 auto;
   max-width: 800px;
