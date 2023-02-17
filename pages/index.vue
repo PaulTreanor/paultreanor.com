@@ -6,7 +6,7 @@
     <div>
       <div class="blurb">
         <img src="../static/me.png" alt="">
-        <h2>Hi, I'm Paul</h2>
+        <h2 class="text-green-100">Hi, I'm Paul</h2>
         <p>I'm a fullstack developer making serverless things at <a href="https://www.fourtheorem.com/">fourTheorem</a>. This website is where I keep my notes and thoughts.</p>
         <p>Feel free to get in touch! 😄</p>
         <div class="row">
