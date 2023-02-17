@@ -25,11 +25,12 @@
     <div class="home-page">
       <h2>Latest Posts</h2>
 
-      <div class="search-box">
-        <input type="text" placeholder="Search for tags or post titles" v-model="search" size="40"/>
-      </div>
+      
 
       <div class="articles">
+        <div class="search-box">
+        <input type="text" placeholder="Search for tags or post titles" v-model="search" size="40"/>
+      </div>
         <div v-for="article of filteredArticles" :key="article.slug" class="article">
           <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
             <div class="article-inner">
