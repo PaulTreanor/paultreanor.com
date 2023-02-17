@@ -97,33 +97,10 @@ export default {
 </script>
 <style scoped>
 
-h2 {
-  text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-p {
-  margin-bottom: 5px;
-
-}
-
-.project {
-  margin-bottom: 2.5rem;
-}
-
-.container {
-    padding-top: 2rem;
-  }
-
 .emailCopy {
   cursor: pointer;
 }
 
-ion-icon {
-  font-size: 2.4rem;
-  margin-right: 15px;
-}
 
 .emailCopy:hover .tooltip {
   display:block;
@@ -136,19 +113,7 @@ ion-icon {
     z-index: 1000;
 }
 
-/* Larger than desktop */
-@media (min-width: 1000px) {
-  .image {
-    margin-right: 1.5rem;
-  }
-
-  /* narrower blurb on widescreen */
-  .blurb {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-
-}
+/* 
 
 img {
   max-width: 100px;
@@ -156,23 +121,8 @@ img {
   margin:auto;
   margin-top: 20px;
 
-}
+} */
 
 
-/* ----- blog page CSS -------- */
 
-
-.articles {
-  margin: 0 auto;
-  max-width: 800px;
-}
-.article {
-  margin-bottom: 15px;
-}
-
-.article-inner .detail {
-  padding-left: 15px;
-  padding-right: 15px;
-
-}
 </style>
