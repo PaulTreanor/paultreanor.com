@@ -7,9 +7,9 @@
         </nuxt-link>
       </div>
 
-      <div class="selector">
+      <!-- <div class="selector">
         <ThemeToggle @darkMode="switchMode" />
-      </div>
+      </div> -->
     </nav>
   </header>
 </template>
