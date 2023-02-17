@@ -1,18 +1,20 @@
 <template>
   <header>
-	  <nav>
-			
-			<div class="nav-buttons">
-				<nuxt-link to="/">Home</nuxt-link>
-				<!-- <nuxt-link to="/projects">Projects</nuxt-link> -->
-				<nuxt-link to="/blog">Blog</nuxt-link>
-			</div>
-		  
-			<div class="selector">
-				<ThemeToggle v-on:darkMode='switchMode'/>
-			</div>
-			
-	  </nav>
+    <nav>
+      <div class="nav-buttons">
+        <nuxt-link to="/">
+          Home
+        </nuxt-link>
+        <!-- <nuxt-link to="/projects">Projects</nuxt-link> -->
+        <nuxt-link to="/blog">
+          Blog
+        </nuxt-link>
+      </div>
+
+      <div class="selector">
+        <ThemeToggle @darkMode="switchMode" />
+      </div>
+    </nav>
   </header>
 </template>
 
@@ -20,14 +22,14 @@
 import ThemeToggle from './ThemeToggle.vue'
 
 export default {
-	components: {
-		ThemeToggle
-	},
-	methods: {
-		switchMode (value) {
-			this.$emit('darkMode', value)
-		}
-	}
+  components: {
+    ThemeToggle
+  },
+  methods: {
+    switchMode (value) {
+      this.$emit('darkMode', value)
+    }
+  }
 }
 </script>
 

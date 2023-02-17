@@ -1,62 +1,46 @@
 <template>
   <div class="home-page">
-	  <h2>Latest Posts</h2>
-	  <div class="articles">
-		  <div class="article" v-for="article of articles" :key="article.slug">
-			  <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
-				  <div class="article-inner">
-						<div class="detail">
+    <h2>Latest Posts</h2>
+    <div class="articles">
+      <div v-for="article of articles" :key="article.slug" class="article">
+        <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
+          <div class="article-inner">
+            <div class="detail">
               <pre>{{ formatDate(article.createdAt) }}</pre>
-							<h4>{{ article.title }}</h4>
-							<p class="lead">{{ article.short }}</p>
-						</div>
-				  </div>
-			  </nuxt-link>
-		  </div>
-	  </div>
+              <h4>{{ article.title }}</h4>
+              <p class="lead">
+                {{ article.short }}
+              </p>
+            </div>
+          </div>
+        </nuxt-link>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-  export default {
-    
-    async asyncData({ $content, params }) {
-      const articles = await $content('blog')
-        .only(['title', 'short', 'img', 'slug', 'author', 'createdAt'])
-        .sortBy('createdAt', 'desc')
-        .fetch()
-        // .then((articles) => {
-        //   console.log(articles)
-        //   return {
-        //     articles}
-        // })
+export default {
 
-      return {
-        articles
-      }
-    },
+  async asyncData ({ $content, params }) {
+    const articles = await $content('blog')
+      .only(['title', 'short', 'img', 'slug', 'author', 'createdAt'])
+      .sortBy('createdAt', 'desc')
+      .fetch()
 
-    methods: {
-       formatDate(date) {
+    return {
+      articles
+    }
+  },
+
+  methods: {
+    formatDate (date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString('en', options)
     }
-    }
-
-    // when component is mounted load the articles from content blog and console log details
-    // mounted() {
-    //   this.$content('blog')
-    //     .only(['title', 'short', 'img', 'slug', 'author', 'createdAt'])
-    //     .sortBy('createdAt', 'desc')
-    //     .fetch()
-    //     .then((articles) => {
-    //       console.log(articles)
-    //     })
-    // }
   }
+}
 </script>
-
-
 
 <style scoped>
 .home-page {
@@ -74,16 +58,9 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* .article-inner img {
-  display: block;
-  width: 100%;
-  max-width: 300px;
-} */
 .article-inner .detail {
   padding-left: 15px;
   padding-right: 15px;
-  
+
 }
-
-
 </style>

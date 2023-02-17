@@ -1,13 +1,13 @@
 <template>
   <label class="switch">
-    <input type="checkbox" v-model="toggle">
-    <span class="slider round"></span>
+    <input v-model="toggle" type="checkbox">
+    <span class="slider round" />
   </label>
 </template>
 
 <script>
 export default {
-  name: "ThemeToggle",
+  name: 'ThemeToggle',
   data () {
     return {
       toggleValue: false
@@ -15,10 +15,10 @@ export default {
   },
   computed: {
     toggle: {
-      get() {
+      get () {
         return this.toggleValue
       },
-      set(val) {
+      set (val) {
         this.$emit('darkMode', val)
       }
     }
@@ -88,5 +88,5 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-} 
+}
 </style>

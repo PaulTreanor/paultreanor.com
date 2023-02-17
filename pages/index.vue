@@ -1,35 +1,34 @@
 <template>
-    <main class="container">
-      <div>
-        <div class="blurb">
-          <img src="../static/me.png" alt="">
-          <h2>Hi, I'm Paul</h2>
-          <p>I'm a fullstack developer making serverless things at <a href="https://www.fourtheorem.com/">fourTheorem</a>. This website is where I keep my notes and thoughts.</p>
-          <p>Feel free to get in touch! 😄</p>
-          <div class="row">
-            <a href="https://github.com/PaulTreanor"><ion-icon name="logo-github"></ion-icon></a>
-            <a href="https://paultreanor.com/rss.xml"><ion-icon name="logo-rss"></ion-icon></a>
-            <a @click="copyEmailToClipboard" class="emailCopy">
-              <ion-icon name="mail"></ion-icon>
-              <span class="tooltip">copy email to clipboard</span>
-            </a>
-          </div>      
+  <main class="container">
+    <div>
+      <div class="blurb">
+        <img src="../static/me.png" alt="">
+        <h2>Hi, I'm Paul</h2>
+        <p>I'm a fullstack developer making serverless things at <a href="https://www.fourtheorem.com/">fourTheorem</a>. This website is where I keep my notes and thoughts.</p>
+        <p>Feel free to get in touch! 😄</p>
+        <div class="row">
+          <a href="https://github.com/PaulTreanor"><ion-icon name="logo-github" /></a>
+          <a href="https://paultreanor.com/rss.xml"><ion-icon name="logo-rss" /></a>
+          <a class="emailCopy" @click="copyEmailToClipboard">
+            <ion-icon name="mail" />
+            <span class="tooltip">copy email to clipboard</span>
+          </a>
         </div>
-      </div>     
-    </main>  
-
+      </div>
+    </div>
+  </main>
 </template>
 
 <script>
 export default {
-  head() {
+  head () {
     return {
-      
+
     }
   },
   methods: {
     copyEmailToClipboard () {
-      navigator.clipboard.writeText("treanorpaul9" + "@" + "gmail" + ".com");
+      navigator.clipboard.writeText('treanorpaul9' + '@' + 'gmail' + '.com')
     }
   }
 }
@@ -80,7 +79,7 @@ ion-icon {
   .image {
     margin-right: 1.5rem;
   }
-  
+
   /* narrower blurb on widescreen */
   .blurb {
     max-width: 700px;
