@@ -15,8 +15,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size="100">🍄</text></svg>' },
-      { rel: 'stylesheet', type: 'text/css', href: '/css2.css' },
-      { rel: 'stylesheet', type: 'text/css', href: '/skeleton-main.css' }],
+    ],
     script: [
       { src: 'https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js' },
       { src: 'https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js' }

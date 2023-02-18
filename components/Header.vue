@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav>
+    <nav class="mx-40 my-5 container">
       <div class="nav-buttons">
         <nuxt-link to="/">
           Home
@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style>
-header {
+/* header {
 	padding: 15px 30px;
 }
 
@@ -54,6 +54,6 @@ nav a {
 	display: flex;
 	font-size: 2rem;
 	margin: 0 auto;
-}
+} */
 
 </style>

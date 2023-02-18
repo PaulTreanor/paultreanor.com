@@ -1,20 +1,20 @@
 <template>
-  <div>
+  <div class="mx-40 font-open-sans">
 
   <!-- Hero -->
-  <main class="container">
-    <div>
-      <div class="blurb">
-        <img src="../static/me.png" alt="">
-        <h2 class="text-green-100">Hi, I'm Paul</h2>
-        <p>I'm a fullstack developer making serverless things at <a href="https://www.fourtheorem.com/">fourTheorem</a>. This website is where I keep my notes and thoughts.</p>
-        <p>Feel free to get in touch! 😄</p>
-        <div class="row">
+  <main class="">
+    <div class="container">
+      <div class="my-10 blurb">
+        <img class="pb-5" src="../static/me.png" alt="">
+        <h2 class="text-3xl font-open-sans font-semi-bold py-3">Hi, I'm Paul</h2>
+        <p class="font-open-sans">I'm a fullstack developer making serverless things at <a href="https://www.fourtheorem.com/">fourTheorem</a>. This website is where I keep my notes and thoughts.</p>
+        <p class="font-open-sans">Feel free to get in touch! 😄</p>
+        <div class="row pt-3 text-2xl">
           <a href="https://github.com/PaulTreanor"><ion-icon name="logo-github" /></a>
           <a href="https://paultreanor.com/rss.xml"><ion-icon name="logo-rss" /></a>
           <a class="emailCopy" @click="copyEmailToClipboard">
             <ion-icon name="mail" />
-            <span class="tooltip">copy email to clipboard</span>
+            <span class="tooltip font-open-sans text-sm italic">copy email to clipboard</span>
           </a>
         </div>
       </div>
@@ -23,7 +23,7 @@
 
   <!-- Blog Item List -->
     <div class="home-page">
-      <h2>Latest Posts</h2>
+      <h2 class="text-3xl font-open-sans font-semi-bold py-3">Latest Posts</h2>
 
       
 
@@ -97,6 +97,10 @@ export default {
 </script>
 <style scoped>
 
+.blurb {
+  font-family: 'Open Sans'
+}
+
 .emailCopy {
   cursor: pointer;
 }
@@ -113,15 +117,14 @@ export default {
     z-index: 1000;
 }
 
-/* 
+
 
 img {
   max-width: 100px;
   display:block;
-  margin:auto;
   margin-top: 20px;
 
-} */
+}
 
 
 
