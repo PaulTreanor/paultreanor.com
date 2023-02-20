@@ -4,12 +4,12 @@
   <!-- Hero -->
   <main class="">
     <div class="container">
-      <div class="my-10 blurb">
+      <div class="blurb my-11">
         <img class="pb-5" src="../static/me.png" alt="">
-        <h2 class="text-3xl font-open-sans font-semi-bold py-3 ">Hi, I'm Paul!</h2>
+        <h2 class="text-4xl font-open-sans font-bold py-4 ">🐮 Hi, I'm Paul!</h2>
         <p class="text-lg font-open-sans">I'm a fullstack developer making serverless things at <a href="https://www.fourtheorem.com/">fourTheorem</a>. This website is where I keep my notes and thoughts.</p>
-        <p class="text-lg font-open-sans">Feel free to get in touch! 😄</p>
-        <div class="row pt-3 text-2xl">
+        <p class="text-lg font-open-sans">Feel free to get in touch!</p>
+        <div class="row pt-4 text-2xl">
           <a href="https://github.com/PaulTreanor"><ion-icon name="logo-github" /></a>
           <a href="https://paultreanor.com/rss.xml"><ion-icon name="logo-rss" /></a>
           <a class="emailCopy" @click="copyEmailToClipboard">
@@ -23,16 +23,16 @@
 
   <!-- Blog Item List -->
     <div class="home-page">
-      <h2 class="text-3xl font-open-sans font-semi-bold py-3">Latest Posts</h2>
+      <h2 class="text-4xl font-open-sans font-bold py-4">📝 Latest Notes</h2>
       <div class="articles pb-40">
         <div class="search-box py-2">
-          <input type="text" placeholder="Search for tags or post titles" v-model="search" size="50" class="bg-slate-50 border border-sky-300 text-slate-900 rounded-lg active:border-sky-400 hover:border-sky-400 focus:border-sky-400 block p-2.5"/>
+          <input type="text" placeholder="Search for tags or post titles 🔎" v-model="search" size="50" class="bg-slate-50 border border-sky-300 text-slate-900 rounded-lg active:border-sky-400 hover:border-sky-400 focus:border-sky-400 block p-2.5"/>
         </div>
-        <div v-for="article of filteredArticles" :key="article.slug" class="my-6 max-w-2xl">
+        <div v-for="article of filteredArticles" :key="article.slug" class="my-7 max-w-2xl">
           <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
-            <div class="border-slate-300 border-b-2 border-solid pb-4">
+            <div class="border-slate-300 border-b-2 border-solid pb-5">
               <div class="w-fit font-open-sans">
-                <h5 class="font-open-sans text-xl text-slate-900 hover:bg-sky-200 active:focus:bg-sky-400 pb-1 w-fit">{{ article.title }}</h5>
+                <h5 class="font-open-sans text-xl text-slate-900 hover:bg-sky-200 active:focus:bg-sky-400 pb-2 w-fit">{{ article.title }}</h5>
                 <!-- <p class="text-slate-700 hover:text-sky-700 active:focus:text-sky-800">
                   {{ article.short }}
                 </p> -->
