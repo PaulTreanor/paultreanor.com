@@ -32,11 +32,11 @@
           <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
             <div class="border-slate-300 border-b-2 border-solid pb-4">
               <div class="w-fit font-open-sans">
-                <h5 class="font-open-sans text-xl text-slate-900 hover:text-sky-700 active:focus:text-sky-800 pb-1">{{ article.title }}</h5>
+                <h5 class="font-open-sans text-xl text-slate-900 hover:bg-sky-200 active:focus:bg-sky-400 pb-1 w-fit">{{ article.title }}</h5>
                 <!-- <p class="text-slate-700 hover:text-sky-700 active:focus:text-sky-800">
                   {{ article.short }}
                 </p> -->
-                <p class="font-open-sans text-slate-600 hover:text-sky-700 active:focus:text-sky-800">{{ formatDate(article.createdAt) }}</p>
+                <p class="font-open-sans text-slate-600 hover:bg-sky-200 active:focus:bg-sky-400 w-fit">{{ formatDate(article.createdAt) }}</p>
               </div>
             </div>
           </nuxt-link>
@@ -122,6 +122,11 @@ img {
   margin-top: 20px;
 
 }
+
+/* a {
+    @apply text-sky-500 hover:text-sky-700 active:focus:text-sky-800;
+} */
+
 
 
 </style>

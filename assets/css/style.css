@@ -58,7 +58,8 @@ html {
 }
 
 a {
-  @apply text-sky-500 hover:text-sky-700 active:focus:text-sky-800;
+  /* @apply text-sky-500 hover:text-sky-700 active:focus:text-sky-800; */
+  @apply bg-sky-200 hover:bg-sky-300 active:focus:bg-sky-400 ;
 }
 
 
