@@ -20,12 +20,12 @@ article {
   margin: 0 auto;
   padding: 50px 30px;
   max-width: 800px;
+  font-family: 'Open Sans', sans-serif;
 }
 h1 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 30px;
-  font-family: 'inter', sans-serif;
 }
 
 iframe {

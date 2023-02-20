@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header @darkMode="swap" />
+    <Header v-show="ifNotHome" @darkMode="swap" />
     <Nuxt />
   </div>
 </template>
@@ -24,6 +24,11 @@ export default {
           href: `/skeleton-${this.cur}.css`
         }
       ]
+    }
+  },
+  computed : {
+    ifNotHome () {
+      return this.$route.path !== '/'
     }
   },
   methods: {

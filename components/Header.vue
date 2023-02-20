@@ -1,9 +1,11 @@
 <template>
   <header>
     <nav class="mx-40 my-5 container">
-      <div class="nav-buttons">
+      <div class="">
         <nuxt-link to="/">
-          Home
+          <p class="nav-link text-4xl">
+            🏠
+          </p>
         </nuxt-link>
       </div>
 
@@ -30,30 +32,8 @@ export default {
 </script>
 
 <style>
-/* header {
-	padding: 15px 30px;
+
+.nav-link {
+  font-family: 'Open Sans', sans-serif;
 }
-
-@media screen and (max-width: 380px) {
-	.selector {
-		display: none;
-	}
-}
-
-nav {
-	display: flex;
-	align-items: center;
-}
-
-nav a {
-	display: block;
-	margin: 0 15px;
-}
-
-.nav-buttons {
-	display: flex;
-	font-size: 2rem;
-	margin: 0 auto;
-} */
-
 </style>
