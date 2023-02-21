@@ -1,37 +1,42 @@
 <template>
   <div>
-    <Header v-on:darkMode='swap'/>
+    <Header v-show="ifNotHome" @darkMode="swap" />
     <Nuxt />
   </div>
 </template>
 
 <script>
 export default {
-  head() {
+  data () {
+    return {
+      cur: 'light'
+    }
+  },
+  head () {
     return {
       link: [
         {
-          rel: "stylesheet",
-          href: `/skeleton-light.css`
+          rel: 'stylesheet',
+          href: '/skeleton-light.css'
         },
         {
-          rel: "stylesheet",
+          rel: 'stylesheet',
           href: `/skeleton-${this.cur}.css`
         }
       ]
-    };
+    }
   },
-  data() {
-    return {
-      cur: "light"
-    };
+  computed : {
+    ifNotHome () {
+      return this.$route.path !== '/'
+    }
   },
   methods: {
-    swap(value) {
+    swap (value) {
       if (value) {
-        this.cur = "dark";
+        this.cur = 'dark'
       } else {
-        this.cur = "light";
+        this.cur = 'light'
       }
     }
   }
@@ -47,5 +52,3 @@ export default {
 }
 
 </style>
-
-
