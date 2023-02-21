@@ -5,8 +5,8 @@
   <main class="">
     <div class="container">
       <div class="blurb my-11">
-        <img class="pb-5" src="../static/me.png" alt="">
-        <h2 class="text-4xl font-open-sans font-bold py-4 ">🐮 Hi, I'm Paul!</h2>
+        <img class="mt-5 mb-7" src="../static/me.png" alt="">
+        <h2 class="text-4xl font-open-sans font-bold py-4 ">Hi, I'm Paul! 🐮</h2>
         <p class="text-lg font-open-sans">I'm a fullstack developer making serverless things at <a href="https://www.fourtheorem.com/">fourTheorem</a>. This website is where I keep my notes and thoughts.</p>
         <p class="text-lg font-open-sans">Feel free to get in touch!</p>
         <div class="row pt-4 text-2xl">
