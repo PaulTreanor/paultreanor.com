@@ -1,0 +1,1 @@
+__NUXT_JSONP__("manifest.js", {routes:["\u002F","\u002Ffix-mac-monitor","\u002Fstarting-serverless","\u002Felectron-custom-icon","\u002Flocal-outlier-factor"]})
