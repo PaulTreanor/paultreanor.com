@@ -36,7 +36,15 @@
                 <!-- <p class="text-slate-700 hover:text-sky-700 active:focus:text-sky-800">
                   {{ article.short }}
                 </p> -->
-                <p class="font-open-sans text-slate-600 hover:bg-sky-200 active:focus:bg-sky-400 w-fit no-underline">{{ formatDate(article.createdAt) }}</p>
+                
+                <div class="flex flex-wrap">
+                  <p class="font-open-sans text-slate-600 hover:bg-sky-200 active:focus:bg-sky-400 w-fit no-underline pr-4">{{ formatDate(article.createdAt) }}</p>
+                  <div v-for="tag in article.tags" :key="tag"  class="bg-sky-100 text-sky-800 text-sm font-open-sans font-semibold rounded-full px-3 py-1 mr-2 mb-2">
+                    {{ tag }}
+                  </div>
+          
+                  
+                </div>
               </div>
             </div>
           </nuxt-link>
@@ -51,7 +59,8 @@ export default {
 
   data () {
     return {
-      search: ''
+      search: '',
+      tags: {}
     }
   },
 
