@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-40 font-open-sans">
+  <div class="mx-4 md:mx-20 lg:mx-40 font-open-sans">
 
   <!-- Hero -->
   <main class="">
@@ -26,7 +26,7 @@
       <h2 class="text-4xl font-open-sans font-bold py-4">📝 Latest Notes</h2>
       <div class="articles pb-40">
         <div class="search-box py-2">
-          <input type="text" placeholder="Search for tags or post titles 🔎" v-model="search" size="50" class="bg-slate-50 border border-sky-300 text-slate-900 rounded-lg active:border-sky-400 hover:border-sky-400 focus:border-sky-400 block p-2.5"/>
+          <input type="text" placeholder="Search for tags or post titles 🔎" v-model="search" class="bg-slate-50 border border-sky-300 text-slate-900 rounded-lg active:border-sky-400 hover:border-sky-400 focus:border-sky-400 block p-2.5 w-96 max-w-full"/>
         </div>
         <div v-for="article of filteredArticles" :key="article.slug" class="my-7 max-w-2xl">
           <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
