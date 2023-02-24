@@ -29,25 +29,24 @@
           <input type="text" placeholder="Search for tags or post titles 🔎" v-model="search" class="bg-slate-50 border border-sky-300 text-slate-900 rounded-lg active:border-sky-400 hover:border-sky-400 focus:border-sky-400 block p-2.5 w-96 max-w-full"/>
         </div>
         <div v-for="article of filteredArticles" :key="article.slug" class="my-7 max-w-2xl">
-          <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
             <div class="border-slate-300 border-b-2 border-solid pb-5 no-underline">
               <div class="w-fit font-open-sans">
-                <h5 class="font-open-sans text-xl text-slate-900 hover:bg-sky-200 active:focus:bg-sky-400 pb-2 w-fit no-underline">{{ article.title }}</h5>
-                <!-- <p class="text-slate-700 hover:text-sky-700 active:focus:text-sky-800">
-                  {{ article.short }}
-                </p> -->
-                
+                <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
+                  <h5 class="font-open-sans text-xl text-slate-900 hover:bg-sky-200 active:focus:bg-sky-400 pb-2 w-fit no-underline">{{ article.title }}</h5>
+                  <!-- <p class="text-slate-700 hover:text-sky-700 active:focus:text-sky-800">
+                    {{ article.short }}
+                  </p> -->
+                </nuxt-link>
                 <div class="flex flex-wrap">
-                  <p class="font-open-sans text-slate-600 hover:bg-sky-200 active:focus:bg-sky-400 w-fit no-underline pr-4">{{ formatDate(article.createdAt) }}</p>
-                  <div v-for="tag in article.tags" :key="tag"  class="bg-sky-100 text-sky-800 text-sm font-open-sans font-semibold rounded-full px-3 py-1 mr-2 mb-2">
+                  <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
+                    <p class="font-open-sans text-slate-600 hover:bg-sky-200 active:focus:bg-sky-400 w-fit no-underline pr-4">{{ formatDate(article.createdAt) }}</p>
+                  </nuxt-link>
+                  <div v-for="tag in article.tags" :key="tag" @click="tagClickHandler(tag)" class="bg-sky-100 text-sky-800 text-sm font-open-sans font-semibold rounded-full px-3 py-1 mr-2 mb-2">
                     {{ tag }}
                   </div>
-          
-                  
                 </div>
               </div>
             </div>
-          </nuxt-link>
         </div>
       </div>
     </div>
@@ -65,15 +64,35 @@ export default {
   },
 
   computed: {
-    filteredArticles () {
-      return this.articles.filter(article => {
-        // if (article.tags) {
-        //   return article.tags.some(tag => {
-        //     return tag.toLowerCase().includes(this.search.toLowerCase())
-        //   })
-        // }
-        return article.title.toLowerCase().includes(this.search.toLowerCase()) 
-      })
+    filteredArticles() {
+      let articlesToReturn = []
+      if (this.search) {
+        this.articles.forEach(article => {
+          if (article.tags) {
+            article.tags.forEach(tag => {
+              if (tag.toLowerCase().includes(this.search.toLowerCase())) {
+                if (!articlesToReturn.includes(article)) {
+                  articlesToReturn.push(article)
+                }
+              }
+            })
+          }
+          if (article.title.toLowerCase().includes(this.search.toLowerCase())) {
+            if (!articlesToReturn.includes(article)) {
+              articlesToReturn.push(article)
+            }
+          }
+        })
+        return articlesToReturn
+      } else {
+        return this.articles
+      }
+
+
+      
+      // return this.articles.filter(article => {
+      //   return article.title.toLowerCase().includes(this.search.toLowerCase()) 
+      // })
     }
   },
 
@@ -89,6 +108,9 @@ export default {
   },
 
   methods: {
+    tagClickHandler (tag) {
+      this.search = tag
+    },
     copyEmailToClipboard () {
       navigator.clipboard.writeText('treanorpaul9' + '@' + 'gmail' + '.com')
     },
