@@ -8,8 +8,6 @@ img: blog-2.jpg
 
 
 tags:
-  - OpenHands
-  - Python
   - Code
 ---
 

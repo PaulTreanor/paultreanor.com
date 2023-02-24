@@ -5,10 +5,8 @@ createdAt: 21 September 2021
 slug: starting-serverless
 
 tags:
-  - Serverless
-  - AWS
-  - Cloud
-  - Lambda
+  - Work
+  - Code
 ---
 
 
