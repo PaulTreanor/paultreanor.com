@@ -4,9 +4,42 @@
         <title>Paul Treanor&apos;s blog</title>
         <link>https://paultreanor.com/blog</link>
         <description>Bloggo :)</description>
-        <lastBuildDate>Fri, 24 Feb 2023 18:45:50 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 03 Mar 2023 18:01:07 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[🦁 Time Tamer]]></title>
+            <link>https://paultreanor.com/time-tamer</link>
+            <guid>https://paultreanor.com/time-tamer</guid>
+            <pubDate>Fri, 03 Mar 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="-time-tamer"><a href="#-time-tamer" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>🦁 Time Tamer</h1>
+<p>I made a time management app for MacOs called Time Tamer. It's essentially a very simple minimal version of <a href="https://toggl.com/" rel="nofollow noopener noreferrer" target="_blank">Toggl</a>. You can download it <a href="https://github.com/PaulTreanor/time-tamer/releases/tag/v1.0" rel="nofollow noopener noreferrer" target="_blank">here as a GitHub release</a>.</p>
+<img src="/time-tamer-demo.png" alt="Time Tamer">
+It's not groundbreaking, but it's good enough for me to use it everyday. I'm not finished with it either, there's still a few little fixes I'd like to address...
+<ul>
+<li>Display the app's timer status in the menu bar</li>
+<li>Pressing <code>Enter</code> key while typing adds task to list</li>
+<li>Delete button to deleted existing tasks</li>
+<li>Edit button to edit existing tasks</li>
+<li>Releases for windows and linux</li>
+</ul>
+<h3 id="why-i-made-it"><a href="#why-i-made-it" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>Why I made it</h3>
+<p>I've found that <span class="font-bold"> I work better if I time myself while I work</span>. It makes focusing hard feel like a game, while also holding me accountable, so I feel bad if I piss about too much.</p>
+<p>Until recently I just played these <a href="https://www.youtube.com/watch?v=lTRiuFIWV54" rel="nofollow noopener noreferrer" target="_blank">1 hour YouTube LoFi compilations</a> while I worked and counted the number of videos up to track how long I work. Time Tamer is my attempt at making a slightly more elegant tool for the job.</p>
+<h3 id="suggestion-on-how-to-use-time-tamer"><a href="#suggestion-on-how-to-use-time-tamer" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>Suggestion on how to use Time Tamer</h3>
+<p>I like these <span class="italic">meta<span> work tools, but they only work if you take them seriously. If you start cheating then the timer loses all it's motivational powers.</span></span></p>
+<ul>
+<li>
+<p><span class="font-bold">I only track things <em>while</em> I'm actually working on them</span>. If I leave my desk or open Twitter, I pause the timer.</p>
+</li>
+<li>
+<p>I also <span class="font-bold">only track real work</span> (stuff I'm getting paid to do). This way I can be sure that the <em>total time</em> at the end of each day is a source of truth.</p>
+</li>
+<li>
+<p>I set goals every morning for how many hours of focused work I'll try to get done.</p>
+</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Adding custom electron app icons on Mac with electron-build]]></title>
             <link>https://paultreanor.com/electron-custom-icon</link>
