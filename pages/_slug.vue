@@ -16,6 +16,7 @@ export default {
 <style>
 /* import ../assets/css/style.css */
 @import '../assets/css/style.css';
+@import url('https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css');
 
 h1 {
   @apply text-slate-900 text-4xl font-open-sans font-bold;
