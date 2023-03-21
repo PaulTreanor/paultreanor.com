@@ -23,6 +23,10 @@ export default {
     ]
   },
 
+  router: {
+    base: '/'
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/css/style.css',
