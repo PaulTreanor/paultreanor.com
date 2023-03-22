@@ -1,4 +1,6 @@
 import '../styles/global.css'
+import '../styles/github.css'; // Adjust the path according to your project structure and chosen theme
+
 
 export default function App({ Component, pageProps }) {
   return (
