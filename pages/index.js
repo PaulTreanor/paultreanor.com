@@ -51,7 +51,7 @@ export default function Home({ allPagesData }) {
           width={140}
           alt={'Paul Treanor'}
         />
-        <h1>Paul Treanor</h1>
+        <h1 className='text-slate-500'>Paul Treanor</h1>
         <p>I'm a fullstack developer making serverless things at fourTheorem. This website is where I keep my notes and thoughts.</p>
         <p>Feel free to get in touch!</p>
 

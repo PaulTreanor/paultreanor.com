@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .tooltip {
   display: none;
     /* margin-top: 10px; moves it down */
