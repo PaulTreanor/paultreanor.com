@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Script from 'next/script'
+import Image from 'next/image'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts';
@@ -23,6 +23,15 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
+        <Image
+          priority
+          src="/images/profile.jpg"
+          className={utilStyles.borderCircle}
+          height={144}
+          width={144}
+          alt={'Paul Treanor'}
+        />
+        <h1 className={utilStyles.heading2Xl}>paul</h1>
         <p>I'm a fullstack developer making serverless things at fourTheorem. This website is where I keep my notes and thoughts.</p>
         <p>Feel free to get in touch!</p>
 
