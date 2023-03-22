@@ -1,9 +1,9 @@
 ---
 title: MacBook secondary monitor not waking from sleep solved 💻
 short: How to fix a Mac's external monitor not waking up after sleep mode
-date: 23 July 2022
+date: '2021-07-23'
 slug: fix-mac-monitor
-createdAt: 23 July 2022
+createdAt: '2021-07-23'
 img: blog-2.jpg
 
 

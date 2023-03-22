@@ -1,7 +1,9 @@
 ---
 title: Starting with AWS and the Serverless Framework 
 short: The best learning resources for getting started with serverless.
-createdAt: 21 September 2021
+createdAt: '2021-09-21'
+date: '2021-09-21'
+
 slug: starting-serverless
 
 tags:

@@ -1,9 +1,9 @@
 ---
 title: Local outlier factor from scratch in Python 
 short: Explaination and implementation of the local outlier factor algorithm.
-date: 3 June 2021
+date: '2021-06-03'
 slug: local-outlier-factor
-createdAt: 3 June 2021
+createdAt: '2021-06-03'
 img: blog-2.jpg
 
 

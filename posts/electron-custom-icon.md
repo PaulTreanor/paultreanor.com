@@ -1,9 +1,9 @@
 ---
 title: Adding custom electron app icons on Mac with electron-build
 short: A guide to adding personalized icons to electron apps on Mac
-date: 2 February 2023
+date: '2023-02-02'
 slug: electron-custom-icon
-createdAt: 2 February 2023
+createdAt: '2023-02-02'
 img: blog-2.jpg
 
 

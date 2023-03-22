@@ -1,9 +1,9 @@
 ---
 title: 🦁 Time Tamer
 short: A simple time management app for MacOs
-date: 3 March 2023
+date: '2023-03-03'
 slug: time-tamer
-createdAt: 3 March 2023
+createdAt: '2023-03-03'
 
 
 tags:
