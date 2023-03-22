@@ -1,14 +1,14 @@
-import Layout from '../../components/layout';
-import Date from '../../components/date';
+import Layout from '../components/layout';
+import Date from '../components/date';
 import Head from 'next/head'
 
 
 
-import { getAllPostIds, getPostData } from '../../lib/posts';
+import { getAllPageIds, getPageData } from '../lib/posts';
 
 export async function getStaticProps({ params }) {
   // Add the "await" keyword like this:
-  const postData = await getPostData(params.id);
+  const postData = await getPageData(params.id);
 
   return {
     props: {
@@ -19,7 +19,7 @@ export async function getStaticProps({ params }) {
 
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds();
+  const paths = getAllPageIds();
   return {
     paths,
     fallback: false,
