@@ -31,19 +31,12 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head >
-
-      <div className='max-w-2xl mx-auto'>
-        <h3 className='text-slate-700'>
-          <Date dateString={postData.date} />
-        </h3>
-     
-
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </div>
-      
-        
-
-      
+        <div className='max-w-2xl mx-auto'>
+          <h3 className='text-slate-700'>
+            <Date dateString={postData.date} />
+          </h3>
+          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        </div>
     </Layout>
   );
 }

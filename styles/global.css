@@ -75,23 +75,23 @@ a {
 /* Blog page css */
 
 h1 {
-  @apply text-slate-900 text-4xl font-bold;
+  @apply text-slate-800 text-4xl font-bold;
 }
 
 h2 {
-  @apply text-slate-900 text-2xl font-semibold py-2;
+  @apply text-slate-800 text-2xl font-semibold py-2;
 }
 
 h3 {
-  @apply text-slate-900 text-xl font-semibold py-2;
+  @apply text-slate-800 text-xl font-semibold py-2;
 }
 
 h4 {
-  @apply text-slate-900 text-lg font-semibold py-2;
+  @apply text-slate-800 text-lg font-semibold py-2;
 }
 
 h5 {
-  @apply text-slate-900 font-semibold py-2;
+  @apply text-slate-800 font-semibold py-2;
 }
 
 p {

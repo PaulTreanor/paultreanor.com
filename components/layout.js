@@ -8,7 +8,7 @@ export const siteTitle = 'Paul Treanor'
 
 export default function Layout({ children, home }) {
   return (
-    <div className='mx-4 md:mx-20 lg:mx-40 font-open-sans'>
+    <div className='mx-4 md:mx-20 lg:mx-40 font-open-sans mb-32'>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -20,7 +20,7 @@ export default function Layout({ children, home }) {
       </Head>
       <header>
         {!home && (
-          <div>
+          <div className="text-4xl">
             <Link href="/">🏠</Link>
           </div>
         )}
