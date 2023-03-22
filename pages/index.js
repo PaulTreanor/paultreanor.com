@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
 import { getSortedPagesData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
@@ -15,6 +14,28 @@ export async function getStaticProps() {
   };
 }
 
+function copyEmailToClipboard () {
+  navigator.clipboard.writeText('example.email@gmail.com');
+  // add visual feedback to show that email has been added to clipboard
+  const tooltip = document.querySelector('.tooltip');
+  const originalText = tooltip.innerText;
+  tooltip.innerText = 'Email copied!';
+  tooltip.style.display = 'block';
+  setTimeout(() => {
+    tooltip.innerText = originalText;
+  }, 1200);
+}
+
+function handleMouseLeave () {
+  const tooltip = document.querySelector('.tooltip');
+  tooltip.style.display = 'none';
+}
+
+const handleMouseEnter = () => {
+  const tooltip = document.querySelector('.tooltip');
+  tooltip.style.display = 'block';
+}
+
 export default function Home({ allPagesData }) {
   return (
     <Layout home>
@@ -22,37 +43,36 @@ export default function Home({ allPagesData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <section>
         <Image
           priority
           src="/images/me.png"
-          className={utilStyles.borderCircle}
           height={144}
           width={140}
           alt={'Paul Treanor'}
         />
-        <h1 className={utilStyles.heading2Xl}>Paul Treanor</h1>
+        <h1>Paul Treanor</h1>
         <p>I'm a fullstack developer making serverless things at fourTheorem. This website is where I keep my notes and thoughts.</p>
         <p>Feel free to get in touch!</p>
 
         <div className="row pt-4 text-2xl">
           <a href="https://github.com/PaulTreanor"><ion-icon name="logo-github" /></a>
           <a href="https://paultreanor.com/rss.xml"><ion-icon name="logo-rss" /></a>
-          <a className="emailCopy">
+          <a className="emailCopy" onClick={copyEmailToClipboard} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <ion-icon name="mail" />
-            <span className="tooltip font-open-sans text-sm italic">copy email to clipboard</span>
+            <span className="tooltip">Copy email to clipboard</span>
           </a>
         </div>
       </section>
       {/* Add this <section> tag below the existing <section> tag */}
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
+      <section >
+        <h2 >Blog</h2>
+        <ul >
           {allPagesData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+            <li  key={id}>
             <Link href={`/${id}`}>{title}</Link>
             <br />
-            <small className={utilStyles.lightText}>
+            <small >
               <Date dateString={date} />
             </small>
           </li>
