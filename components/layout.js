@@ -8,7 +8,7 @@ export const siteTitle = 'Paul Treanor'
 
 export default function Layout({ children, home }) {
   return (
-    <div>
+    <div className='mx-4 md:mx-20 lg:mx-40 font-open-sans'>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -25,7 +25,7 @@ export default function Layout({ children, home }) {
           </div>
         )}
       </header>
-      <main>{children}</main>
+      <main className='container'>{children}</main>
     </div>
   )
 }
