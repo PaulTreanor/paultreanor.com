@@ -25,13 +25,13 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.headingMd}>
         <Image
           priority
-          src="/images/profile.jpg"
+          src="/images/me.png"
           className={utilStyles.borderCircle}
           height={144}
-          width={144}
+          width={140}
           alt={'Paul Treanor'}
         />
-        <h1 className={utilStyles.heading2Xl}>paul</h1>
+        <h1 className={utilStyles.heading2Xl}>Paul Treanor</h1>
         <p>I'm a fullstack developer making serverless things at fourTheorem. This website is where I keep my notes and thoughts.</p>
         <p>Feel free to get in touch!</p>
 
