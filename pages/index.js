@@ -50,9 +50,9 @@ export default function Home({ allPagesData }) {
         <p class="text-lg font-open-sans">Feel free to get in touch!</p>
 
         <div className="row pt-4 text-2xl">
-          <a href="https://github.com/PaulTreanor"><ion-icon name="logo-github" /></a>
-          <a href="https://paultreanor.com/rss.xml"><ion-icon name="logo-rss" /></a>
-          <a className="emailCopy" onClick={copyEmailToClipboard} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <a className='mr-3' href="https://github.com/PaulTreanor"><ion-icon name="logo-github" /></a>
+          <a className='mr-3' href="https://paultreanor.com/rss.xml"><ion-icon name="logo-rss" /></a>
+          <a className='mr-3 emailCopy' onClick={copyEmailToClipboard} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <ion-icon name="mail" />
             <span className="tooltip">Copy email to clipboard</span>
           </a>
@@ -66,17 +66,18 @@ export default function Home({ allPagesData }) {
             <div class="search-box py-2">
               <input type="text" placeholder="Search for tags or post titles 🔎" v-model="search" class="bg-slate-50 border border-sky-300 text-slate-900 rounded-lg active:border-sky-400 hover:border-sky-400 focus:border-sky-400 block p-2.5 w-96 max-w-full"/>
             </div>
-            <ul className='my-7 max-w-2xl'>
+            <ul className='my-7 max-w-2xl list-none'>
               {allPagesData.map(({ id, date, title }) => (
-                <li className='border-slate-300 border-b-2 border-solid pb-5 no-underline' key={id}>
-                  <small className='font-open-sans text-slate-600 hover:bg-sky-200 active:focus:bg-sky-400 w-fit no-underline pr-4'>
-                    <Date dateString={date} />
-                  </small>
+                <li className='border-slate-300 border-b-2 border-solid pb-8 mt-4 no-underline ml-0' key={id}>
+
                   <Link href={`/${id}`}>
-                    <h5 className='font-open-sans text-xl text-slate-900 hover:bg-sky-200 active:focus:bg-sky-400 pb-2 w-fit no-underline'>
+                    <h5 className='font-open-sans text-xl font-medium text-slate-900 hover:bg-sky-200 active:focus:bg-sky-400 pb-4 w-fit no-underline'>
                       {title}
                     </h5>
                   </Link>
+                  <small className='font-open-sans text-slate-600 hover:bg-sky-200 active:focus:bg-sky-400 w-fit no-underline pr-4'>
+                    <Date dateString={date} />
+                  </small>
                 <br />
                 {/* tag css - bg-sky-100 text-sky-800 text-sm font-open-sans font-semibold rounded-full px-3 py-1 mr-2 mb-2 */}
               </li>

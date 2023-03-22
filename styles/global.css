@@ -95,11 +95,11 @@ h5 {
 }
 
 p {
-  @apply text-slate-900 py-2;
+  @apply text-slate-900 py-2 text-lg;
 }
 
 li {
-  @apply text-slate-900 py-2;
+  @apply text-slate-900 py-2 text-lg;
   @apply leading-4 ml-5
 }
 
@@ -128,4 +128,8 @@ h1 {
 iframe {
   width: 100%;
   height: 400px;
+}
+
+pre {
+  @apply my-4;
 }
