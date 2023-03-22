@@ -3,7 +3,6 @@ import Date from '../components/date';
 import Head from 'next/head'
 
 
-
 import { getAllPageIds, getPageData } from '../lib/posts';
 
 export async function getStaticProps({ params }) {
@@ -31,14 +30,13 @@ export default function Post({ postData }) {
     <Layout>
       <Head>
         <title>{postData.title}</title>
-      </Head>
+      </Head >
 
-      {postData.title}
-      <br />
-      {postData.id}
-      <br />
-      <Date dateString={postData.date} />
-      <br />
+      <h3 className='text-green-500'>
+        <Date dateString={postData.date} />
+      </h3>
+     
+
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </Layout>
   );
