@@ -33,7 +33,7 @@ export default function Post({ postData }) {
       </Head >
         <div className='max-w-2xl mx-auto'>
           <h5 className='text-slate-600 font-normal mb-5'>
-            <Date dateString={postData.date} />
+          <Date dateString={postData.date} />
           </h5>
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </div>
