@@ -39,6 +39,18 @@ const handleMouseEnter = () => {
 export default function Home({ allPagesData }) {
   const [search, setSearch] = useState('');
 
+  const filteredBlogPosts = allPagesData.filter((post) => {
+    const lowerCaseSearch = search.toLowerCase();
+    const lowerCaseTagsString = post.tags.map(tag => tag.toLowerCase()).join(' '); // joining the tags because searching a string for substrings is easier than searching a list of strings for substrings
+    if (search === '') {
+      return post;
+    }
+    if (lowerCaseTagsString.includes(lowerCaseSearch) || post.title.toLowerCase().includes(lowerCaseSearch)) {
+      return post;
+    }
+  });
+
+
   return (
     <Layout home>
       <Head>
@@ -67,7 +79,7 @@ export default function Home({ allPagesData }) {
               <input value={search} onChange={(event) => setSearch(event.target.value)} type="text" placeholder="Search for tags or post titles 🔎" className="bg-slate-50 border border-sky-300 text-slate-900 rounded-lg active:border-sky-400 hover:border-sky-400 focus:border-sky-400 block p-2.5 w-96 max-w-full"/>
             </div>
             <ul className='my-7 max-w-2xl list-none'>
-              {allPagesData.map(({ id, date, title, tags }) => (
+              {filteredBlogPosts.map(({ id, date, title, tags }) => (
                 <li className='border-slate-300 border-b-2 border-solid pb-8 mt-4 no-underline ml-0' key={id}>
                   <Link href={`/${id}`}>
                     <h5 className='font-open-sans text-xl font-medium text-slate-900 hover:bg-sky-200 active:focus:bg-sky-400 pb-4 w-fit no-underline'>
