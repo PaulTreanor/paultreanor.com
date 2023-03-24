@@ -38,14 +38,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build
+      - name: Build and export
         run: npm run build
 
       - name: copy CNAME
-        run: cp CNAME .next/
-
+        run: cp CNAME out/
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.next
+          publish_dir: ./out
