@@ -1,9 +1,9 @@
 ---
 title: Local outlier factor from scratch in Python 
 short: Explaination and implementation of the local outlier factor algorithm.
-date: 3 June 2021
+date: '2021-06-03'
 slug: local-outlier-factor
-createdAt: 3 June 2021
+createdAt: '2021-06-03'
 img: blog-2.jpg
 
 
@@ -60,7 +60,7 @@ The LOF method takes 4 arguments:
 ##### 1. Reachability distance 
 
 
-<img  src="/rdist.png" alt="reachability distance">
+<img  src="/images/lof/rdist.png" alt="reachability distance">
 
 \
 &nbsp;
@@ -82,7 +82,7 @@ def  reachability_distance(A, B, classifier, k):
 ##### 2. Local reachability density 
 
 
-<img src="/lrd.png" alt="local reachability density">
+<img src="/images/lof/lrd.png" alt="local reachability density">
 
 \
 &nbsp;
@@ -110,7 +110,7 @@ def  local_r_density(A, nearest_neighbours, classifier, k): # Local reachability
 ##### 3. Local outlier factor
 
 
-<img src="/lof.png" alt="local outlier factor">
+<img src="/images/lof/lof.png" alt="local outlier factor">
 
 \
 &nbsp;

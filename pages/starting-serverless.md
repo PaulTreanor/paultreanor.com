@@ -1,7 +1,9 @@
 ---
 title: Starting with AWS and the Serverless Framework 
 short: The best learning resources for getting started with serverless.
-createdAt: 21 September 2021
+createdAt: '2021-09-21'
+date: '2021-09-21'
+
 slug: starting-serverless
 
 tags:
@@ -12,7 +14,7 @@ tags:
 
 # Starting with AWS and the Serverless Framework 
 
-<img src="/fourTheorem.png" alt="fourtheorem">
+<img src="/images/sls/fourTheorem.png" alt="fourtheorem">
 
 Since joining fourTheorem earlier this year I've worked with AWS and the Serverless framework a lot, here are some of the best learning resources I've found:
 

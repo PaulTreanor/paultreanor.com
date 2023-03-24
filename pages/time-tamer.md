@@ -1,9 +1,9 @@
 ---
 title: 🦁 Time Tamer
 short: A simple time management app for MacOs
-date: 3 March 2023
+date: '2023-03-03'
 slug: time-tamer
-createdAt: 3 March 2023
+createdAt: '2023-03-03'
 
 
 tags:
@@ -15,7 +15,8 @@ tags:
 
 I made a time management app for MacOs called Time Tamer. It's essentially a very simple minimal version of [Toggl](https://toggl.com/). You can download it [here as a GitHub release](https://github.com/PaulTreanor/time-tamer/releases/tag/v1.0). 
 
-<img  src="/time-tamer-demo.png" alt="Time Tamer">
+<img  src="/images/tt/time-tamer-demo.png" alt="Time Tamer">
+
 It's not groundbreaking, but it's good enough for me to use it everyday. I'm not finished with it either, there's still a few little fixes I'd like to address...
 
 - Display the app's timer status in the menu bar
