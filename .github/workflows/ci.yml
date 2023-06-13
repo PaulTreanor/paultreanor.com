@@ -39,7 +39,9 @@ jobs:
         run: npm install
 
       - name: Build and export
-        run: npm run build
+        run: |
+          rm -rf .next
+          npm run build
 
       - name: copy CNAME
         run: cp CNAME out/
