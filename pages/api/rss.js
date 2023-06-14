@@ -3,7 +3,7 @@
 import { getSortedPagesData } from '../../lib/posts';
 import RSS from 'rss';
 
-const myDomain = 'https://paultreanor.com/';
+const myDomain = 'https://paultreanor.com';
 
 export default async function rssFeed(req, res) {
   if (req.method !== 'GET') {
