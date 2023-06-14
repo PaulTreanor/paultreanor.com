@@ -29,7 +29,7 @@ export default function Post({ postData }) {
   return (
     <Layout>
       <Head>
-        <title>{postData.title}</title>
+        <title>{postData.title }</title>
       </Head >
         <div className='max-w-2xl mx-auto'>
           <h5 className='text-slate-600 font-normal mb-5'>
