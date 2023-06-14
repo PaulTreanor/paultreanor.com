@@ -36,4 +36,12 @@ serve out
 ```
 
 
+### Breaking? 
+
+- Try looking at the node version in the ci.yml
+- Use npx rather than global version of commands (ie. next) 
+- Delete .next folder and try again
+- Delete node_modules and try again
+- Delete package-lock.json and try again
+
 

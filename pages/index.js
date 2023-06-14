@@ -16,7 +16,7 @@ export async function getStaticProps() {
 }
 
 function copyEmailToClipboard () {
-  navigator.clipboard.writeText('example.email@gmail.com');
+  navigator.clipboard.writeText('paul@paultreanor.com');
   const tooltip = document.querySelector('.tooltip');
   const originalText = tooltip.innerText;
   tooltip.innerText = 'Email copied!';
