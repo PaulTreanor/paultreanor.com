@@ -65,7 +65,7 @@ export default function Home({ allPagesData }) {
         <div className="row pt-4 text-2xl">
           <a className='mr-3' href="https://github.com/PaulTreanor"><ion-icon name="logo-github" /></a>
           <a className='mr-3' href="https://twitter.com/paultreanordev"><ion-icon name="logo-twitter" /></a>
-          {/* <a className='mr-3' href="https://paultreanor.com/rss.xml"><ion-icon name="logo-rss" /></a> */}
+          <a className='mr-3' href="https://paultreanor.com/rss.xml"><ion-icon name="logo-rss" /></a>
           <a className='mr-3 emailCopy' onClick={copyEmailToClipboard} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <ion-icon name="mail" />
             <span className="tooltip">Copy email to clipboard</span>

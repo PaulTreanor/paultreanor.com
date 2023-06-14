@@ -45,7 +45,7 @@ My main goal is to create a body of work by treating the rest of 2023 as a sort 
 
   
 
-I'll try my best to build in public and share what I learn, and I'll be active here and also on [Twitter](https://twitter.com/paultreanordev) if you want to keep up to date with what I'm working on.
+I'll try my best to build in public and share what I learn, and I'll be active on my blog ([here's my RSS](https://paultreanor.com/rss.xml)) and also on [Twitter](https://twitter.com/paultreanordev) if you want to keep up to date with what I'm working on.
 
   
 
