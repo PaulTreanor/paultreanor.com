@@ -18,6 +18,7 @@
     "remark-html": "^15.0.2",
     "remark-parse": "^10.0.1",
     "remark-rehype": "^10.1.0",
+    "rss": "^1.2.2",
     "unified": "^10.1.2"
   },
   "devDependencies": {
