@@ -45,3 +45,10 @@ serve out
 - Delete package-lock.json and try again
 
 
+
+### Build RSS feed...
+
+1. Add "type": "module" to package.json
+2. Run node scripts/buildRss.js
+3. Delte "type": "module" from package.json
+4. Build the site

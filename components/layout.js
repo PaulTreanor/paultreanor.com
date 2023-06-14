@@ -17,7 +17,7 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="alternate" type="application/rss+xml" title="RSS Feed for Your Blog Title" href="/api/rss" />
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed for paultreanor.com" href="/rss.xml" />
 
       </Head>
       <header className='max-w-2xl mx-auto'>
