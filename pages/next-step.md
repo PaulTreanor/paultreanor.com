@@ -25,9 +25,7 @@ tags:
 
 # The next step in my career
 
-  
-
-On Thursday I'm going to be starting a new chapter in my career. I'm leaving my current employer fourTheorem to spend the rest of 2023 working on some creative passion projects and learning as much as I can.
+Today I'm starting a new step in my career. Yesterday was my last day with my current employer fourTheorem, and I'm going to be spending the rest of 2023 working on some creative passion projects and learning as much as I can.
 
   
 
