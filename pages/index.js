@@ -59,7 +59,7 @@ export default function Home({ allPagesData }) {
       <section className='blurb my-11'>
         <img className="mt-5 mb-7" src="/images/me.png" alt="" width={100}></img>
         <h2 className="text-4xl font-open-sans font-bold py-4 ">Hi, I'm Paul 🐮</h2>
-        <p className="text-lg font-open-sans">I'm a fullstack developer making serverless things at <a href="https://www.fourtheorem.com/">fourTheorem</a>. This website is where I keep my notes and thoughts.</p>
+        <p className="text-lg font-open-sans">I'm a fullstack indie developer until I run out of money. This website is my digital notebook.</p>
         <p className="text-lg font-open-sans">Feel free to get in touch!</p>
 
         <div className="row pt-4 text-2xl">
