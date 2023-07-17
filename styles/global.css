@@ -132,4 +132,24 @@ iframe {
 
 pre {
   @apply my-4;
+  @apply leading-6 
+}
+
+.code {
+  font-family: Consolas, Menlo, Monaco, 'Courier New', 'Ubuntu Mono', 'Source Code Pro', monospace;
+
+}
+
+.hljs {
+  background: #334155 !important; /* Change as needed */
+  padding: 20px !important; /* Change as needed */
+  overflow-x: auto !important; /* Change as needed */
+}
+
+.language-bash {
+  color: #e2e8f0 !important; /* Change as needed */
+}
+
+.hljs-comment {
+  color: #94a3b8 !important; /* Change as needed */
 }
