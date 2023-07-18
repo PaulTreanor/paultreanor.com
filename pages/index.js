@@ -62,11 +62,26 @@ export default function Home({ allPagesData }) {
         <p className="text-lg font-open-sans">I'm a fullstack indie developer until I run out of money. This website is my digital notebook.</p>
         <p className="text-lg font-open-sans">Feel free to get in touch!</p>
 
-        <div className="row pt-4 text-2xl">
-          <a className='mr-3' href="https://github.com/PaulTreanor"><ion-icon name="logo-github" /></a>
-          <a className='mr-3' href="https://twitter.com/paultreanordev"><ion-icon name="logo-twitter" /></a>
-          <a className='mr-3' href="https://paultreanor.com/rss.xml"><ion-icon name="logo-rss" /></a>
-          <a className='mr-3 emailCopy' onClick={copyEmailToClipboard} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className="row text-2xl">
+          <a 
+            className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200" 
+            href="https://github.com/PaulTreanor">
+            <ion-icon name="logo-github" />
+          </a>
+          <a 
+            className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200" 
+            href="https://twitter.com/paultreanordev">
+            <ion-icon name="logo-twitter" />
+          </a>
+
+          <a 
+            className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200" 
+            href="https://paultreanor.com/rss.xml">
+            <ion-icon name="logo-rss" />
+          </a>
+          <a 
+            className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200"
+            onClick={copyEmailToClipboard} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <ion-icon name="mail" />
             <span className="tooltip">Copy email to clipboard</span>
           </a>

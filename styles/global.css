@@ -144,6 +144,9 @@ pre {
 
 }
 
+.hljs {
+  @apply bg-slate-900 !important;
+}
 
 
 /* .hljs {
