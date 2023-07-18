@@ -1,6 +1,10 @@
+@import 'highlight.js/styles/atom-one-dark-reasonable.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 .tooltip {
   display: none;
@@ -140,16 +144,18 @@ pre {
 
 }
 
-.hljs {
-  background: #334155 !important; /* Change as needed */
-  padding: 20px !important; /* Change as needed */
-  overflow-x: auto !important; /* Change as needed */
-}
 
-.language-bash {
-  color: #e2e8f0 !important; /* Change as needed */
+
+/* .hljs {
+  padding: 20px !important; 
+  overflow-x: auto !important;
+  @apply bg-green-50 !important; 
+} */
+
+/* .language-bash {
+  color: #e2e8f0 !important; 
 }
 
 .hljs-comment {
-  color: #94a3b8 !important; /* Change as needed */
-}
+  color: #94a3b8 !important; 
+} */
