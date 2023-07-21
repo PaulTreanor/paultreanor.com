@@ -72,7 +72,7 @@ html {
 
 /* use tailwinds to make all h1s dark green using @apply */
 a {
-  @apply text-sky-600 hover:text-sky-700 active:focus:text-sky-900;
+  @apply text-sky-600 hover:text-sky-700 active:focus:text-sky-900 hover:bg-green-100  transition-colors duration-200;
 }
 
 
@@ -145,7 +145,8 @@ pre {
 }
 
 .hljs {
-  @apply bg-slate-900 !important;
+  @apply bg-slate-900 rounded-md !important;
+
 }
 
 
