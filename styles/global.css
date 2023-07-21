@@ -1,4 +1,6 @@
-@import 'highlight.js/styles/atom-one-dark-reasonable.css';
+@import 'highlight.js/styles/vs2015.css';
+/* @import 'highlight.js/styles/intellij.css'; */
+
 
 @tailwind base;
 @tailwind components;
@@ -145,7 +147,9 @@ pre {
 }
 
 .hljs {
-  @apply bg-slate-900 rounded-md !important;
+  @apply rounded-md !important;
+  /* @apply bg-slate-900 rounded-md !important; */
+
 
 }
 
