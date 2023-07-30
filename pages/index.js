@@ -5,6 +5,7 @@ import { getSortedPagesData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
 import { useState } from 'react';
+import EmailHover from '../components/EmailHover';
 
 export async function getStaticProps() {
   const allPagesData = getSortedPagesData();
@@ -13,27 +14,6 @@ export async function getStaticProps() {
       allPagesData,
     },
   };
-}
-
-function copyEmailToClipboard () {
-  navigator.clipboard.writeText('paul@paultreanor.com');
-  const tooltip = document.querySelector('.tooltip');
-  const originalText = tooltip.innerText;
-  tooltip.innerText = 'Email copied!';
-  tooltip.style.display = 'block';
-  setTimeout(() => {
-    tooltip.innerText = originalText;
-  }, 1200);
-}
-
-function handleMouseLeave () {
-  const tooltip = document.querySelector('.tooltip');
-  tooltip.style.display = 'none';
-}
-
-const handleMouseEnter = () => {
-  const tooltip = document.querySelector('.tooltip');
-  tooltip.style.display = 'block';
 }
 
 export default function Home({ allPagesData }) {
@@ -79,12 +59,7 @@ export default function Home({ allPagesData }) {
             href="https://paultreanor.com/rss.xml">
             <ion-icon name="logo-rss" />
           </a>
-          <a 
-            className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200"
-            onClick={copyEmailToClipboard} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <ion-icon name="mail" />
-            <span className="tooltip">Copy email to clipboard</span>
-          </a>
+          <EmailHover> <ion-icon name="mail" /> </EmailHover>
         </div>
       </section>
       <section >
