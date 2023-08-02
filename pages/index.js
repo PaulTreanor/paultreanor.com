@@ -67,7 +67,7 @@ export default function Home({ allPagesData }) {
           <h2 className="text-4xl font-open-sans font-bold py-4">📝 Latest Notes</h2>
           <div className="articles pb-40">
             <div className="search-box py-2">
-              <input value={search} onChange={(event) => setSearch(event.target.value)} type="text" placeholder="Search for tags or post titles 🔎" className="bg-slate-50 border border-sky-300 text-slate-900 rounded-lg active:border-sky-400 active:bg-yellow-50 focus:bg-yellow-50 hover:border-sky-400 focus:border-sky-400 block p-2.5 w-96 max-w-full"/>
+              <input id="searchbox" value={search} onChange={(event) => setSearch(event.target.value)} type="text" placeholder="Search for tags or post titles 🔎" className="bg-slate-50 border border-sky-300 text-slate-900 rounded-lg active:border-sky-400 active:bg-yellow-50 focus:bg-yellow-50 hover:border-sky-400 focus:border-sky-400 block p-2.5 w-96 max-w-full"/>
             </div>
             <ul className='my-7 max-w-2xl list-none'>
               {filteredBlogPosts.map(({ id, date, title, tags }) => (
