@@ -18,12 +18,12 @@ Notarizing is a process Apple automatically runs on your app to make sure it run
 All MacOS apps must be code-signed and notarized or else users won't be able to install them. 
 
 ### Prerequisites
-Before you can notarize your app, you need to join the Apple Developer Program which costs €100/year (a not so nice gatekeeping measure from Apple). Then you'll need to set up some Apple Developer Program certificates in your Keychain. [This RocketRide blog post](https://www.rocketride.io/blog/macos-code-sign-notarize-electron-app) is a helpful guide through this painful process.
+Before you can notarize your app, you need to join the Apple Developer Program which costs €100/year (a not-so-nice gatekeeping measure from Apple). Then you'll need to set up some Apple Developer Program certificates in your Keychain. [This RocketRide blog post](https://www.rocketride.io/blog/macos-code-sign-notarize-electron-app) is a helpful guide through this painful process.
 
-Thankfully, these steps are a one-time ordeal for your first macOS app. For subsequent apps, [electron-builder should handle code-signing](https://www.electron.build/code-signing.html) as part of its build process so long as your Keychain credentials are set up correctly.
+Mercifully these steps are a one-time ordeal for your first MacOS app. For subsequent apps, [electron-builder should handle code-signing](https://www.electron.build/code-signing.html) as part of its build process so long as your Keychain credentials are set up correctly.
 
 ### Notarizing
-The [Electron Notarize](https://github.com/electron/notarize) npm module is helpful here. To use the module create the files *notarize.js* and *.env*. **You must add `.env` to your `.gitignore` file** as it contains secrets that you don't want to commit to your GitHub repo.
+The [Electron Notarize](https://github.com/electron/notarize) npm module is helpful here. To use the module create the files *notarize.js* and *.env*. **You must add *.env* to your `.gitignore` file** as it contains secrets that you don't want to commit to your GitHub repo.
 
 **notarize.js**
 ```js
