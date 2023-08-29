@@ -30,9 +30,6 @@ The [Electron Notarize](https://github.com/electron/notarize) npm module is help
 const { notarize } = require('@electron/notarize');
 require('dotenv').config();
 
-// Create a .env file to put your details in
-// The function can take up to a few minutes to complete
-
 async function packageTask () {
 	const options = {
 		appBundleId: 'your.bundle.name', // Unique ID in form `com.paultreanor.promptmarker`
