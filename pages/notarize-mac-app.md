@@ -15,10 +15,10 @@ tags:
 # Notarizing Electron Apps for MacOS
 Notarizing is a process Apple automatically runs on your app to make sure it runs on MacOS and isn't dangerous. It involves sending a copy of your app to Apple's system, and then waiting for a response to hopefully say all is good. 
 
-This is a pain, especially if you're doing it for the first time, but all MacOS apps must be code-signed and notarized or else users won't be able to install them. 
+All MacOS apps must be code-signed and notarized or else users won't be able to install them. 
 
 ### Prerequisites
-Before you can notarize your app, you need to join the Apple Developer Program which costs €100/year (in my opinion a horrible gatekeeping measure from Apple). Then you'll need to set up some Apple Developer Program certificates in your Keychain. [This RocketRide blog post](https://www.rocketride.io/blog/macos-code-sign-notarize-electron-app) is a helpful guide through this painful process.
+Before you can notarize your app, you need to join the Apple Developer Program which costs €100/year (a not so nice gatekeeping measure from Apple). Then you'll need to set up some Apple Developer Program certificates in your Keychain. [This RocketRide blog post](https://www.rocketride.io/blog/macos-code-sign-notarize-electron-app) is a helpful guide through this painful process.
 
 Thankfully, these steps are a one-time ordeal for your first macOS app. For subsequent apps, [electron-builder should handle code-signing](https://www.electron.build/code-signing.html) as part of its build process so long as your Keychain credentials are set up correctly.
 
