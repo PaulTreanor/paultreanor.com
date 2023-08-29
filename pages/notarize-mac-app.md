@@ -64,7 +64,14 @@ TEAM_ID=XXXXXXXXXX
 
 You'll need to follow [these instructions](https://support.apple.com/en-us/HT204397) to create an app specific password. Just write in the name of your app and you'll get a 16 digit password for it. 
 
-Fill in the `options` arguments and then run "node notarize.js" in your shell after running your build process. It can take a few minutes to run and you'll either get an error message or it will run successfully. 
+Fill in the `options` arguments and then run the script after running your build process:
+
+```bash
+npm run build
+node notarize.js
+```
+
+This can take a few minutes to run and you'll either get an error message from Apple or it will run successfully. 
 
 ### Verification and Stapling
 You can check that your file is notarized correctly by running the following:
