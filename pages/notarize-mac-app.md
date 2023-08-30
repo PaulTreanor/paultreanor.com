@@ -13,7 +13,7 @@ tags:
 
 
 # Notarizing Electron Apps for MacOS
-Notarizing is a process Apple automatically runs on your app to make sure it runs on MacOS and isn't dangerous. It involves sending a copy of your app to Apple's system, and then waiting for a response to hopefully say all is good. 
+Notarizing is an automated process by Apple that ensures your application is safe and compatible with MacOS. It involves sending a copy of your app to Apple's system, and then waiting for a response to hopefully say all is good. 
 
 All MacOS apps must be code-signed and notarized or else users won't be able to install them. 
 
