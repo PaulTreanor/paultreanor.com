@@ -81,7 +81,7 @@ spctl -a -t exec -vv YourApp.dmg
 You can staple the notarization ticket directly to your `dmg` file so it can be verified by Apple even if the user installs it offline:
 
 ```bash
-xcrun stapler staple "PromptMarker.dmg"
+xcrun stapler staple "YourApp.dmg"
 ```
 
 These commands also work with `.app` files if you'd rather distribute those instead. 
