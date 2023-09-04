@@ -42,9 +42,9 @@ export default function Home({ allPagesData }) {
         <p className="text-lg font-open-sans">I'm a fullstack indie developer until I run out of money. This website is my digital notebook.</p>
         <p className="text-lg font-open-sans">Feel free to get in touch!</p>
 
-        <div className="row text-2xl">
+        <div className="row text-2xl pt-3j">
           <a 
-            className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200" 
+            className="mr-3 pr-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200" 
             href="https://github.com/PaulTreanor">
             <ion-icon name="logo-github" />
           </a>
