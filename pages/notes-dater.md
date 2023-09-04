@@ -20,6 +20,6 @@ It's weird that Obsidian doesn't ship with this, but I appreciate that they make
 
 [Here's the GitHub Repo](https://github.com/PaulTreanor/notes-dater). You can [click here to open the plugin in Obsidian](https://obsidian.md/plugins?id=notes-dater) if it's on your computer. 
 
-<img  src="/images/notes-dater/notes-dater.png" alt="Time Tamer">
+<img  src="/images/notes-dater/notes-dater.png" alt="Notes Dater">
 
 
