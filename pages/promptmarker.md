@@ -21,7 +21,7 @@ I made a ChatGPT MacOS app called PromptMarker which lets you save prompts and q
 ### Why I made PromptMarker 
 I made the app to remove some friction I had while using the ChatGPT webapp: 
 - Desktop apps are easier to find and [alt-tab](https://alt-tab-macos.netlify.app/) to when you're working on multiple things at once
-- EU users can't use [custom instructions](https://openai.com/blog/custom-instructions-for-chatgpt) 
+- EU users didn't have access to [custom instructions](https://openai.com/blog/custom-instructions-for-chatgpt) when I started making this
 - I find myself retyping similar prompts a lot
 
 I'm reasonably happy with how PromptMarker solves these problems. 
