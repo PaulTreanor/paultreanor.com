@@ -29,13 +29,6 @@ I'm reasonably happy with how PromptMarker solves these problems.
 ### How I use the app
 If I find myself typing some sort of pre-prompt context more than once, I'll save it to the sidebar. This is specifically pretty useful when for programming, I don't have to retype an explanation that I'm using `react`, `electron-store`, and `tailwindCSS` (for example) before asking it to write me a component - I can just click on the sidebar instead. 
 
-### Some specific prompts I like:
-**Be brief**
-"Answer my question briefly:"
-
-**Writing review** (this is absurdly useful)
-"Can you give me some feedback on my full article. I want to know if there are any spelling mistakes, awkward sentence, "bad takes"/"cringe", or if there's any general areas that could be improved upon? I'd like your feedback in the form of a list of items."
-
 ### Links
 - [Download the app](https://paultreanor.gumroad.com/l/promptmarker)
 - [GitHub Repo](https://github.com/PaulTreanor/PromptMarker)
