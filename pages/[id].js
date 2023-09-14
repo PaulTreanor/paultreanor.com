@@ -1,21 +1,30 @@
 import Layout from '../components/layout';
 import Date from '../components/date';
 import Head from 'next/head'
-
+import { renderToStaticMarkup } from 'react-dom/server'
+import EmailHover from '../components/EmailHover' // Your path may be different
 
 import { getAllPageIds, getPageData } from '../lib/posts';
 
 export async function getStaticProps({ params }) {
-  // Add the "await" keyword like this:
   const postData = await getPageData(params.id);
+
+  // Create an instance of the EmailHover component
+  const emailHoverInstance = renderToStaticMarkup(<EmailHover><ion-icon name="mail" /></EmailHover>);
+
+  // Replace the placeholder in the markdown content with the rendered component
+  const contentHtmlWithComponents = postData.contentHtml.replace('EMAIL_HOVER_COMPONENT', emailHoverInstance);
+
 
   return {
     props: {
-      postData,
+      postData: {
+        ...postData,
+        contentHtml: contentHtmlWithComponents,
+      },
     },
   };
 }
-
 
 export async function getStaticPaths() {
   const paths = getAllPageIds();
