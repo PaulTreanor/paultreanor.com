@@ -15,9 +15,9 @@ tags:
 
 ---
 
-# CodeSpaces, Beyond local dev. 
+# CodeSpaces - Beyond local dev
 
-*This blog post is based on a talk I gave at a recent BelfastJS meetup (which was great fun!). Since the talk wasn't recorded, I compiled the slides and some notes into a visual blog post.*
+*This blog post is based on a talk I gave at a recent BelfastJS meetup (which was great fun!). Since the talk wasn't recorded, I compiled the slides and some notes into a blog post.*
 
 
 ---------------------
