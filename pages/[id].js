@@ -44,7 +44,7 @@ export default function Post({ postData }) {
           <h5 className='text-slate-600 font-normal mb-5'>
           <Date dateString={postData.date} />
           </h5>
-          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+          <div className="blog-content" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </div>
     </Layout>
   );

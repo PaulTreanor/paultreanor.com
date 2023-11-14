@@ -48,8 +48,13 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	/* line-height: 1; */
 }
+
+li {
+  line-height: 2em; 
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -154,6 +159,8 @@ pre {
 }
 
 
+
+
 /* .hljs {
   padding: 20px !important; 
   overflow-x: auto !important;
@@ -167,3 +174,8 @@ pre {
 .hljs-comment {
   color: #94a3b8 !important; 
 } */
+
+
+.blog-content li {
+  line-height: 1.3em;
+}
