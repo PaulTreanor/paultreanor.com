@@ -9,7 +9,6 @@ img: blog-2.jpg
 
 tags:
   - Project
-  - Work 
 ---
 
 # Shiny Black Boxism
