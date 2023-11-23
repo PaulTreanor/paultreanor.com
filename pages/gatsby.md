@@ -12,6 +12,7 @@ tags:
   - Work 
 ---
 
+# Advice on building production applications in Gatsby in 2023
 
 I've been building education focused web application for the past few weeks, and I went with Gatsby for the frontend. My main reason for choosing Gatsby was because I'm familiar with it and that let me move very fast, but it got me thinking about whether or not Gatsby's a good choice for other projects. 
 
