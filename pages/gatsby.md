@@ -26,7 +26,7 @@ I've been building an education focused web application for the past few weeks, 
 - If you're building a very large app/site with dozens of pages
 - If you are working with a team (I think slower feedback loops will compound)
 
-Again, maybe the biggest factor that should affect your choice is just using what you are familiar with. I don't think choosing the latest tools for every single project isn't necessary or wise. 
+Again, maybe the biggest factor that should affect your choice is just using what you are familiar with. I don't think choosing the latest tools for every single project is necessary or wise. 
 
 If you do decide to go with Gatsby then here's my advice:
   
