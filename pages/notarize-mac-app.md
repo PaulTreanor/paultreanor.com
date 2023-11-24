@@ -8,7 +8,7 @@ img: blog-2.jpg
 
 
 tags:
-  - Code
+  - Tutorial
 ---
 
 

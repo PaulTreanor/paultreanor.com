@@ -30,6 +30,24 @@ export default function Home({ allPagesData }) {
     }
   });
 
+  const getTagStyles = (tag) => {
+    switch(tag) {
+        case 'Note':
+            return 'bg-blue-100 hover:bg-blue-200 text-blue-800';
+        case 'Tutorial':
+            return 'bg-green-100 hover:bg-green-200 text-green-800';
+        case 'Release':
+            return 'bg-fuchsia-100 hover:bg-fucshia-200 text-fucshia-800';
+        case 'Talk':
+            return 'bg-amber-100 hover:bg-amber-200 text-amber-800';
+        case 'Essay':
+            return 'bg-red-100 hover:bg-red-200 text-red-800';
+        default:
+            return 'bg-sky-100 hover:bg-green-100 text-sky-800'; // default style
+    }
+};
+
+
 
   return (
     <Layout home>
@@ -81,10 +99,10 @@ export default function Home({ allPagesData }) {
                     <small className='pt-1 font-open-sans text-slate-600 hover:bg-yellow-50 active:focus:bg-sky-400 w-fit no-underline pr-4'>
                       <Date dateString={date} />
                     </small>
-                    { tags.map(tag => (
-                      <button key={tag} onClick={() => setSearch(tag)} className="bg-sky-100 hover:bg-green-100 text-sky-800 text-sm font-open-sans font-semibold rounded-full px-3 py-1 mr-2 w-fit">
-                        {tag}
-                      </button>
+                    {tags.map(tag => (
+                        <button key={tag} onClick={() => setSearch(tag)} className={`text-sm font-open-sans font-semibold rounded-full px-3 py-1 mr-2 w-fit ${getTagStyles(tag)}`}>
+                            {tag}
+                        </button>
                     ))}
                   </div>
                 <br />
