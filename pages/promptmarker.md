@@ -8,8 +8,7 @@ img: blog-2.jpg
 
 
 tags:
-  - Project
-  - Productivity
+  - Release
 ---
 
 # 🔖 PromptMarker

@@ -8,9 +8,7 @@ img: blog-2.jpg
 
 
 tags:
-  - Environment
-  - Productivity
-  - Code
+  - Tutorial
 ---
 
 # MacBook secondary monitor not waking from sleep solved 💻

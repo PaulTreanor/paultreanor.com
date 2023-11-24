@@ -8,11 +8,7 @@ img: blog-2.jpg
 
 
 tags:
-  - Code
-  - Environment
-  - Productivity
-  - Talk 
-
+  - Talk
 ---
 
 # CodeSpaces - Beyond local dev

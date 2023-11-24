@@ -8,9 +8,7 @@ img: blog-2.jpg
 
 
 tags:
-  - Environment
-  - Productivity
-  - Code
+  - Tutorial
 ---
 
 # Auto-formatting JS with ESlint and VSCode

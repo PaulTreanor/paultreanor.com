@@ -8,7 +8,7 @@ img: blog-2.jpg
 
 
 tags:
-  - Project
+  - Essay
 ---
 
 # Shiny Black Boxism

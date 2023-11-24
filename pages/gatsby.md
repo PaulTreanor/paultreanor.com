@@ -8,8 +8,7 @@ img: blog-2.jpg
 
 
 tags:
-  - Code
-  - Work 
+  - Note
 ---
 
 # Advice on building production applications in Gatsby in 2023

@@ -8,7 +8,7 @@ img: blog-2.jpg
 
 
 tags:
-  - Code
+  - Tutorial
 ---
 
 # Adding custom electron app icons on Mac with electron-build

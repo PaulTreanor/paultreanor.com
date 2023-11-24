@@ -17,7 +17,7 @@ img: blog-2.jpg
 
 tags:
 
-- Work
+- Note
 
 ---
 

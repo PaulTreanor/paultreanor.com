@@ -8,7 +8,7 @@ img: blog-2.jpg
 
 
 tags:
-  - Code
+  - Tutorial
 ---
 
 # Local outlier factor from scratch in Python 
