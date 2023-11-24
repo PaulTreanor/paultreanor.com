@@ -20,12 +20,18 @@ export default function Home({ allPagesData }) {
   const [search, setSearch] = useState('');
 
   const filteredBlogPosts = allPagesData.filter((post) => {
+    
     const lowerCaseSearch = search.toLowerCase();
     const lowerCaseTagsString = post.tags.map(tag => tag.toLowerCase()).join(' '); // joining the tags because searching a string for substrings is easier than searching a list of strings for substrings
     if (search === '') {
+      // change post.tags to be a string made up of the first item in the tags list
+
+      post.tag = post.tags[0]
+
       return post;
     }
     if (lowerCaseTagsString.includes(lowerCaseSearch) || post.title.toLowerCase().includes(lowerCaseSearch)) {
+      post.tags = post.tags[0]
       return post;
     }
   });
@@ -45,7 +51,24 @@ export default function Home({ allPagesData }) {
         default:
             return 'bg-sky-100 hover:bg-green-100 text-sky-800'; // default style
     }
-};
+  };
+
+  const getTitleAndDateColours = (tag) => {
+    switch(tag) {
+        case 'Note':
+            return 'hover:bg-blue-50';
+        case 'Tutorial':
+            return 'hover:bg-green-50';
+        case 'Release':
+            return 'hover:bg-fuchsia-50';
+        case 'Talk':
+            return 'hover:bg-amber-50';
+        case 'Essay':
+            return 'hover:bg-red-50';
+        default:
+            return 'hover:bg-green-100'; // default style
+    }
+  };
 
 
 
@@ -85,18 +108,19 @@ export default function Home({ allPagesData }) {
           <h2 className="text-4xl font-open-sans font-bold py-4">📝 Latest Notes</h2>
           <div className="articles pb-40">
             <div className="search-box py-2">
-              <input id="searchbox" value={search} onChange={(event) => setSearch(event.target.value)} type="text" placeholder="Search for tags or post titles 🔎" className="bg-slate-50 border border-sky-300 text-slate-900 rounded-lg active:border-sky-400 active:bg-yellow-50 focus:bg-yellow-50 hover:border-sky-400 focus:border-sky-400 block p-2.5 w-96 max-w-full"/>
+              <input id="searchbox" value={search} onChange={(event) => setSearch(event.target.value)} type="text" placeholder="Search for tags or post titles 🔎" className="bg-slate-50 border border-sky-300 text-slate-900 rounded-lg active:border-sky-400 active:bg-teal-50 focus:bg-teal-50 hover:border-sky-400 focus:border-sky-400 block p-2.5 w-96 max-w-full"/>
             </div>
             <ul className='my-7 max-w-2xl list-none'>
-              {filteredBlogPosts.map(({ id, date, title, tags }) => (
+              {filteredBlogPosts.map(({ id, date, title, tags, tag }) => (
                 <li className='border-slate-300 border-b-2 border-solid pb-8 mt-4 no-underline ml-0' key={id}>
                   <Link href={`/${id}`}>
-                    <h5 className='font-open-sans text-xl font-medium text-slate-900 hover:underline hover:bg-yellow-50 active:focus:bg-sky-400 pb-4 w-fit no-underline'>
+                    <h5 className={`font-open-sans text-xl font-medium text-slate-900 hover:underline ${getTitleAndDateColours(tag)} active:focus:bg-sky-400 pb-4 w-fit no-underline`}>
                       {title}
                     </h5>
                   </Link>                  
+                  { console.log({"tag": tag})}
                   <div className='flex flex-wrap'>
-                    <small className='pt-1 font-open-sans text-slate-600 hover:bg-yellow-50 active:focus:bg-sky-400 w-fit no-underline pr-4'>
+                    <small className={`pt-1 font-open-sans text-slate-600 ${getTitleAndDateColours(tag)} active:focus:bg-sky-400 w-fit no-underline pr-4`}>
                       <Date dateString={date} />
                     </small>
                     {tags.map(tag => (
