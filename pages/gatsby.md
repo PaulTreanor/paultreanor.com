@@ -14,7 +14,7 @@ tags:
 
 # Advice on building production applications in Gatsby in 2023
 
-I've been building education focused web application for the past few weeks, and I went with Gatsby for the frontend. My main reason for choosing Gatsby was because I'm familiar with it and that let me move very fast, but it got me thinking about whether or not Gatsby's a good choice for other projects. 
+I've been building an education focused web application for the past few weeks, and I went with Gatsby for the frontend. My main reason for choosing Gatsby was because I'm familiar with it and that let me move very fast, but it got me thinking about whether or not Gatsby's a good choice for other projects. 
 
 **Why use Gatsby**
 - If you need very fast static pages 
@@ -31,7 +31,7 @@ Again, maybe the biggest factor that should affect your choice is just using wha
 If you do decide to go with Gatsby then here's my advice:
   
 ## 1. Limit complexity
-**YAGNI**. Save yourself the mental bandwidth and cut out as much Gatsby boilerplate as you possibly can, it will speed up your build times, the speed that you can work at, and it will save you from endless bugs. 
+**YAGNI**. ``Save yourself`` the mental bandwidth and cut out as much Gatsby boilerplate as you possibly can, it will speed up your build times, the speed that you can work at, and it will save you from endless bugs. 
 
 You [don't need the GraphQL](https://www.gatsbyjs.com/docs/how-to/querying-data/using-gatsby-without-graphql/) to fetch your data and you don't need [sitemap](https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap/), [gtag](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/), and [gatbsy-image](https://www.gatsbyjs.com/plugins/gatsby-image/) plugins. I ended up tearing these plugins out and just using `<img>` tags for images (with no negative effect on page speed). Gatsby's weakness is its overly big API surface area, try to avoid to bad stuff and just use the good stuff (router and static page generation).
 
