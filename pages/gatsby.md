@@ -26,7 +26,7 @@ I've been building an educational web application for the past few weeks, and I 
 - If you're building a very large app/site with dozens of pages
 - If you are working with a team (I think slower feedback loops will compound)
 
-Again, maybe the biggest factor that should affect your choice is just using what you are familiar with. I don't think choosing the latest tools for every single project isn't necessary or wise. 
+Again, maybe the biggest factor that should affect your choice is just using what you are familiar with. I don't think choosing the latest tools for every single project is necessary or wise. 
 
 If you do decide to go with Gatsby then here's my advice:
   
@@ -79,7 +79,7 @@ My `package.json` scripts:
 
 
 ## 4. Keep state management light 
-One of the reasons static side rendering is getting more popular is because it simplifies state management. Since Gatsby is a client side React framework we have to be thoughtful with state.
+One of the reasons server side rendering is getting more popular is because it simplifies state management. Since Gatsby is a client side React framework we have to be thoughtful with state.
 
 Redux is very powerful but I would avoid it if possible. In my experience Redux leads to chaotic hard-to-follow code and it splits up components into multiple files. I was able to use useState with prop drilling, React-Query, and browser storage (using AWS Amplify's Auth) instead of Redux and I'm really glad I did so. These choices massively simplified my app's code. 
 
