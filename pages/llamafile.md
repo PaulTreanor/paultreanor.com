@@ -83,7 +83,7 @@ At this point you should test the runllava.1d.sh out.
 
   
 
-4. **Brining it all together**
+4. **Bringing it all together**
 [Set xbar to run on startup](https://www.idownloadblog.com/2015/03/24/apps-launch-system-startup-mac/) and then restart you machine. 
 
 Then bookmark localhost:8080 in your browser so you can access it quickly. The model will always be waiting to answer you questions, just like ChatGPT (without the downtime).
