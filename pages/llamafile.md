@@ -11,62 +11,84 @@ tags:
   - Tutorial
 ---
 
-# Automatically running LLMs on startup on Mac
 
-[Llamafile](https://hacks.mozilla.org/2023/11/introducing-llamafile/) lets you run a local LLM as a single downloadable executable and chat with it on a localhost port. This gave me the idea to make this even more accessible by making the LLM always be running so I can bookmark the port and chat to it instantly at any time, like a backup ChatGPT.
+  
 
-It's fun experiment, and the LLM I'm running (Llava) is pretty impressive. On my M1 MacBook it is faster than ChatGPT (although not quite as smart with most tasks). Best of all it isn't that hard to setup.
+[Llamafile](https://hacks.mozilla.org/2023/11/introducing-llamafile/) lets you run a local LLM as an executable file that launches a chat UI on a localhost port. This gave me the idea to keep the LLM always running in the background, so I can bookmark the port in my browser and ask it questions with the click of a button. 
 
+Overall the model I'm running (Llava) is pretty impressive and it's very fast on my M1 MacBook. The model is great for generating names (better that GPT-4 imo) and very good at explaining technical topcs, but it's programming skills need some work. 
+
+Here's the steps make using a local LLM really convenient on MacOS. 
 
 1. **Download an LLM executable with Llamafile**
 
-This is very simple and [Simon Willison's blog post](https://simonwillison.net/2023/Nov/29/llamafile/) has great instructions for this. You want to download the file, make it executable with `chmod`, and then run the file to make sure it works. 
+  [Simon Willison's blog post](https://simonwillison.net/2023/Nov/29/llamafile/) has great instructions for this (his blog is always fantastic btw), but here's a quick summary:
 
-2. **Install Xbar** 
+```bash
+# Download the file
+curl -LO https://huggingface.co/jartine/llava-v1.5-7B-GGUF/resolve/main/llava-v1.5-7b-q4-server.llamafile
 
-Next up install [Xbar](https://xbarapp.com/). Xbar is a utility that lets you run launch agent scripts very easily on MacOS. Just download the `.dmg` and put it in your applications folder. 
+# Make it executable
+chmod 755 llava-v1.5-7b-q4-server.llamafile
 
+# Run the file
+./llava-v1.5-7b-q4-server.llamafile
+
+# Go to http://127.0.0.1:8080/ to play around with the model. 
+```
+
+  
+
+2. **Install Xbar**
+We're going to use a utility called [Xbar](https://xbarapp.com/) to run Llamafile in the background at startup. Just download the Xbar `.dmg` and put it in your applications folder.
+
+  
 3. **Create an Xbar plugin**
 
-
-An Xbar plugin is just a shell script that's placed in a special directory. When Xbar launches (it should launch on startup) it will run these scripts. 
+An Xbar plugin is just a shell script that's placed in a special directory. When Xbar launches it will run these scripts.
 
 Go to the xbar plugins directory:
 
+  
+
 ```bash
+# Go to the xbar plugins directory
 cd ~/Library/Application\ Support/xbar/plugins
-```
 
-Create a your file in this directory called `runLlava.1d.sh` and make the file executable. 
-
-```bash
+# Create a bash file called runLlava.1d.sh
 touch runLlava.1d.sh
+
+# Make the file executable
 chmod +x runLlava.1d.sh
 ```
 
-Then add some bash code that just calls the llamafile executable you downloaded in step 1:
+Now we can add some code to runLlava.1d.sh that calls the llamafile executable you downloaded in step 1:
 
 ```bash
 #!/bin/bash
 nohup /Users/paultreanor/ai/llamaFile/llamafile-server-0.1-llava-v1.5-7b-q4 &
 ```
 
-At this point you should test the script out. 
+
+At this point you should test the runllava.1d.sh out. 
+
+  
 
 ```bash
+
 ./runLlava.1d.sh
 
-# Then go to localhost:8080 to see the UI
+# Go to http://127.0.0.1:8080/ to make sure it's working
 ```
 
-4. **Test it out** 
+  
 
-Restart your machine and launch Xbar. I have Xbar set so it runs when I turn my Mac on. 
+4. **Brining it all together**
+[Set xbar to run on startup](https://www.idownloadblog.com/2015/03/24/apps-launch-system-startup-mac/) and then restart you machine. 
 
-Then bookmark localhost:8080 in your browser so you can access it whenever you want, just like ChatGPT.
+Then bookmark localhost:8080 in your browser so you can access it quickly. The model will always be waiting to answer you questions, just like ChatGPT (without the downtime).
 
-<img  src="/images/llamafile/bookmark.png" alt="llamafile web UI and bookmark">
+\
+&nbsp;
 
-
-
-
+<img src="/images/llamafile/bookmark.png" alt="llamafile web UI and bookmark">
