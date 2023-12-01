@@ -1,4 +1,4 @@
-@import 'highlight.js/styles/vs2015.css';
+@import 'highlight.js/styles/qtcreator-light.css';
 /* @import 'highlight.js/styles/intellij.css'; */
 
 
@@ -143,7 +143,7 @@ iframe {
 
 pre {
   @apply my-4;
-  @apply leading-6 
+  @apply leading-6 border border-solid border-slate-400 rounded-md;
 }
 
 .code {
