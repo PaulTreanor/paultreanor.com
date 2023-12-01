@@ -4,6 +4,9 @@ import Head from 'next/head'
 import { renderToStaticMarkup } from 'react-dom/server'
 import EmailHover from '../components/EmailHover' // Your path may be different
 
+import 'highlight.js/styles/qtcreator-light.css';
+
+
 import { getAllPageIds, getPageData } from '../lib/posts';
 
 export async function getStaticProps({ params }) {
