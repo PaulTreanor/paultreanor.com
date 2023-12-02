@@ -16,7 +16,7 @@ tags:
 
 [Llamafile](https://hacks.mozilla.org/2023/11/introducing-llamafile/) lets you run a local LLM as an executable file that launches a chat UI on a localhost port. This gave me the idea to keep the LLM always running in the background, so I can bookmark the port in my browser and ask it questions with the click of a button. 
 
-Overall the model I'm running (Llava) is pretty impressive and it's very fast on my M1 MacBook. The model is great for generating names (better that GPT-4 in my experience) and very good at explaining technical topics, but its programming skills need some work. 
+Overall the model I'm running (Llava, a fine tune of LLama) is pretty impressive and it's very fast on my M1 MacBook. The model is great for generating names (better that GPT-4 in my experience) and very good at explaining technical topics, but its programming skills need some work. 
 
 Here are the steps make a really convenient local LLM on MacOS:
 
@@ -92,3 +92,6 @@ Then bookmark localhost:8080 in your browser so you can access it quickly. The m
 &nbsp;
 
 <img src="/images/llamafile/bookmark.png" alt="llamafile web UI and bookmark">
+
+## Update
+This absolutely chews through my battery life even though it's idle in the background. I think making the script a little more event driven (maybe triggered by visiting port 8080) and not just running idle should be a decent fix for this. 
