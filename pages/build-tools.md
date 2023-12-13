@@ -17,3 +17,5 @@ I recently shared some strategies and inspiration for programmers who want to bu
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dG8FhbsxyrQ?si=FU-00rcALk0Xb0Nf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+[Link to slides](https://docs.google.com/presentation/d/e/2PACX-1vROZaa21-fSmBVuQQ_0SKnFGltGlyT7Yk3tKL0x8zqHbgHu-YKYJrCudyP8sTJ_l9JUAr_jzJ6ipdq0/pub?start=false&loop=false&delayms=3000)
