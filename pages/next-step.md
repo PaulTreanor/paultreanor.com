@@ -35,7 +35,7 @@ I can't thank fourTheorem enough for the opportunities they've given me. The tea
 
 ### A body of work
 
-Despite my best intentions, I've struggled to focus on side projects while working full time, so I'm setting aside the rest of the year to work on them. My plan is to spend the next 9ish months building cool things and then look for another job next Spring.
+Despite my best intentions, I've struggled to focus on side projects while working full time, so I'm setting aside the rest of the year to work on them. My plan is to spend the next 8ish months building cool things and then look for another job in the new year.
 
   
 
