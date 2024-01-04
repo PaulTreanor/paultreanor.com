@@ -92,8 +92,8 @@ export default function Home({ allPagesData }) {
           </a>
           <a 
             className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200" 
-            href="https://twitter.com/paultreanordev">
-            <ion-icon name="logo-twitter" />
+            href="https://linkedin.com/in/paultreanordev">
+            <ion-icon name="logo-linkedin" />
           </a>
 
           <a 
