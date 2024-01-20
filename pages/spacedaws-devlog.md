@@ -40,9 +40,9 @@ SpacedAWS will be the best way to study for AWS Certifications.
 
 **Current development status**
 
-I've been gradually developing this idea since November. So far, I've completed the DNS/frontend deployment, frontend CI/CD, a landing page, courses and flashcard UI, an email collection service, authentication, and a basic question-answering flow. 
+I've been slowly chipping away at this since November. So far, I've completed the DNS/frontend deployment, frontend CI/CD, a landing page, courses and flashcard UI, an email collection service, authentication, and a basic question-answering flow. 
 
-Here's a screenshot of some of the work:
+Here's a screenshot:
 
 <img src="/images/spacedaws/spacedAWS-demo-1.gif" alt="spacedaws current progress">
 
