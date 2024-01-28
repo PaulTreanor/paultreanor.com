@@ -28,6 +28,15 @@ I'm building <a href="https://spacedaws.com" target="_blank" rel="noopener noref
 </p>
 
 
+### 28/1/24 - CICD and E2E testing
+I added some end to end testing and created a CICD pipeline this week. 
+
+There's a lot of services working together in this project, and I'm working on it over a long period of time, so I think automated tests are a valuable investment. It's unreasonable to manually test every piece of functionality after every change I make. 
+
+I'm using a pre-commit git hook to run my tests and also ESLint. I prefer this to GitHub Actions for *personal* projects. Tests fail faster, before I even commit the changes, so there's no messing around with the GitHub website to see where it went wrong. 
+
+Small improvements over last week :)
+
 
 ### 19/1/24 - Why SpacedAWS? & current development status
 
