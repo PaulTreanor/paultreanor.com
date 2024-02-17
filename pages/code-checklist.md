@@ -11,6 +11,8 @@ tags:
   - Note
 ---
 
+# Code quality and engineering practices checklist
+
 Thank you [Gerard](https://www.linkedin.com/in/gerardpslowey) for helping me brainstorm this list, I'll try to keep it updated:
 
 ### General detection of code issues
