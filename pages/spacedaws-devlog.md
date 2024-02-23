@@ -33,7 +33,7 @@ This project was on the backburner for a few weeks while I was looking for a job
 
 I did some thinking about the architecture of the project, which was really helpful and clarified all the stuff I need to do. I'm going to be working on this for many more months, and just a few hours a week, so having a clear plan and a microservices architecture is helpful.
 
-<img src="/images/spacedaws/spacedAWS-architecture-1.png" alt="spacedaws architecture diagram">
+<img src="/images/spacedaws/spacedaws-architecture-1.png" alt="spacedaws architecture diagram">
 
 
 I started working on the service that delivers questions to the frontend. I'm using the Serverless Framework to deploy that infrastructure, although for now it's just a lambda and a JSON file behind API Gateway (gotta start somewhere). I'm calling this endpoint from the frontend using react-query, which I really like. It automatically retries fetches if there's a problem and it lets you easily create loading and error states. 
