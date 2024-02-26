@@ -30,17 +30,17 @@ Again, maybe the biggest factor that should affect your choice is just using wha
 If you do decide to go with Gatsby then here's my advice:
   
 ## 1. Limit complexity
-**YAGNI**. ``Save yourself`` the mental bandwidth and cut out as much Gatsby boilerplate as you possibly can: this will speed up your build times, the speed that you can work at, and it will save you from endless bugs. 
+**YAGNI**. Save yourself some mental bandwidth and cut out as much Gatsby boilerplate as you possibly can: this will speed up your build times, the speed that you can work at, and it will save you from endless bugs. 
 
 You [don't need the GraphQL](https://www.gatsbyjs.com/docs/how-to/querying-data/using-gatsby-without-graphql/) to fetch your data and you don't need [sitemap](https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap/), [gtag](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/), and [gatbsy-image](https://www.gatsbyjs.com/plugins/gatsby-image/) plugins. I ended up tearing these plugins out and just using `<img>` tags for images (with no negative effect on page speed). Gatsby's weakness is its overly big API surface area, try to avoid the bad stuff and just use the good stuff (router and static page generation).
 
 ## 2. Use Bun 
-Gatsby's developer feedback loops are a little painful but Bun helps tremendously with this (as well as having an M1 MacBook to be honest). `Bun install` literally runs twice as fast for my frontend as `npm install`, and `Bun run dev` is 2 full seconds faster than `npm run dev`. It helps a lot. 
+Gatsby's developer feedback loops are a little painful but Bun helps tremendously with this (as well as having an M1 MacBook to be honest). `bun install` literally runs twice as fast for my frontend as `npm install`, and `bun run dev` is 2 full seconds faster than `npm run dev`. It helps a lot. 
 
 ## 3. Use TypeScript
 TypeScript feels like a no-brainer for apps. TypeScript definitely allowed me to build this app faster. It might force you to take a little bit more time figuring out how your data will be structured (a good thing), but it will save you time trying to remember how your data is structured later on. 
 
-I just setup a `tsconfig.json` file and added type checking to my `dev` command. I've never seen this approach for setting up TypeScript in the wild before but it's very easy to setup and avoids more plugins and dependencies. 
+I just setup a `tsconfig.json` file and added type checking to my `dev` npm script. I've never seen this approach for setting up TypeScript in the wild before but it's very easy to setup and avoids more plugins and dependencies. 
 
 My tsconfig.json:
 ```json

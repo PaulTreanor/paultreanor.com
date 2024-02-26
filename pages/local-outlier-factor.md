@@ -136,7 +136,7 @@ def  local_outlier_factor(A, nearest_neighbours, classifier, k):
 
 ### Performance
 
-LOF is slow because since it essentially runs KNN *k<sup>2</sup>+1* times. If performance is important it may be worth looking at the [local *distance* outlier factor](https://doi.org/10.1145/342009.335388) algorithm instead. 
+LOF is slow because since it essentially runs KNN `k²+1` times. If performance is important it may be worth looking at the [local *distance* outlier factor](https://doi.org/10.1145/342009.335388) algorithm instead. 
 
 
 ### Resources

@@ -26,7 +26,7 @@ I made the app to remove some friction I had while using the ChatGPT webapp:
 I'm reasonably happy with how PromptMarker solves these problems. 
 
 ### How I use the app
-If I find myself typing some sort of pre-prompt context more than once, I'll save it to the sidebar. This is specifically pretty useful when for programming, I don't have to retype an explanation that I'm using `react`, `electron-store`, and `tailwindCSS` (for example) before asking it to write me a component - I can just click on the sidebar instead. 
+If I find myself typing some sort of pre-prompt context more than once, I'll save it to the sidebar. This is specifically pretty useful when for programming, I don't have to retype an explanation that I'm using React, electron-store, and TailwindCSS (for example) before asking it to write me a component - I can just click on the sidebar instead. 
 
 ### Links
 - [Download the app](https://paultreanor.gumroad.com/l/promptmarker)

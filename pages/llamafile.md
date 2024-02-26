@@ -62,7 +62,7 @@ touch runLlava.1d.sh
 chmod +x runLlava.1d.sh
 ```
 
-Now we can add some code to runLlava.1d.sh that calls the Llamafile executable you downloaded in step 1:
+Now we can add some code to `runLlava.1d.sh` that calls the Llamafile executable you downloaded in step 1:
 
 ```bash
 #!/bin/bash
@@ -70,7 +70,7 @@ nohup /Users/paultreanor/ai/llamaFile/llamafile-server-0.1-llava-v1.5-7b-q4 &
 ```
 
 
-At this point you should test the runLlava.1d.sh out. 
+At this point you should test the `runLlava.1d.sh` out. 
 
   
 

@@ -23,7 +23,7 @@ Before you can notarize your app, you need to join the Apple Developer Program w
 Mercifully these steps are a one-time ordeal for your first MacOS app. For subsequent apps, [electron-builder should handle code-signing](https://www.electron.build/code-signing.html) as part of its build process so long as your Keychain credentials are set up correctly.
 
 ### Notarizing
-The [Electron Notarize](https://github.com/electron/notarize) npm module is helpful here. To use the module create the files *notarize.js* and *.env*. **You must add *.env* to your `.gitignore` file** as it contains secrets that you don't want to commit to your GitHub repo.
+The [Electron Notarize](https://github.com/electron/notarize) npm module is helpful here. To use the module create the files `notarize.js` and `.env`. **You must add `.env` to your `.gitignore` file** as it contains secrets that you don't want to commit to your GitHub repo.
 
 **notarize.js**
 ```js
