@@ -183,8 +183,12 @@ pre {
 /* Note highlight.js stylesheets need to be imported directly into the .js react file to be applied */
 
 .inline-code-custom-style {
-  background-color: #f0f0f0;
-  padding: 2px 4px;
+  background-color: #f7f6f6;
+  padding: 2px 2px;
   border-radius: 4px;
-  font-family: monospace;
+  /* font-family: monospace; */
+  border: 1px solid #d5d6d8;
+
+
 }
+
