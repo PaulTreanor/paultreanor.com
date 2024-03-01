@@ -12,7 +12,8 @@ tags:
 ---
 
 # Automatically running LLMs at startup on Mac
-  
+
+**March 2024 Update**: [Thankfully there's better ways to run this sort of things now!](https://lmstudio.ai/)
 
 [Llamafile](https://hacks.mozilla.org/2023/11/introducing-llamafile/) lets you run a local LLM as an executable file that launches a chat UI on a localhost port. This gave me the idea to keep the LLM always running in the background, so I can bookmark the port in my browser and ask it questions with the click of a button. 
 
