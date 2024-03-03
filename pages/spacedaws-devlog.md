@@ -27,6 +27,15 @@ I'm building <a href="https://spacedaws.com" target="_blank" rel="noopener noref
 
 </p>
 
+### 1 March 2024 - Throwing in the flag
+So I'm giving up on SpacedAWS, at least for the foreseeable future. There's still months of work needed to get a shippable MVP and my interest in the project is just not there any more, so I'm throwing in the flag. 
+
+It's a good lesson about keeping side projects small. Whatever I do next will be something I can get into user's hands within 5 hours of work. Something I can release very small and then build out. 
+
+If you're interested in taking on the project please email me, I still think it's a killer business idea. An idea and an unfinished codebase aren't worth much so I'm happy to give it away for free.
+
+Side projects are great because they're easy to start an easy to quit. Quitting is cool, on to the next thing!
+
 ### 23 February 2024 - Architcture and getting started on backend
 
 This project was on the backburner for a few weeks while I was looking for a job. I got a job so I've been able to get back to it this week.
@@ -72,5 +81,4 @@ Here's a screenshot:
 I'm a few months away from an MVP as this is a nights and weekend project. I still need to develop and integrate the course content, build the user progress tracking system, build the question delivery system, build the payments system, and then make sure all that stuff's glued together right.
 
 How do you eat an elephant? One bite at a time. 
-
 
