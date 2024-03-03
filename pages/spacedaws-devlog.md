@@ -27,8 +27,8 @@ I'm building <a href="https://spacedaws.com" target="_blank" rel="noopener noref
 
 </p>
 
-### 1 March 2024 - Throwing in the flag
-So I'm giving up on SpacedAWS, at least for the foreseeable future. There's still months of work needed to get a shippable MVP and my interest in the project is just not there any more, so I'm throwing in the flag. 
+### 1 March 2024 - Throwing in the towel
+So I'm giving up on SpacedAWS, at least for the foreseeable future. There's still months of work needed to get a shippable MVP and my interest in the project is just not there any more, so I'm throwing in the towel. 
 
 It's a good lesson about keeping side projects small. Whatever I do next will be something I can get into user's hands within 5 hours of work. Something I can release very small and then build out. 
 
