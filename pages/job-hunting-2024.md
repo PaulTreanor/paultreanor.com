@@ -16,7 +16,7 @@ tags:
 Job hunting is soul crushing, but I managed to navigate the rough market in early 2024 while getting a steady-ish stream of interviews and an offer I'm  really happy with. Here's what worked for me.
 
 ## Get on linkedIn
-Yes it's awful, but I'm glad I got over myself and made an account. LinkedIn has built in social proof via your connections, which makes it more valuable than jus cold applying to jobs with a CV.
+Yes it's awful, but I'm glad I got over myself and made an account. LinkedIn has built in social proof via your connections, which makes it more valuable than just cold applying to jobs with a CV.
 
 LinkedIn puts you in touch with recruiters. When you apply for a job you should message the recruiter who posted the job, they almost always respond (use the Premium free trial to message them).
 
