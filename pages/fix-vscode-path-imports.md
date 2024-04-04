@@ -14,9 +14,7 @@ tags:
 
 # Fixing VSCode "go to definition" in webpack projects
 
-## Some context and the issue
-
-Right clicking on an import statement in VSCode, and selecting "go to definition" (or use the `F12` keyboard shortcut), opens the file where the imported object was defined in a new tab. This is a very helpful feature when traversing components and dependencies across very large React projects. This wasn't working for me with the codebase I maintain at Rapid7.
+Right-clicking an import statement in VSCode, and selecting "go to definition" (`F12` keyboard shortcut) opens the file of the defined import in a new tab. This is a handy feature when traversing components and dependencies arcross a big React project, but for some reason it didn't work with the codebase I maintain at Rapid7. 
 
 The issue was caused by VSCode not being able to resolve the path provided in the `import` statement, because my import paths were actually wrong. For example, in a file called `scanConfigTableActions.js`, an object is imported like this:
 
@@ -26,7 +24,7 @@ import * as historyUtils from 'utils/historyUtils';
 
 The code runs fine, but `historyUtils.js` is in a completely different part of the project's file tree, so `utils/historyUtils` is not the correct relative import between the two files.
 
-```md
+```txt
 src/
 └── js/
     ├── components/
