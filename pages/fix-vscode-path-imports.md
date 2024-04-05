@@ -39,11 +39,12 @@ src/
 The reason this non-relative import path resolves OK is because the project's `webpackconfig.js` defines `src/js` as a path to resolve module from, meaning that import statements don't need to specify this part of the path. This means that `utils/historyUtils.js` is the same as writing `src/js/utils/historyUtils.js`.
 
 This is what was included in the project's `webpack.config.js`:
+
 ```json
 {
-resolve: {
-    modules: [path.resolve(__dirname, 'src/js'), 'node_modules'],
-},
+"resolve": {
+    "modules": [path.resolve(__dirname, "src/js"), "node_modules"],
+}
 ```
 
 VSCode's tooling isn't aware of these paths though. You have to let VSCode know about this by adding the module resolution paths to a jsconfig.json or tsconfig.json file at the root of your project.
@@ -55,7 +56,7 @@ In my case, I added `src/js` as a path:
   "compilerOptions": {
     "baseUrl": ".", // This must be specified if "paths" is.
     "paths": {
-      "utils/*": ["src/js/utils/*"],
+      "utils/*": ["src/js/*"],
     }
   },
   "include": ["src/**/*"]
