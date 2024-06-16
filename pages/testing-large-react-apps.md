@@ -2,7 +2,7 @@
 title: Testing large React applications
 short: Setting up a local LLM on Mac so that it's always ready for your questions
 date: '2024-06-16'
-slug: testing-large-react-app
+slug: testing-large-react-apps
 createdAt: '2023-06-16'
 img: blog-2.jpg
 
@@ -14,7 +14,7 @@ tags:
 # Testing large React applications
 
 
-I've been writing a lot of tests for large applications at Rapid7, and I think the strategies carry over to small projects nicely. This post is focused on writing component level tests with React Testing Library and Jest. 
+I've been writing a lot of tests for large applications at Rapid7 and I think the strategies for writing tests with React Testing Library and Jest carry over nicely to small projects.
 
 ## Group tests by source files
 For large applications it's good to write tests in files that correspond with the source files they are testing. So `login.ts` should be tested by `login.test.ts`, and `logout.ts` should be tested by `logout.test.ts`. They shouldn't be tested in a single `auth.test.ts` file. The layout of your `/tests` directory should mirror the `/src` directory - [this pattern is very common in Java projects.](https://symflower.com/en/company/blog/2022/best-practices-for-test-files/)
@@ -22,7 +22,6 @@ For large applications it's good to write tests in files that correspond with th
 As the number of tests grows, this lets us keep the relationships between our application and its tests manageable. The downside of this is that we are organising tests based on implementation rather than the behaviour we actually want to test. 
 
 A project directory structure where tests mirror src:
-
 ```txt
 /react-app
 |-- /node_modules                      
