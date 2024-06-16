@@ -122,7 +122,7 @@ describe('Dashboard', () => {
             expect(userEmail).toHaveTextContent('average.joe@example.com');
         });
 
-        test('allows user to delete important thing', () => {
+        test('does not allow user to delete important thing', () => {
             const handleDelete = screen.getByTestId('delete-button');
             expect(deleteButton).toBeInTheDocument();
             fireEvent.click(deleteButton);
