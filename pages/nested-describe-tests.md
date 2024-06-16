@@ -22,7 +22,8 @@ For large applications it's good to write tests in files that correspond with th
 As the number of tests grows, this lets us keep the relationships between our application and its tests manageable. The downside of this is that we are organising tests based on implementation rather than the behaviour we actually want to test. 
 
 A project directory structure where tests mirror src:
-```
+
+```txt
 /react-app
 |-- /node_modules                      
 |-- /src                     
