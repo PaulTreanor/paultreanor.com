@@ -53,6 +53,7 @@ The nice thing about referrals is that when your application goes into the void,
     <li>Make peace with Workday...yes it's vile software, but suck it up and keep re-entering your CV for each role. It's a small annoyance in the grand scheme of things.</li>
     <li>There is far more fullstack roles than frontend or backend.</li>
     <li>Make a reminder in your calendar to cancel your LinkedIn Premium Free trial after 1 month or you will be out €40. I'm still sour about this...</li>
+    <li>January to May is ideal for job hunting due to new budgets and initiatives driving hiring. From mid-June to September things slowdown as staff take annual leave, and in November to December hiring basically stops for the holidays. If you start looking in early January you can have a 5 month run before hiring slows down for summer.</li>
 </ol>
 
  I'm not an expert but I hope this helps someone. In the interest of being as transparent as possible here's the CV that got me the offer I accepted:
