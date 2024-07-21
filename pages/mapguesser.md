@@ -13,7 +13,7 @@ tags:
 
 # 🌎 MapGuesser.com
 
-I made [MapGuesser](http://mapguesser.com), a GeoGuessr inspired geography game. It's pretty simple but I'm pretty proud of what I got done and people seem to be having with it 🎉
+I made [MapGuesser](http://mapguesser.com), a GeoGuessr inspired geography game. It's pretty simple but I'm pretty proud of what I got done and people seem to be having fun with it 🎉
 
  I was hoping to create a good multiplayer experience like [skribbl.io](https://skribbl.io/) but my free time just disappeared so I decided to release my frontend only version as is. Time and creativity are pretty seasonal so you just have to embrace that 🤷‍♂️.
 
