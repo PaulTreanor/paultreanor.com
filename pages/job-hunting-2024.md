@@ -48,7 +48,7 @@ The nice thing about referrals is that when your application goes into the void,
     <li>For the first 3 weeks of my job search I got few responses and outreach from recruiters. It took a while for the search to warm up.</li>
     <li>Move quickly. Apply to new jobs right away. Reply to recruiters immediately. Ring people back ASAP. Schedule interviews for the earliest possible slot. This compresses your job hunt and gives you more opportunities.</li>
     <li>Don't stress out about whether or not a job is a good fit before you get an offer. It's just wasted anxiety.</li>
-    <li>ATS systems can't read fancy Figma CVs. When I redid mine in Google Docs PDF, I saw a notable uptick in responses.</li>
+    <li><s>ATS systems can't read fancy Figma CVs. When I redid mine in Google Docs PDF, I saw a notable uptick in responses. </s><b> Update:</b> <a>Apparently ATS systems are BS</a> so this could just have been a coincidence.</li>
     <li>Almost all tech jobs in Ireland are in Dublin or Belfast and require you to be in the office at least 3 days a week.</li>
     <li>Make peace with Workday...yes it's vile software, but suck it up and keep re-entering your CV for each role. It's a small annoyance in the grand scheme of things.</li>
     <li>There is far more fullstack roles than frontend or backend.</li>
