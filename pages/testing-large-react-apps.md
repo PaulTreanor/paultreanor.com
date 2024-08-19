@@ -135,5 +135,4 @@ describe('Dashboard', () => {
 
 [Ken C Dodds suggests avoiding describes when writing tests](https://kentcdodds.com/blog/avoid-nesting-when-youre-testing), so take my recommendations with a pinch of salt. His use-case is slightly different though, as he suggests grouping tests by behaviour being tested, rather than the source files being tested. I recommend grouping tests by their source file, and then grouping by behaviour using describes within each test file. 
 
-These details don't matter at all on small projects, but sometimes small projects turn into big projects, and having thousands of tests with no real schema to organise them would be bad. 
-
+You'd think these details wouldn't matter for small codebases, but we naturally have a lot less time and attention to give them, so organising the tests in a straightfoward way is very useful. 
