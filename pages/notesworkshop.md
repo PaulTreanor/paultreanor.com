@@ -30,7 +30,11 @@ I did a talk at a BelfastJS meetup a while back called "Power Tools for Digital 
 It's a markdown editor with an editing pane on the left and a live preview on the right, similar to how you edit markdown in VSCode.
 The interesting part it that **you can write your own rules that are applied to the rendered markdown**. 
 
-Users can create conditional rules that apply effects to the rendered markdown. So for example a user could make the following rule: If a line contains the words "important", "urgent", or "ASAP" (*this is the condition*) then that line should be bold (*this is the effect*). The demo is simple but I think it has enough options for conditions and effects to get the idea across.
+Users can create conditional rules that apply effects to the rendered markdown. 
+
+So for example a user could make the following rule: If a line contains the words "important", "urgent", or "ASAP" (*this is the condition*) then that line should be bold (*this is the effect*). 
+
+The demo is simple but I think it has enough options for conditions and effects to get the idea across.
 
 It's basically **a human readable DSL that's programmed via UI elements** like dropdowns and buttons. This feels way more accessible than end user programming tools like Excel or AutoHotKey which are basically just programming languages. 
 
