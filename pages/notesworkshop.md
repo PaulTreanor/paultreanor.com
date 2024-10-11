@@ -25,7 +25,8 @@ tags:
 
 I did a talk at a BelfastJS meetup a while back called "Power Tools for Digital DIYers". I didn't post it anywhere because I don't have a great recording of it, but I did make a cool demo for the talk, so I might as well share it. 
 
-[Here it is!](https://notesworkshop.vercel.app/) - this is very much a desktop only demo, it won't work on mobile. It's a note-taking app that you can programming like Excel. I called it NotesWorkShop. **It's very very rough around the edges** but I am very proud of the idea
+[Here it is!](https://notesworkshop.vercel.app/) - it's a bit cramped on mobile and it's very rough around the edges. It's a note-taking app that you can programming like Excel.
+
 ## How do you use it. 
 It's a markdown editor with an editing pane on the left and a live preview on the right, similar to how you edit markdown in VSCode.
 The interesting part it that **you can write your own rules that are applied to the rendered markdown**. 
