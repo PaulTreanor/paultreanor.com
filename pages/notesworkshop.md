@@ -23,15 +23,14 @@ tags:
 
 # A note-taking app that you can program like Excel...
 
-A few weeks ago I gave a talk called ""Power Tools for Digital DIYers" at a BelfastJS meetup. I didn't post it anywhere because I don't have a great recording of it, but I as part of the talk I made a cool demo, so I figured I'd share it here.
-
-**[So here it is!](https://notesworkshop.vercel.app/)** - it's very rough around the edges and not really usable on mobile, but it works as a proof of concept: It's a note-taking app that you can program like Excel.
+I made a demo for [a notes taking app that you can program like excel](https://notesworkshop.vercel.app/). It's very rough around the edges and not really usable on mobile, but I'm happy wiht how the proof of concept turned out. 
 
 ## How you use it
-It's a markdown editor with an editing pane on the left and a live preview on the right, similar to how you edit markdown in VSCode.
-The interesting part it that **you can write your own rules that are applied to the rendered markdown**. Rules apply effects to the text when the user's conditions are met. 
+You right markdown in the left pane, and theres a live preview on the right, just like how you edit markdown in VSCode. There interesting part is that **you can write your own rules that are applied to the rendered markdown**. These rules are basically combinations of *conditions* that apply *effects* when met. 
 
-So for example a user could make the following rule: If a line contains the words "important", "urgent", or "ASAP" (*this is the condition*) then that line should be bold (*this is the effect*). The demo only has a handful of built in conditions and effects, but you can imagine a more fully featured version.
+So for example here's a rule a user could make: If a line contains the words "important", "urgent", or "ASAP" (*this is the condition*) then that line should be bold (*this is the effect*). 
+
+The demo only has a handful of built in conditions and effects, but you can imagine a more fully featured version.
 
 It's basically **a human readable DSL that's programmed via UI elements** like dropdowns and buttons. This feels way more accessible than something like excel which is basically just a programming language, but also more flexible than Notion. 
 
