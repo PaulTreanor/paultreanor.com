@@ -1,6 +1,6 @@
 ---
 
-title: Tiny Calendar
+title: 📅 Tiny Calendar
 
 short: A browser extension for quickly opening dates in Google Calendar
 
