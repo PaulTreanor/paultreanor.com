@@ -15,14 +15,14 @@ tags:
 
 I wanted to share some thoughts about how programmers might navigate the AI advancements that the next decade is going to bring. At the end of the day it's all just speculation really, but it's reassuring to have some personal direction. 
 
-My ideas around career direction and strategy assume that a few of my strongly held hunches around AI are true:
+My ideas around this assume that a few of my strongly held hunches around AI are true:
 
 1. AI is a [general-purpose technology](https://en.wikipedia.org/wiki/General-purpose_technology) and a [megatrend](https://en.wikipedia.org/wiki/Megatrend), not a bubble. 
 2. AI will make all of software development, including the job market, more competitive. 
 3. Even if AI research stopped today, it would take decades to [realise the full capabilities of current models](https://interconnected.org/home/2023/11/24/digestion).
 
 ## AI will disrupt tech domains unevenly
-I think AI agents will find some coding environments fairly easy to sandbox. It's already happening with [browsers](https://www.anthropic.com/news/3-5-models-and-computer-use) and [REPL type scripting environments](https://platform.openai.com/docs/assistants/tools/code-interpreter), and it's easy to imagine container based apps being easy to replicate and test as well because that's what containers were designed for. 
+I think AI agents will find some coding environments fairly easy to sandbox. It's already happening with [browsers](https://www.anthropic.com/news/3-5-models-and-computer-use) and [REPL type scripting environments](https://platform.openai.com/docs/assistants/tools/code-interpreter), and it's easy to imagine container based apps being easy to replicate and test as well (because that's what containers were made for). 
 
 On the other hand intricate UIs, cloud systems, AI/VR environments, and embedded systems are going to be much harder for AI agents to sandbox. I don't think we'll have a general AI that can run effective tests on a wide range of embedded systems for a few decades (imagine a robot that can test hearing aids and ABS braking systems for lorries).
 
