@@ -13,6 +13,8 @@ tags:
 
 # 🔖 PromptMarker
 
+**Update 2024**: *I'm retiring this project because I pretty much never use ChatGPT since Claude Sonnet 3.5 game out. Since then OpenAI has made some small changes to the ChatGPT UI so some PromptMarker features no longer work and I see no need to update the application anymore.*
+
 I made a ChatGPT MacOS app called PromptMarker which lets you save prompts and quickly switch between them. You can download the app at [Gumroad](https://paultreanor.gumroad.com/l/promptmarker).
 
 <img  src="/images/promptmarker/screenshot.png" alt="PromptMarker">
