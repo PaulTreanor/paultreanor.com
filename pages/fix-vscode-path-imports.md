@@ -12,8 +12,14 @@ tags:
   - Tutorial
 ---
 
-# Fixing VSCode "go to definition" in webpack projects
+# Fixing VSCode "go to definition" in webpack projects (and why import path aliases are bad)
 
+### Cause of the issue 
+This issue stems from path aliases instead of absolute paths for module imports. Path aliases can seem a little bit neater than having paths like `.../../../components/app/scanConfigs/scanConfigTableActions.js` throughout your codebase but they add a needless and compounding amount of complexity to your project. As you layer tooling like a bunder, TypeScript, or monorepo tooling you need to add configuration for your path aliases for each of these or your IDE won't work as expected. 
+
+Path aliases are a pointless abstraction, but if you're stuck with them, here's how to fix them in webpack. 
+
+### Fixing the issue with webpack
 If you press Command and left-click an import statement in VSCode, it opens the file of the defined import in a new tab. This is a handy feature when traversing components and dependencies across a big React project, but for some reason, it didn't work with the codebase I maintain at Rapid7. 
 
 The issue was caused by VSCode not being able to resolve the path provided in the `import` statement, because my import paths were actually wrong. For example, in a file called `scanConfigTableActions.js`, an object is imported like this:
