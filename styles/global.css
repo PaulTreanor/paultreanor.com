@@ -192,3 +192,33 @@ pre {
 
 }
 
+ion-icon {
+  pointer-events :none;
+}
+
+[data-tooltip] {
+	position: relative;
+}
+
+[data-tooltip]:hover::before {
+	content: attr(data-tooltip);
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 5px 10px;
+	border-radius: 6px;
+	background: #333;
+	color: white;
+	font-size: 14px;
+	white-space: nowrap;
+	/* Optional: add animation */
+	opacity: 0;
+	animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+	}
+}

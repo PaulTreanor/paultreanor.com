@@ -96,7 +96,12 @@ export default function Home({ allPagesData }) {
             href="https://linkedin.com/in/paultreanordev">
             <ion-icon name="logo-linkedin" />
           </a>
-
+          <a 
+            className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200" 
+            data-tooltip="pauls.garden"
+            href="https://pauls.garden/u/paultreanor">
+            <ion-icon name="leaf-outline" />
+          </a>
           <a 
             className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200" 
             href="https://paultreanor.com/rss.xml">
