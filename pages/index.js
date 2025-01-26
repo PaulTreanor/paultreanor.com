@@ -22,9 +22,6 @@ export default function Home({ allPagesData }) {
   const filteredBlogPosts = allPagesData.filter((post) => {
     
     const lowerCaseSearch = search.toLowerCase();
-    console.log(search.toLowerCase())
-    console.log(post.tag)
-    // console.log(post.tag.toLowerCase())
 
     const lowerCaseTagsString = post.tags[0].toLowerCase()
     if (search === '') {
