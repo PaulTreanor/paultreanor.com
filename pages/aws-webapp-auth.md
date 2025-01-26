@@ -75,9 +75,9 @@ npm install aws-amplify
 
 
 ### Step 2: Add your Cognito details to a .env file 
-Different frameworks handle environment variables in different ways, for Gatsby your `.env.development` / `.env.production` file would look like this (I just made these specific values up):
+Different frontend frameworks will handle handle environment variables in different ways so you'll have to consult the docs for whatever you are using. If you are still using Gatsby for some reason like I often do, then your `.env.development` / `.env.production` file would look like this (I just made these specific values up):
 
-```
+```bash
 GATSBY_COGNITO_USER_POOL_ID=us-east-1_Ra7CjsEwl
 GATSBY_COGNITO_CLIENT_ID=akav9na83n2vna9n2010nvn2m2
 ```
