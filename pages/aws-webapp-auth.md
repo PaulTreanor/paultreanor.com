@@ -13,13 +13,12 @@ tags:
 
 # AWS Cognito and Amplify auth for React apps (without the Amplify CLI)
 
-The Amplify frontend library is great for auth, but the docs don't make it very obvious how to use it without the Amplify CLI. Here's some notes on provisioning a Cognito userpool with AWS SAM and using the userpool as auth in a webapp. 
+The Amplify frontend library is great for auth, but the Amplify docs don't make it very obvious how to use it without the slightly clunky Amplify CLI. Here are my notes on provisioning a Cognito userpool with AWS SAM and using it with the aws-amplify npm library to add auth in a webapp. 
 
 ## Provisioning a Cognito userpool and userpool client in AWS SAM
 
-The Cognito userpool and userpool client are the actual backend infrastructure that manages user accounts. You can think of a userpool as a database for accounts. Here's an [AWS SAM](https://aws.amazon.com/serverless/sam/) that can provision these resources.
+The Cognito userpool and userpool client are the actual backend infrastructure that manages user accounts. You can think of a userpool as a database for accounts. Here's an [AWS SAM](https://aws.amazon.com/serverless/sam/) template.yaml that can provision these resources:
 
-template.yaml
 ```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
@@ -76,7 +75,7 @@ npm install aws-amplify
 
 
 ### Step 2: Add your Cognito details to a .env file 
-Different frameworks handle environment variables in different ways, for Gatsby your `.env.development` / `.env.production` file would look like this (I made the values up):
+Different frameworks handle environment variables in different ways, for Gatsby your `.env.development` / `.env.production` file would look like this (I just made these specific values up):
 
 ```
 GATSBY_COGNITO_USER_POOL_ID=us-east-1_Ra7CjsEwl
