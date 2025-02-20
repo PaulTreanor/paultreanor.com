@@ -14,7 +14,7 @@ tags:
 # Low-Hanging Fruits of JS build and test times
 
 ### Speeding up Jest test suite 
-The InsightAppSec frontend has about 50k unit tests written in Jest. Depending on whether or not your laptop's plugged in, they take in or around 6 minutes to run. I recently spent an afternoon doing some benchmarking to try and make them run faster. 
+The InsightAppSec frontend has about 4000 unit tests written in Jest. Depending on whether or not your laptop's plugged in, they take in or around 6 minutes to run. I recently spent an afternoon doing some benchmarking to try and make them run faster. 
   
 Using Node 20 instead of Node 18 made the test suite run 35% faster (5m31s to 3m21s), which is a really nice improvement. 
 
