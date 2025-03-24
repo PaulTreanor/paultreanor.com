@@ -1,6 +1,6 @@
 ---
 
-title: You can download and run old Chrome versions easily with Puppeteer 
+title: Easily downloading and running old Chrome versions
 
 short: A simple way to launch downgraded browser versions. 
 
