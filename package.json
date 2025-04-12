@@ -2,14 +2,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start"
+    "build": "node scripts/buildRss.js && next build && next export",
+    "start": "next start",
+    "rss": "node scripts/buildRss.js"
   },
   "dependencies": {
     "date-fns": "^2.29.3",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.8.0",
-    "next": "latest",
+    "next": "12.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rehype": "^12.0.1",
