@@ -25,3 +25,10 @@ yarn-error.log*
 
 # fonts
 /public/fonts
+
+
+# ai
+claude.md
+
+# rss
+public/rss.xml
