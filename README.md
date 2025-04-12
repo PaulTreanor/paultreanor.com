@@ -46,9 +46,14 @@ serve out
 
 
 
-### Build RSS feed...
+### RSS Feed
 
-1. Add "type": "module" to package.json
-2. Run node scripts/buildRss.js
-3. Delte "type": "module" from package.json
-4. Build the site
+The RSS feed is automatically generated when you run `npm run build`. The feed is available at `/rss.xml`.
+
+To generate the RSS feed separately:
+
+```bash
+npm run rss
+```
+
+This creates/updates the RSS feed at `public/rss.xml` with all your markdown posts from the pages directory.
