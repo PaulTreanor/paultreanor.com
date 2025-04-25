@@ -14,10 +14,10 @@ tags:
 # Studying is 100 times easier than it used to be
 Deep Research is available to for all free tier ChatGPT and Gemini accounts. It can generate a report on anything and the quality of the final report is astounding (even the free versions). 
 
-So studying technical stuff just got 100 times easier! You can be really specific about what you want to learn and what you struggle with. You can ask it to give 10 complex examples. You can ask it to be funny if you need to learn something boring. I don't see how AI study assistants could get any better in the future, Deep Research is just that good. There's no point in waiting around!
+I really think it has made studying 100 times easier. You can specify exactly what you need to know about. You can ask it to give you many diverse examples. You can ask it to be funny if you're learning something boring. **It's a tool that generates an exact textbook chapter for any topic you need to learn about.** 
 
-There's a little bit of a double edged sword here - AI makes learning easier, but it also commodifies a lot of traditional software developer knowledge and skills. I think the best approach is to focus on learning mental models around core technologies and avoid over-investing in things that don’t generalise well (e.g., obscure AWS services or LeetCode problems).
+There's a double edged sword here though - AI makes learning easy, but it commodifies a lot of software engineering knowledge and skills. I am trying to focus on deeply learning mental models around core technologies and I'm avoiding over-investing in things that don't generalise well (e.g., obscure AWS services or LeetCode problems). 
 
-There's still a lot of value in using Deep Research to just get the gist of things though! [Knowing what's possible and being vaguely familiar](https://www.pluralsight.com/resources/blog/cloud/the-career-changing-art-of-reading-the-docs) with the nooks and crannies of a core technology is useful. 
+There's value in just getting the gist of things. [Being vaguely familiar](https://www.pluralsight.com/resources/blog/cloud/the-career-changing-art-of-reading-the-docs) with all the nooks and crannies of a core technology useful and Deep Research excels at providing this kind of holistic birds eye view. 
 
-Hardly anyone does significant independent study in our field, but it pays off very fast. I've been solidifying my understanding of HTTP, JS exceptions and error handling, and containerisation over the past few weeks and I've benefited from it already. I alsouse it to research personal questions as well and the reports are always worth the read. This is one of my favourite software products ever. 
+Basically no one does significant independent study in our field, but it pays off really fast. 
