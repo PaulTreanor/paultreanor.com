@@ -12,7 +12,7 @@ tags:
 ---
 
 # Studying is 100 times easier than it used to be
-Google Gemini's standard Deep Research tool is available for free to everyone with a Google account. It's an AI research tool that can generate reports on basically anything, from very specific historical events, to sports psychology papers that address a specific question you have, to very technical programming questions. It crawls hundreds of websites and the quality of the final report is astounding. 
+Deep Research is available to for all free tier ChatGPT and Gemini accounts. It can generate a report on anything and the quality of the final report is astounding (even the free versions). 
 
 So studying technical stuff just got 100 times easier! You can be really specific about what you want to learn and what you struggle with. You can ask it to give 10 complex examples. You can ask it to be funny if you need to learn something boring. I don't see how AI study assistants could get any better in the future, Deep Research is just that good. There's no point in waiting around!
 
