@@ -25,7 +25,7 @@ You can get really creative with putting state in the URL. [urltodo.com](https:/
 I have a few ideas here: 
 - Copy-paste it from your notes app into a text area. 
 - Upload it with the file API (`<input type="file">`) then let your app display it. The [Ink & Switch Potluck demo](https://www.inkandswitch.com/potluck/demo/?openDocument=splitwise) lets users create a document in the app and then re-upload it. 
-- Read it in from a resource in a public URL that can be edited from another application, like a GitHub Gist (you could even use JSON with this). For example, [a workout analyser that reads structured data from a note you update manually](https://www.pauls.garden/gainsreport/) (please excuse the vibecoding).
+- Read it in from a resource in a public URL that can be edited from another application, like a GitHub Gist (you could even use JSON with this). 
 - Use [Google Sheets as a database](https://www.youtube.com/watch?v=K6Vcfm7TA5U)
 - You could do something interesting with iFrames?
 
