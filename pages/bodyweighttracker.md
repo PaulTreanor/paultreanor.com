@@ -14,7 +14,7 @@ img: blog-2.jpg
 
 tags:
 
-- Tutorial
+- Release
 
 ---
 ## bodyweighttracker.com, AWS CDK, and ShadCN/UI thoughts
