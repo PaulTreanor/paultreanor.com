@@ -26,9 +26,11 @@ You can install it by running `npm install -g fs2md` and you can read [the docum
 I originally created it to quickly copy the contents of specific subdirectories directly into Gemini's web chat, which can sometimes be more useful than using AI coding agents when debugging because it only uses context you provide to it. fs2md makes it easier to get this context. 
 
 **Features**
+
 You can point it at any directory you want it to copy, and it takes optional flags for outputting to a file, ignoring patterns, only including specific file extensions, and limiting larger files (by token size or bytes).
 
 **How I like to use it**
+
 I find it's useful to grab the contents of a folder and then copy that into sublime text or another markdown editor to create a useful prompt. 
 
 
