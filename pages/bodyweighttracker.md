@@ -19,7 +19,7 @@ tags:
 ---
 ## bodyweighttracker.com, AWS CDK, and ShadCN/UI thoughts
 
-I made a webapp for tracking my bodyweight at [bodyweighttracker.com](www.bodyweighttracker.com/). It's not  special or interesting in anyway except that it doesn't have ads or a bloated feature set.
+I made a webapp for tracking my bodyweight at [bodyweighttracker.com](https://www.bodyweighttracker.com/). It's not  special or interesting in anyway except that it doesn't have ads or a bloated feature set.
 
 This was my first time exploring AWS CDK and even though this was a small project it's just so clear to me that there's no reason to use AWS SAM or the Serverless Framework anymore. CDK is just a much nicer experience and I suspect the gap would be even bigger with a more complex project. 
 
