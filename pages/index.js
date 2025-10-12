@@ -94,9 +94,9 @@ export default function Home({ allPagesData }) {
           </a>
           <a 
             className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200" 
-            data-tooltip="pauls.garden"
-            href="https://pauls.garden">
-            <ion-icon name="leaf-outline" />
+            data-tooltip="Scratchpad"
+            href="https://docs.google.com/document/d/1fYpuMK6lF1b7LJ6dRO1iTOX477HLjkxasZiMZ5R4ezc/edit?tab=t.0">
+            <ion-icon name="flask" />
           </a>
           <a 
             className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200" 
