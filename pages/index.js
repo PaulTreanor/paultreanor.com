@@ -95,7 +95,7 @@ export default function Home({ allPagesData }) {
           <a 
             className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200" 
             data-tooltip="Scratchpad"
-            href="https://docs.google.com/document/d/1fYpuMK6lF1b7LJ6dRO1iTOX477HLjkxasZiMZ5R4ezc/edit?tab=t.0">
+            href="https://docs.google.com/document/d/e/2PACX-1vQwmt06_8gAd_-crel1aNmIgdpq7id5zeD1PKOaWg6C_ReGUt2QUueb7ScVfjwo5hmfOHNgxKzs69Yz/pub">
             <ion-icon name="flask" />
           </a>
           <a 
