@@ -20,6 +20,6 @@ So I asked [reddit ireland where are they from and whether or not they say the w
 
 <img  src="/images/aye/aye.svg" alt="Aye Map">
 
-When you map it out here we have a pretty nice "aye" isogloss: people in Ulster (and Sligo...and Wicklow for some reason) say "aye", other people generally don't. 
+When you map it out here we have a pretty nice "aye" isogloss: people in Ulster (Wicklow for some reason) say "aye", other people generally don't. 
 
 I can finally say aye without thinking about it again. 
