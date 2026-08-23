@@ -5,7 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 .tooltip {
   display: none;
@@ -78,7 +78,7 @@ html {
 
 /* use tailwinds to make all h1s dark green using @apply */
 a {
-  @apply text-sky-600 hover:text-sky-700 active:focus:text-sky-900 hover:bg-green-100  transition-colors duration-200;
+  @apply text-violet-500 hover:text-violet-700 active:focus:text-violet-900 hover:bg-green-100  transition-colors duration-200;
 }
 
 

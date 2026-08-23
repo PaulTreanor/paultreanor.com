@@ -17,36 +17,61 @@ export async function getStaticProps() {
 
 export default function Home({ allPagesData }) {
   const [search, setSearch] = useState('');
+  const [activeTags, setActiveTags] = useState(() => Array.from(new Set(allPagesData.map((post) => post.tags[0]))));
+
+  const allTags = Array.from(new Set(allPagesData.map((post) => post.tags[0])));
+
+  const toggleTag = (tag) => {
+    setActiveTags((prev) => prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]);
+  };
 
   const filteredBlogPosts = allPagesData.filter((post) => {
-    
-    const lowerCaseSearch = search.toLowerCase();
+    const tag = post.tags[0];
+    post.tag = tag;
 
-    const lowerCaseTagsString = post.tags[0].toLowerCase()
+    if (!activeTags.includes(tag)) {
+      return false;
+    }
+
     if (search === '') {
-      post.tag = post.tags[0]
-      return post;
+      return true;
     }
-    if (lowerCaseTagsString.includes(lowerCaseSearch) || post.title.toLowerCase().includes(lowerCaseSearch)) {
-      post.tag = post.tags[0]
-      return post;
-    }
+
+    const lowerCaseSearch = search.toLowerCase();
+    return tag.toLowerCase().includes(lowerCaseSearch) || post.title.toLowerCase().includes(lowerCaseSearch);
   });
 
   const getTagStyles = (tag) => {
     switch(tag) {
         case 'Note':
-            return 'bg-blue-100 hover:bg-blue-200 text-blue-800';
+            return 'bg-blue-100 hover:bg-blue-200 text-blue-900';
         case 'Tutorial':
-            return 'bg-green-100 hover:bg-green-200 text-green-800';
+            return 'bg-green-100 hover:bg-green-200 text-green-900';
         case 'Release':
-            return 'bg-fuchsia-100 hover:bg-fucshia-200 text-fucshia-800';
+            return 'bg-fuchsia-100 hover:bg-fuchsia-200 text-fuchsia-900';
         case 'Talk':
-            return 'bg-amber-100 hover:bg-amber-200 text-amber-800';
+            return 'bg-amber-100 hover:bg-amber-200 text-amber-900';
         case 'Essay':
-            return 'bg-red-100 hover:bg-red-200 text-red-800';
+            return 'bg-red-100 hover:bg-red-200 text-red-900';
         default:
-            return 'bg-sky-100 hover:bg-green-100 text-sky-800'; // default style
+            return 'bg-sky-100 hover:bg-green-100 text-sky-900'; // default style
+    }
+  };
+
+    const getInlineTagStyles = (tag) => {
+    switch(tag) {
+        case 'Note':
+            return 'border border-blue-300 hover:bg-blue-200 text-blue-900';
+        case 'Tutorial':
+            return 'border border-green-300 hover:bg-green-200 text-green-900';
+        case 'Release':
+            return 'border border-fuchsia-300 hover:bg-fuchsia-200 text-fuchsia-900';
+        case 'Talk':
+            return 'border border-amber-300 hover:bg-amber-200 text-amber-900';
+        case 'Essay':
+            return 'border border-red-300 hover:bg-red-200 text-red-900';
+        default:
+            return 'border border-sky-300 hover:bg-sky-200 text-sky-900'; // default style
     }
   };
 
@@ -74,69 +99,77 @@ export default function Home({ allPagesData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className='blurb my-11'>
-        <img className="mt-5 mb-7" src="/images/me.png" alt="" width={100}></img>
-        <h2 className="text-4xl font-open-sans font-bold py-4 ">Hi, I'm Paul 🐮</h2>
-        <p className="text-lg font-open-sans">I'm a fullstack dev who likes to build my own tools. This website is my digital notebook.</p>
+      <div className="flex flex-col md:flex-row md:items-start text-violet-900">
+        <section className='blurb mb-6 md:my-8 md:w-72 lg:w-80 md:flex-shrink-0'>
+          <img className="mt-5 mb-4" src="/images/me.png" alt="" width={100}></img>
+          <h2 className="text-3xl font-open-sans font-bold">Hi, I'm Paul</h2>
+          <p className="font-open-sans">I'm a fullstack dev who likes to build my own tools. This website is my digital notebook.</p>
 
-        <p className="text-lg font-open-sans">Feel free to get in touch!</p>
+          <p className="font-open-sans">Feel free to get in touch!</p>
 
-        <div className="row text-2xl pt-3">
-          <a 
-            className="mr-3 pr-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200" 
-            href="https://github.com/PaulTreanor">
-            <ion-icon name="logo-github" />
-          </a>
-          <a 
-            className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200" 
-            href="https://linkedin.com/in/paultreanordev">
-            <ion-icon name="logo-linkedin" />
-          </a>
-          {/* <a 
-            className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200" 
-            data-tooltip="Scratchpad"
-            href="https://docs.google.com/document/d/e/2PACX-1vQwmt06_8gAd_-crel1aNmIgdpq7id5zeD1PKOaWg6C_ReGUt2QUueb7ScVfjwo5hmfOHNgxKzs69Yz/pub">
-            <ion-icon name="flask" />
-          </a> */}
-          <a 
-            className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200" 
-            href="https://paultreanor.com/rss.xml">
-            <ion-icon name="logo-rss" />
-          </a>
-          <EmailHover> <ion-icon name="mail" /> </EmailHover>
-        </div>
-      </section>
-      <section >
-        <div className="home-page">
-          <h2 className="text-4xl font-open-sans font-bold py-4">📝 Latest Notes</h2>
-          <div className="articles pb-40">
-            <div className="search-box py-2">
-              <input id="searchbox" value={search} onChange={(event) => setSearch(event.target.value)} type="text" placeholder="Search for tags or post titles 🔎" className="bg-slate-50 border border-sky-300 text-slate-900 rounded-lg active:border-sky-400 active:bg-teal-50 focus:bg-teal-50 hover:border-sky-400 focus:border-sky-400 block p-2.5 w-96 max-w-full"/>
-            </div>
-            <ul className='my-7 max-w-2xl list-none'>
-              {filteredBlogPosts.map(({ id, date, title, tag }) => (
-                <li className='border-slate-300 border-b-2 border-solid pb-8 mt-4 no-underline ml-0' key={id}>
-                  <Link href={`/${id}`}>
-                    <h5 className={`font-open-sans text-xl font-medium text-slate-900 hover:underline ${getTitleAndDateColours(tag)} active:focus:bg-sky-400 pb-4 w-fit no-underline`}>
-                      {title}
-                    </h5>
-                  </Link>                  
-                  <div className='flex flex-wrap'>
-                    <small className={`pt-1 font-open-sans text-slate-600 ${getTitleAndDateColours(tag)} active:focus:bg-sky-400 w-fit no-underline pr-4`}>
-                      <Date dateString={date} />
-                    </small>
-                        <button onClick={() => setSearch(tag)} className={`text-sm font-open-sans font-semibold rounded-full px-3 py-1 mr-2 w-fit ${getTagStyles(tag)}`}>
-                            {tag}
-                        </button>
-                  </div>
-                <br />
-              </li>
-              ))}
-            </ul>
+          <div className="row text-xl pt-3">
+            <a
+              className="mr-3 pr-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200"
+              href="https://github.com/PaulTreanor">
+              <ion-icon name="logo-github" />
+            </a>
+            <a
+              className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200"
+              href="https://linkedin.com/in/paultreanordev">
+              <ion-icon name="logo-linkedin" />
+            </a>
+            <a
+              className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200"
+              href="https://paultreanor.com/rss.xml">
+              <ion-icon name="logo-rss" />
+            </a>
+            <EmailHover> <ion-icon name="mail" /> </EmailHover>
           </div>
-        </div>
-        
-      </section>
+        </section>
+
+        {/* Dividing line between sections (add w-px to make it visible) */}
+        <div className="hidden md:block bg-slate-300 self-stretch mx-10 my-11" />
+
+        <section className="md:flex-1 md:min-w-0 md:mt-11 text-violet-900">
+          <div className="home-page">
+            <h2 className="text-3xl font-manrope font-bold">Latest Notes</h2>
+            <div className="articles pb-40">
+              <div className="search-box py-2">
+                <input id="searchbox" value={search} onChange={(event) => setSearch(event.target.value)} type="text" placeholder=" search..." className="bg-slate-50 border border-violet-300 text-violet-900 rounded-md active:border-violet-400 active:bg-teal-50 focus:bg-teal-50 hover:border-violet-400 focus:border-violet-400 block p-1 w-96 mb-2 max-w-full"/>
+              </div>
+              <div className="tag-filter flex flex-wrap gap-3 pt-2">
+                {allTags.map((tag) => (
+                  <button
+                    key={tag}
+                    onClick={() => toggleTag(tag)}
+                    className={`text-sm font-open-sans font-semibold rounded-md px-2 py-0.5 w-fit transition-colors duration-200 ${activeTags.includes(tag) ? getTagStyles(tag) : 'bg-slate-100 text-slate-400 hover:bg-slate-200'}`}
+                  >
+                    {tag}
+                  </button>
+                ))}
+              </div>
+              <ul className='grid grid-cols-[auto_1fr] items-start gap-x-4 gap-y-5 my-7 max-w-2xl md:max-w-3xl lg:max-w-4xl'>
+                {filteredBlogPosts.map(({ id, date, title, tag }) => (
+                  <li className='contents' key={id}>
+                    <small className='text-slate-500 no-underline whitespace-nowrap text-sm md:text-base justify-self-end'>
+                      <span className='md:hidden'><Date dateString={date} formatString="MM/yy" className="font-mono" /></span>
+                      <span className='hidden md:inline'><Date dateString={date} formatString="d MMM, yy" className="font-mono" /></span>
+                    </small>
+                    <div className='min-w-0 flex items-start gap-x-3'>
+                      <Link href={`/${id}`} className={`font-open-sans font-medium leading-relaxed text-sm md:text-base text-slate-900 hover:underline hover:text-violet-500 no-underline min-w-0 flex-1 break-words ${getTitleAndDateColours(tag)}`}>
+                        {title}
+                      </Link>
+                      <button onClick={() => setSearch(tag)} className={`hidden md:block text-sm font-open-sans font-semibold rounded-md px-2 py-0.5 w-fit shrink-0 self-start ${getInlineTagStyles(tag)}`}>
+                        {tag}
+                      </button>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
     </Layout>
   );
 }
