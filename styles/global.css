@@ -1,11 +1,11 @@
 /* @import 'highlight.js/styles/intellij.css'; */
 
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Fredoka:wght@400..600&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 .tooltip {
   display: none;
@@ -38,8 +38,24 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font-family: 'Open Sans', sans-serif;
+	/* font-family: 'Nunuto', sans-serif; */
+  font-family: 'Nunito', sans-serif;
 	vertical-align: baseline;
+}
+
+/* Force headings to Patrick+Hand and non-heading text to Nunuto, even where a
+   component still sets an explicit font-* utility class (e.g. font-open-sans). */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fredoka', cursive !important;
+}
+
+code, pre, kbd, samp, .font-mono {
+  font-family: Consolas, Menlo, Monaco, 'Courier New', 'Ubuntu Mono', 'Source Code Pro', monospace !important;
+}
+
+html, body, div, span, p, a, li, small, button, input, textarea, label,
+blockquote, td, th, figcaption {
+  font-family: 'Nunito', sans-serif !important;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 

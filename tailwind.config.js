@@ -13,6 +13,8 @@ module.exports = {
       fontFamily: {
         'open-sans': ['Open Sans', 'sans-serif'],
         manrope: ['Manrope', 'sans-serif'],
+        nunito: ['Nunito', 'cursive'],
+        fredoka: ['Fredoka', 'sans-serif'],
       },
     },
   },

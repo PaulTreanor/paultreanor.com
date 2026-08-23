@@ -4,7 +4,6 @@ import { getSortedPagesData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
 import { useState } from 'react';
-import EmailHover from '../components/EmailHover';
 
 export async function getStaticProps() {
   const allPagesData = getSortedPagesData();
@@ -102,28 +101,36 @@ export default function Home({ allPagesData }) {
       <div className="flex flex-col md:flex-row md:items-start text-violet-900">
         <section className='blurb mb-6 md:my-8 md:w-72 lg:w-80 md:flex-shrink-0'>
           <img className="mt-5 mb-4" src="/images/me.png" alt="" width={100}></img>
-          <h2 className="text-3xl font-open-sans font-bold">Hi, I'm Paul</h2>
+          <h2 className="text-4xl font-open-sans font-bold">Hi, I'm Paul</h2>
           <p className="font-open-sans">I'm a fullstack dev who likes to build my own tools. This website is my digital notebook.</p>
 
           <p className="font-open-sans">Feel free to get in touch!</p>
 
           <div className="row text-xl pt-3">
             <a
-              className="mr-3 pr-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200"
+              className="group mr-3 pr-2 pt-4 hover:bg-transparent transition-colors duration-200"
               href="https://github.com/PaulTreanor">
-              <ion-icon name="logo-github" />
+              <span className="relative inline-block w-6 h-6 align-middle">
+                <img src="/images/icons/git-unfilled.svg" alt="GitHub" className="absolute inset-0 w-6 h-6 group-hover:opacity-0 transition-opacity duration-200" />
+                <img src="/images/icons/git-filled.svg" alt="" aria-hidden="true" className="absolute inset-0 w-6 h-6 [filter:brightness(0)] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+              </span>
             </a>
             <a
-              className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200"
+              className="group mr-3 p-2 pt-4 hover:bg-transparent transition-colors duration-200"
               href="https://linkedin.com/in/paultreanordev">
-              <ion-icon name="logo-linkedin" />
+              <span className="relative inline-block w-6 h-6 align-middle">
+                <img src="/images/icons/LinkedIn-unfilled.svg" alt="LinkedIn" className="absolute inset-0 w-6 h-6 group-hover:opacity-0 transition-opacity duration-200" />
+                <img src="/images/icons/LinkedIn-filled.svg" alt="" aria-hidden="true" className="absolute inset-0 w-6 h-6 [filter:brightness(0)] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+              </span>
             </a>
             <a
-              className="mr-3 p-2 pt-4 rounded-full hover:bg-green-100 transition-colors duration-200"
+              className="group mr-3 p-2 pt-4 hover:bg-transparent transition-colors duration-200"
               href="https://paultreanor.com/rss.xml">
-              <ion-icon name="logo-rss" />
+              <span className="relative inline-block w-6 h-6 align-middle">
+                <img src="/images/icons/rss-unfilled.svg" alt="RSS feed" className="absolute inset-0 w-6 h-6 group-hover:opacity-0 transition-opacity duration-200" />
+                <img src="/images/icons/rss-filled.svg" alt="" aria-hidden="true" className="absolute inset-0 w-6 h-6 [filter:brightness(0)] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+              </span>
             </a>
-            <EmailHover> <ion-icon name="mail" /> </EmailHover>
           </div>
         </section>
 
@@ -132,7 +139,7 @@ export default function Home({ allPagesData }) {
 
         <section className="md:flex-1 md:min-w-0 md:mt-11 text-violet-900">
           <div className="home-page">
-            <h2 className="text-3xl font-manrope font-bold">Latest Notes</h2>
+            <h2 className="text-4xl font-bold">Latest Notes</h2>
             <div className="articles pb-40">
               <div className="search-box py-2">
                 <input id="searchbox" value={search} onChange={(event) => setSearch(event.target.value)} type="text" placeholder=" search..." className="bg-slate-50 border border-violet-300 text-violet-900 rounded-md active:border-violet-400 active:bg-teal-50 focus:bg-teal-50 hover:border-violet-400 focus:border-violet-400 block p-1 w-96 mb-2 max-w-full"/>
