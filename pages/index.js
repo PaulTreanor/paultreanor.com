@@ -106,29 +106,32 @@ export default function Home({ allPagesData }) {
 
           <p className="font-open-sans">Feel free to get in touch!</p>
 
-          <div className="row text-xl pt-3">
+          <div className="row flex flex-row text-4xl">
             <a
-              className="group mr-3 pr-2 pt-4 hover:bg-transparent transition-colors duration-200"
+              className="group mr-3 pr-1 md:pr-2 pt-3 md:pt-4 hover:bg-transparent transition-colors duration-200"
               href="https://github.com/PaulTreanor">
-              <span className="relative inline-block w-6 h-6 align-middle">
-                <img src="/images/icons/git-unfilled.svg" alt="GitHub" className="absolute inset-0 w-6 h-6 group-hover:opacity-0 transition-opacity duration-200" />
-                <img src="/images/icons/git-filled.svg" alt="" aria-hidden="true" className="absolute inset-0 w-6 h-6 [filter:brightness(0)] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+              <img src="/images/icons/git-filled.svg" alt="GitHub" className="md:hidden inline-block w-10 h-12 align-middle" />
+              <span className="hidden md:relative md:inline-block md:w-10 md:h-10 align-middle">
+                <img src="/images/icons/git-unfilled.svg" alt="GitHub" className="absolute inset-0 w-10 h-10 group-hover:opacity-0 transition-opacity duration-200" />
+                <img src="/images/icons/git-filled.svg" alt="" aria-hidden="true" className="absolute inset-0 w-10 h-10 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
               </span>
             </a>
             <a
               className="group mr-3 p-2 pt-4 hover:bg-transparent transition-colors duration-200"
               href="https://linkedin.com/in/paultreanordev">
-              <span className="relative inline-block w-6 h-6 align-middle">
-                <img src="/images/icons/LinkedIn-unfilled.svg" alt="LinkedIn" className="absolute inset-0 w-6 h-6 group-hover:opacity-0 transition-opacity duration-200" />
-                <img src="/images/icons/LinkedIn-filled.svg" alt="" aria-hidden="true" className="absolute inset-0 w-6 h-6 [filter:brightness(0)] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+              <img src="/images/icons/LinkedIn-filled.svg" alt="LinkedIn" className="md:hidden w-9 h-9 align-middle" />
+              <span className="hidden md:relative md:inline-block w-9 h-9 align-middle">
+                <img src="/images/icons/LinkedIn-unfilled.svg" alt="LinkedIn" className="absolute inset-0 w-9 h-9 group-hover:opacity-0 transition-opacity duration-200" />
+                <img src="/images/icons/LinkedIn-filled.svg" alt="" aria-hidden="true" className="absolute inset-0 w-9 h-9 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
               </span>
             </a>
             <a
               className="group mr-3 p-2 pt-4 hover:bg-transparent transition-colors duration-200"
               href="https://paultreanor.com/rss.xml">
-              <span className="relative inline-block w-6 h-6 align-middle">
-                <img src="/images/icons/rss-unfilled.svg" alt="RSS feed" className="absolute inset-0 w-6 h-6 group-hover:opacity-0 transition-opacity duration-200" />
-                <img src="/images/icons/rss-filled.svg" alt="" aria-hidden="true" className="absolute inset-0 w-6 h-6 [filter:brightness(0)] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+              <img src="/images/icons/rss-filled.svg" alt="RSS feed" className="md:hidden w-9 h-9 align-middle" />
+              <span className="hidden md:relative md:inline-block w-9 h-9 align-middle">
+                <img src="/images/icons/rss-unfilled.svg" alt="RSS feed" className="absolute inset-0 w-9 h-9 group-hover:opacity-0 transition-opacity duration-200" />
+                <img src="/images/icons/rss-filled.svg" alt="" aria-hidden="true" className="absolute inset-0 w-9 h-9 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
               </span>
             </a>
           </div>

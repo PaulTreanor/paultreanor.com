@@ -13,10 +13,7 @@ export async function getStaticProps({ params }) {
 
   return {
     props: {
-      postData: {
-        ...postData,
-        contentHtml: contentHtmlWithComponents,
-      },
+      postData,
     },
   };
 }
@@ -35,9 +32,9 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title }</title>
       </Head >
-        <div className='max-w-2xl mx-auto'>
-          <h5 className='text-slate-600 font-normal mb-5'>
-          <Date dateString={postData.date} />
+        <div className='max-w-2xl mx-auto md:mt-6'>
+          <h5 className='text-slate-600 font-normal'>
+          <Date dateString={postData.date} className="font-mono text-sm" />
           </h5>
           <div className="blog-content" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </div>

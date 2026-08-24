@@ -7,7 +7,7 @@ export const siteTitle = 'Paul Treanor'
 
 export default function Layout({ children, home }) {
   return (
-    <div className='mx-2 md:mx-20 lg:mx-40 font-open-sans mb-32'>
+    <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -19,19 +19,20 @@ export default function Layout({ children, home }) {
         <link rel="alternate" type="application/rss+xml" title="RSS Feed for paultreanor.com" href="/rss.xml" />
 
       </Head>
-      <header className='max-w-2xl mx-auto'>
+      <div className='relative'>
         {!home && (
-          <div className='mt-10 mb-8'>
-            
+          /* Desktop: sits in the left margin gutter (md:mx-20 = 80px, lg:mx-40 = 160px),
+             so it never overlaps content and needs no reserved space above it. */
+          <div className='md:absolute md:top-0 md:left-3 lg:left-8'>
             <Link href="/">
-              <div  className="text-4xl">
-                🏠
-              </div>
-              </Link>
+              <img src="/images/icons/home.svg" alt="Home" className="w-16 h-16 md:w-14 md:h-14 lg:w-24 lg:h-24 hover:scale-110 active:scale-95 transition-transform duration-200" />
+            </Link>
           </div>
         )}
-      </header>
-      <main>{children}</main>
-    </div>
+        <div className='mx-2 md:mx-20 lg:mx-40 font-open-sans mb-32'>
+          <main>{children}</main>
+        </div>
+      </div>
+    </>
   )
 }
