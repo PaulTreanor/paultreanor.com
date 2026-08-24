@@ -1,0 +1,23 @@
+---
+title: AWS and personal financial risk
+short: All AWS accounts carry with them some amount of personal financial risk. 
+date: '2026-08-24'
+slug: aws-risk
+createdAt: '2026-08-24'
+img: blog-2.jpg
+
+
+tags:
+  - Essay
+---
+
+# AWS and personal financial risk
+
+I think the standard advice for new software developers to sign up to AWS and start messing around is given a little bit too lightly, because AWS isn't a safe place to mess around in. It sounds a bit hysterical, but having an open AWS account brings with it some level of unavoidable personal financial risk. 
+
+Mistakes in code can DDoS your own services. If you play around with an expensive instance type, no one will remind you to shut it off. You could leak your credentials. We are all vulnerable to very legitimate looking phishing emails. A small surprise bill can ruin your week, a big one can ruin your life (in which case all you can do is pray that AWS will forgive it).
+
+Protecting your AWS account from this financial risk is not straightforward or guaranteed to work all the time. Billing alarms get triggered *after* the expensive mistake has happened, and if you're account's compromised, these features can be disabled by attackers. Any public-facing service could get a traffic spike, and unlike at work, you probably don't have a second pair of eyes to review your code for expensive mistakes. Very high unexpected AWS bills on personal accounts are a well worn story and they can happen to you too. 
+
+We are all comfortable with different levels of risk in our lives. AWS billing is an opaque and understated risk to expose yourself to. If your side project has limited upside, then I'd encourage you to think twice about using a platform with what has essentially unlimited financial downside. There's plenty of options for fixed monthly costs, and it's hard to put a price on sleeping peacefully at night. 
+
